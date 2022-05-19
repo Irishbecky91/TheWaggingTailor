@@ -1,6 +1,6 @@
-# Project Name
+# MadraMail
 
-![Image name](file path)
+![MadraMail Logo](file path)
 
 [View the live project here](depolyed link)
 
@@ -35,48 +35,97 @@
 
 ## Introduction
 
+MadraMail is a subscription site that send packaged toys and treats to customers for their pets. The service caters to dogs, cats, rabbits and birds. The customer would choose the appropriate plan and pay monthly for that subscription. Upon accessing the site, the user will be prompted to signup and fill in a form relating to their pet. This tailors the monthly boxes to the pets interests and favourite flavours.
 
+There will also be an option on this site to purchase specific items outside of the subscription, such as collars, toys and accessories.
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#MadraMail)
 
 ## UX 
 
 ### Ideal User Demographic
 #### The ideal user of this website is:
-- users
+- Pet Owners
+- Animal Lovers
+- Gift Givers
+- Collectors
+- Busy Professionals
+
 
 ### User Stories
-#### Sample text:
-- Sample text
+#### Site User:
+- As a Site User I want to be able to view a list of products so that I can select some to purchase.
+- As a Site User I want to be able to view individual product details so that I can identify the price, description, product rating, product image and available options and sizes.
+- As a Site User I want to be able to quickly identify deals and promotions so that I can take advantage of special savings on products I'd like to purchase.
+- As a Site User I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
+- As a Site User I want to be able to easily register for an account so that I can sign up for a monthly subscription.
+- As a Site User I want to be able to easily log in or log out so that I can access my personal account information.
+- As a Site User I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
+- As a Site User I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
+- As a Site User I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information.
+- As a Site User I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
+- As a Site User I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+- As a Site User I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
+- As a Site User I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
+- As a Site User I want to be able to easily select the type, size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity, size or type.
+- As a Site User I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
+- As a Site User I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
+- As a Site User I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
+- As a Site User I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
+- As a Site User I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
+- As a Site User I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
+- As a Site User I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
 
-### Development Planes
-Sample text
+#### Store Owner
+- As a Store Owner I want to be able to add a product so that I can add new items to my store.
+- As a store/owner I want to be able to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.
+- As a Store Owner I want to be able to delete a product so that I can Remove items that are no longer for sale.
 
-#### Strategy
-Sample text
+### **Development Planes**
+To create a comprehensive and appealing website, the developer researched other pet related websites to discover what features and functionality would be required. This information created the above user stories and is developed further below.
+
+#### Main Inspirations
+- [BarkBox](https://www.barkbox.com/ "Link to BarkBox")
+- [Great Pet](https://home.greatpetcare.com/ "Link to Great Pet")
+- [Chewy](https://www.chewy.com/ "Link to Great Pet")
+
+#### **Strategy**
+Broken into three categories, the website will attempt to focus on the following target audiences:
 - **Roles:**
-     - Sample text
+     - Site User
+     - Site Owner
 
 - **Demographic:**
-     - Sample text
+     - Young to mature adults
+     - Pet Owners
+     - Gift Givers
 
 - **Psychographics:**
     - Personality & Attitudes:
-     - Sample text
+        - Fun Loving
+        - Creative
+        - Outgoing
+        - Playful
     - Values:
-     - Sample text
+        - Loves Animals
+        - Generous
     - Lifestyles:
-     - Sample text
+        - Has or knows someone who does have Pets
+        - Busy Professionals
 
-The website needs to enable the **user** to:
-- Sample text
+The website needs to enable the **Site User** to:
+- Select that plan that suits the type of animal, as well as the toys/flavours they prefer.
+- Purchase a subscription which renews each month unless instructed otherwise.
+- View a selection of products not included in the subscription service.
+- Create a personalised profile relating to their pet type and preferences
 
-The website needs to enable the **admin** to:
-- Sample text
+The website needs to enable the **Site Owner** to:
+- Add, edit and delete products on the site.
+- View orders in the admin screen
 
-Sample text relating to strategy table:
+With the user stories in mind, the developer created the below strategy table to determine the trade-off of importance and viability with the following results:
 
-![Strategy Table](file path)
+![Strategy Table](static/media/README/strategy-table.png)
 
 #### Scope
 Sample text relating to scope
