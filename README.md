@@ -1,6 +1,6 @@
-# MadraMail
+# The Wagging Tailor
 
-![MadraMail Logo](file path)
+![The Wagging Tailor  Logo](file path)
 
 [View the live project here](depolyed link)
 
@@ -39,7 +39,7 @@ MadraMail is a subscription site that send packaged toys and treats to customers
 
 There will also be an option on this site to purchase specific items outside of the subscription, such as collars, toys and accessories.
 
-[Back to top ⇧](#MadraMail)
+[Back to top ⇧](#)
 
 ## UX 
 
@@ -128,20 +128,27 @@ With the user stories in mind, the developer created the below strategy table to
 ![Strategy Table](static/media/README/strategy-table.png)
 
 #### Scope
-Sample text relating to scope
+A scope was defined to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
+
 - **Content Requirements**
-     - The user will be looking for:
-      - Sample text
+    - The user will be looking for:
+        - A variety of options for the subscription service
+        - Details of the products provided
+        - Tailored packages for various species
+        - A personalised Profile Page displaying pet details
 - **Functionality Requirements**
-     - The user will be able to:
-      - Sample text
+    - The user will be able to:
+        - Choose their pets favourite toy types and flavours
+        - Update their profile with pet details and images
+        - Easily navigate the site to find product information.
 
 #### Structure
-Sample text relating to structue site map
-![Site Map](file path)
+The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
+
+![Site Map](static/media/README/site-map.png)
 
 #### Skeleton 
-Sample text relating to Skeleton plane
+Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
 
 Home Page:
 ![Home Page Wireframe](file path)
