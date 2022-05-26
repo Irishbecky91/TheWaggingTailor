@@ -6,4 +6,4 @@ def home(request):
     """
     Home View
     """
-    render(request, 'home/index.html')
+    return render(request, 'home/index.html')
