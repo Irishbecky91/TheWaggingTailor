@@ -150,8 +150,71 @@ The information architecture was organized in a hierarchical tree structure to e
 #### Skeleton 
 Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
 
-Home Page:
-![Home Page Wireframe](file path)
+<details>
+<summary>Home Page:</summary>
+
+![Home Page Wireframe](static/media/README/wireframes/wireframe-home.png)
+</details>
+
+<details>
+<summary>Products List Page:</summary>
+
+![Product List Page Wireframe](static/media/README/wireframes/wireframe-products.png)
+</details>
+
+<details>
+<summary>Product Details Page:</summary>
+
+![Products Page Wireframe](static/media/README/wireframes/wireframe-product-details.png)
+</details>
+
+<details>
+<summary>Shopping Bag Page:</summary>
+
+![Shopping Bag Page Wireframe](static/media/README/wireframes/wireframe-bag.png)
+</details>
+
+<details>
+<summary>Checkout Page:</summary>
+
+![Checkout Page Wireframe](static/media/README/wireframes/wireframe-checkout.png)
+</details>
+
+<details>
+<summary>Order Confirmation Page:</summary>
+
+![Order Confirmation Page Wireframe](static/media/README/wireframes/wireframe-order-confirmation.png)
+</details>
+
+<details>
+<summary>Personal Profile Page:</summary>
+
+![Personal Profile Page Wireframe](static/media/README/wireframes/wireframe-profile.png)
+</details>
+
+<details>
+<summary>Edit/Delete Profile Page:</summary>
+
+![Edit/Delete Profile Page Page Wireframe](static/media/README/wireframes/wireframe-user-edit.png)
+</details>
+
+<details>
+<summary>Order History Page:</summary>
+
+![Order History Page Wireframe](static/media/README/wireframes/wireframe-order-history.png)
+</details>
+
+<details>
+<summary>FAQs Page:</summary>
+
+![FAQs Page Wireframe](static/media/README/wireframes/wireframe-faqs.png)
+</details>
+
+<details>
+<summary>Edit/Delete Product Page:</summary>
+
+![Edit/Delete Product Page Wireframe](static/media/README/wireframes/wireframe-admin-edit.png)
+</details>
 
 ### Design
 
