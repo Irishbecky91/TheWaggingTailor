@@ -2,18 +2,48 @@
     position: relative;
 }
 
-.hero-image {
-    background-image: url('/media/site-images/puppy-outfit.jpg');
+.image-container .hero-image {
     max-height: 40vw;
     overflow: cover;
     position: relative;
     bottom: 0;
 }
 
+.intro-div {
+    position: relative;
+    height: 350px
+}
+
+.intro-image {
+    position: absolute;
+    bottom: 0;
+    padding-right: 50%;
+}
+
+.image-container .hero-image img {
+    padding: 0px !important;
+}
+
+.bg-custom {
+    background-color: #F4A30E;
+}
+
 .bg-custom-nav {
-    background-color: rgb(216, 196, 169);
+    background-color: #04212E;
+}
+
+.text-navy {
+    color: #04212E;
 }
 
 .link-colour {
-    color: #F4A30E;
+    color: #04212E;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }

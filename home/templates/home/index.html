@@ -2,14 +2,59 @@
 {% load static %}
 
 {% block header %}
-        <div class="image-fluid image-container">
-            <div class="row">
-                <img src="{% static 'media/site-images/puppy-outfit.jpg' %}"
-                    alt="Image of a French Bulldog wearing a sweater and ascot" class="img-fluid home-image">
-            </div>
-        </div>
+<div class="image-container">
+    <div class="row img-fluid home-image py-0">
+        <img src="{% static 'media/site-images/puppy-outfit-logo.png' %}"
+            alt="Image of a French Bulldog wearing a sweater and ascot" class="img-fluid home-image">
+    </div>
+</div>
 {% endblock %}
 
 {% block content %}
+<h1 class="text-center mt-4">Welcome to The Wagging Tailor</h1>
+<br>
 
+<div class="container text-center">
+    <h2>Meet our Team</h2>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class="card border-0">
+                <img src="{% static 'media/site-images/rolo.png' %}" class="card-img-top rounded-circle"
+                    alt="Image of Rolo">
+                <div class="card-body" py-1>
+                    <h5 class="card-title">Rolo</h5>
+                    <p class="card-text text-start">The original inspiration for our business, this stylish pup has been
+                        known to
+                        rock a mean biker jacket in his downtime. Rolo enjoys long walks on the beach and chilling in
+                        the sun.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="card border-0">
+                <img src="{% static 'media/site-images/zoe.png' %}" class="card-img-top rounded-circle"
+                    alt="Image of Rolo">
+                <div class="card-body">
+                    <h5 class="card-title">Zoe</h5>
+                    <p class="card-text text-start">This little girl loves to romp about in one of our stylish dresses.
+                        She loves the feel
+                        of the wind in her fur while being chauffuered to her next adventure.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="card border-0">
+                <img src="{% static 'media/site-images/becky.png' %}" class="card-img-top rounded-circle"
+                    alt="Image of Rolo">
+                <div class="card-body">
+                    <h5 class="card-title">Becky</h5>
+                    <p class="card-text text-start">The founder of The Wagging Tailor, she is known for her
+                        out-of-this-world designs and cheesy T-shirts. She loves to try her hand at new skills and
+                        pamper her pups with treats and toys
+                        galore!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
