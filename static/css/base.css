@@ -9,17 +9,6 @@
     bottom: 0;
 }
 
-.intro-div {
-    position: relative;
-    height: 350px
-}
-
-.intro-image {
-    position: absolute;
-    bottom: 0;
-    padding-right: 50%;
-}
-
 .image-container .hero-image img {
     padding: 0px !important;
 }
@@ -46,4 +35,14 @@ body {
 
 p {
     font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-container {
+    max-height: 525px;
+    overflow: hidden;
+}
+
+.carousel-container img {
+    width: auto;
+    height: auto;
 }
