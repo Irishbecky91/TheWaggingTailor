@@ -2,17 +2,6 @@
     position: relative;
 }
 
-.image-container .hero-image {
-    max-height: 40vw;
-    overflow: cover;
-    position: relative;
-    bottom: 0;
-}
-
-.image-container .hero-image img {
-    padding: 0px !important;
-}
-
 .bg-custom {
     background-color: #F4A30E;
 }
@@ -45,4 +34,9 @@ p {
 .carousel-container img {
     width: auto;
     height: auto;
+}
+
+footer, footer a {
+    background-color: #04212E;
+    color: #F4A30E !important;
 }
