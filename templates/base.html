@@ -42,23 +42,21 @@
     <div class="message-container"></div>
     {% endif %}
 
-    <header class="container-fluid fixed-top">
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-warning text-black">
-                <h4 class="logo-font my-1">Did you know we make custom orders? Click <a href="#"><strong>here</strong></a> to find out more!</h4>
-            </div>
-        </div>
-        <div id="topnav" class="row bg-black pt-lg-4 pb-lg-4 d-none d-lg-flex">
+    <!-- Logo -->
+    <header class="container-fluid">
+        <div id="top-navbar" class="row bg-dark nav-dark pt-lg-3 pb-lg-3 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-light my-0">The Wagging Tailor</h2>
+                <a class="navbar-brand main-logo" href="{% url 'home' %}">
+                    <img src="{% static 'media/site-images/logo.png' %}" alt="Logo for The Wagging Tailor" width="100"
+                        height="100" class="d-inline-block align-text-top">
                 </a>
             </div>
+            <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="#">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search our site">
+                        <input class="form-control border border-white rounded-0" type="text" name="q"
+                            placeholder="Search our amazing products">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -69,14 +67,15 @@
                     </div>
                 </form>
             </div>
+            <!-- Icons -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-light nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <div><i class="text-light fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Profile</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -85,19 +84,19 @@
                             <a href="#" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Logout</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                            <a href="#" class="dropdown-item">Register</a>
-                            <a href="#" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="nav-link"
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="#">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <div><i class="text-light fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="text-light my-0">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -110,19 +109,36 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navbar -->
+        <div class="row bg-dark bg-gradient">
+            <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                    aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                {% include 'includes/mobile-header.html' %}
+                {% include 'includes/main-navbar.html' %}
             </nav>
         </div>
+        <div id="quote-banner" class="row text-center">
+            <div class="col bg-custom text-dark">
+                <h4 class="logo-font my-2">Did you know we make custom outfits? Get a quote <a
+                        href="#" class="link-colour"><strong>here</strong></a> today!</h4>
+            </div>
+        </div>
+        <!-- Hero Image -->
     </header>
 
     {% block page_header %}
     {% endblock %}
-    
+
+    <div class="image-fluid image-container">
+        <div class="row">
+            <img src="{% static 'media/site-images/puppy-outfit.jpg' %}" alt="Image of a Pomeranian in a pretty dress"
+                class="img-fluid home-image">
+        </div>
+    </div>
+
     {% block content %}
     {% endblock %}
 
