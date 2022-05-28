@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block header %}
+        <div class="image-fluid image-container">
+            <div class="row">
+                <img src="{% static 'media/site-images/puppy-outfit.jpg' %}"
+                    alt="Image of a French Bulldog wearing a sweater and ascot" class="img-fluid home-image">
+            </div>
+        </div>
+{% endblock %}
+
 {% block content %}
 
 {% endblock %}

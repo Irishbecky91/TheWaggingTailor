@@ -44,21 +44,23 @@
 
     <!-- Logo -->
     <header class="container-fluid">
-        <div id="top-navbar" class="row bg-dark nav-dark pt-lg-3 pb-lg-3 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div id="top-navbar" class="row bg-dark bg-gradient nav-dark pt-lg-3 d-none d-lg-flex">
+            <div class="logo-div text-center col-12 col-lg-4 my-auto py-2 py-lg-0">
                 <a class="navbar-brand main-logo" href="{% url 'home' %}">
                     <img src="{% static 'media/site-images/logo.png' %}" alt="Logo for The Wagging Tailor" width="100"
                         height="100" class="d-inline-block align-text-top">
+                    <p class="title text-light mb-0">The Wagging Tailor</p>
                 </a>
+                
             </div>
             <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="#">
                     <div class="input-group w-100">
-                        <input class="form-control border border-white rounded-0" type="text" name="q"
+                        <input class="form-control border border-light rounded-0" type="text" name="q"
                             placeholder="Search our amazing products">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-black border border-light rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="text-light fas fa-search"></i>
                                 </span>
@@ -110,7 +112,7 @@
             </div>
         </div>
         <!-- Navbar -->
-        <div class="row bg-dark bg-gradient">
+        <div class="row bg-custom-nav">
             <nav class="navbar navbar-expand-lg navbar-dark w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
                     aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,23 +123,15 @@
             </nav>
         </div>
         <div id="quote-banner" class="row text-center">
-            <div class="col bg-custom text-dark">
+            <div class="col bg-dark text-light">
                 <h4 class="logo-font my-2">Did you know we make custom outfits? Get a quote <a
                         href="#" class="link-colour"><strong>here</strong></a> today!</h4>
             </div>
         </div>
-        <!-- Hero Image -->
     </header>
 
-    {% block page_header %}
+    {% block header %}
     {% endblock %}
-
-    <div class="image-fluid image-container">
-        <div class="row">
-            <img src="{% static 'media/site-images/puppy-outfit.jpg' %}" alt="Image of a Pomeranian in a pretty dress"
-                class="img-fluid home-image">
-        </div>
-    </div>
 
     {% block content %}
     {% endblock %}
