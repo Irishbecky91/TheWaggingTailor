@@ -12,6 +12,7 @@ body {
     width: 100%;
     height: 20vw;
     object-fit: cover;
+    min-height: 200px;
 }
 
 .bg-custom {
@@ -55,4 +56,11 @@ p {
 footer, footer a {
     background-color: #04212E;
     color: #F4A30E !important;
+}
+
+/* Add responsiveness - screens 550 pixels and less */
+@media screen and (max-width: 991px) {
+    .mobile-colour {
+        color: #EFF5F8 !important;
+    }
 }
