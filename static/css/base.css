@@ -1,14 +1,17 @@
-{% load static %}
-
 body {
     background: url("/static/media/site-images/paw-background.png") no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
     color: #555;
 }
 
 .image-container {
     position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
 }
 
 .bg-custom {

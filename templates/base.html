@@ -46,7 +46,7 @@
     <title>The Wagging Tailor {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
@@ -148,7 +148,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-    <footer>
+    <footer class="mt-auto">
         <div class="container">
             <div class="row pb-3 pt-3">
                 <div class="col-6 text-center">

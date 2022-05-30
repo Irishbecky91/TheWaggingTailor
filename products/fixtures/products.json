@@ -112,12 +112,12 @@
     "pk": 11,
     "model": "products.product",
     "fields": {
-        "product_name": "Striped Wool Sweater",
-        "description": "A warm and cosy choice for any cold day, this sweater is made from soft marino wool. The striped pattern has a very autumn feel, just looking at it will have you craving for a pumpkin spiced latte!",
-        "price": 19.99,
-        "category": 3,
+        "product_name": "Freedom Neckerchief",
+        "description": "What better way to show off your pets' love for their freedom than with a neckerchief that shows off the Stars and Stripes?",
+        "price": 4.99,
+        "category": 9,
         "rating": 4.9,
-        "image": "dog-pet-sweater-textile-art-boston-terrier-1196834-pxhere.com.jpg"
+        "image": "martin-castro-SGBGU5ZhENo-unsplash.jpg"
     }
 },{
     "pk": 12,
@@ -277,12 +277,12 @@
     "pk": 26,
     "model": "products.product",
     "fields": {
-        "product_name": "Leather Biker Jacket",
-        "description": "For the stylish, the tough, and the biker dogs, this jacket is perfect for the dog that wants to take on the world!",
-        "price": 54.99,
-        "category": 1,
-        "rating": 4.2,
-        "image": "mocno-fotografia-1Zj-h35UciY-unsplash.jpg"
+        "product_name": "The 'Night on the town' Evening Dress",
+        "description": "Lovely little dress with some beautiful details. There's space on the back for a harness ring to fit through, so it's just right for an evening out.",
+        "price": 19.99,
+        "category": 8,
+        "rating": 3.3,
+        "image": "matt-walsh-DyMOyjolcHE-unsplash.jpg"
     }
 },{
     "pk": 27,
@@ -613,27 +613,5 @@
         "category": 8,
         "rating": 4.6,
         "image": "kerwin-elias-7-ToFEHzMNw-unsplash.jpg"
-    }
-},{
-    "pk": 57,
-    "model": "products.product",
-    "fields": {
-        "product_name": "Freedom Neckerchief",
-        "description": "What better way to show off your pets' love for their freedom than with a neckerchief that shows off the Stars and Stripes?",
-        "price": 4.99,
-        "category": 9,
-        "rating": 4.9,
-        "image": "martin-castro-SGBGU5ZhENo-unsplash.jpg"
-    }
-},{
-    "pk": 58,
-    "model": "products.product",
-    "fields": {
-        "product_name": "The 'Night on the town' Evening Dress",
-        "description": "Lovely little dress with some beautiful details. There's space on the back for a harness ring to fit through, so it's just right for an evening out.",
-        "price": 19.99,
-        "category": 8,
-        "rating": 3.3,
-        "image": "matt-walsh-DyMOyjolcHE-unsplash.jpg"
     }
 }]

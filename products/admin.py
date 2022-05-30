@@ -11,6 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
     Defines how the Product is used and displayed in Admin
     """
     list_display = (
+        'pk',
         'product_name',
         'category',
         'description',
