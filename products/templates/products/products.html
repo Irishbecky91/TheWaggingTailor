@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block extra_title %}
@@ -6,10 +6,21 @@
 {% endblock %}
 
 {% block header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block content %}
-{% endblock %}
-
-{% block postloadjs %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{ products }}
+        </div>
+    </div>
+</div>
 {% endblock %}

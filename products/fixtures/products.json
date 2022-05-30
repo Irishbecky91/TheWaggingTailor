@@ -2,7 +2,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-        "product_product_name": "Green Mane Scarf",
+        "product_name": "Green Mane Scarf",
         "description": "A Mane Scarf, perfect for when your pet want to look fierce! Comes in a variety of sizes so all kinds can enjoy. Machine washable and a stretch fit for snug and comfortable use. Please check out our sizing guide for the perfect fit!",
         "price": 10.99,
         "category": 8,
@@ -277,451 +277,363 @@
     "pk": 26,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Leather Biker Jacket",
+        "description": "For the stylish, the tough, and the biker dogs, this jacket is perfect for the dog that wants to take on the world!",
+        "price": 54.99,
+        "category": 1,
+        "rating": 4.2,
+        "image": "mocno-fotografia-1Zj-h35UciY-unsplash.jpg"
     }
 },{
     "pk": 27,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "The 'What's new Sherlock' flat cap and steel rim glasses.",
+        "description": "For those intelligent, discerning pets who are all about knowledge and the intelligent style.",
+        "price": 12.99,
+        "category": 9,
+        "rating": 3.5,
+        "image": "pearl-lynn-4eHku-Br1qQ-unsplash.jpg"
     }
 },{
     "pk": 28,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "Funky Bowtie",
+        "description": "This cool bowtie gives your pet a spark of style and will create a buzz where ever they go!",
+        "price": 3.99,
+        "category": 9,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "pexels-breno-cardoso-8530860.jpg"
     }
 },{
     "pk": 29,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Autumnal light blouse with white detailing",
+        "description": "Great for those afternoon picnics, this top is ideal for those pets that enjoy a bit of cheese in the park on the weekends!",
+        "price": 13.99,
+        "category": 6,
+        "rating": 4.8,
+        "image": "pexels-alexis-ricardo-alaurin-10641096.jpg"
     }
 },{
     "pk": 30,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Cat Cap",
+        "description": "Great for those cold winter nights. This cap has a fastener under the chin and is highly durable. This is ideal for outdoor cats who come back a bit chilly!",
+        "price": 7.99,
+        "category": 9,
+        "rating": 3.9,
+        "image": "pexels-alice-castro-4444017.jpg"
     }
 },{
     "pk": 31,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Sports Jumper",
+        "description": "This jumper is designed to be tight-fitting and breathable. It has a water-resistant membrane to help your pet maintain a steady body temperature and resist chills from either the rain or bodies of water like puddles.",
+        "price": 33.99,
+        "category": 3,
+        "rating": 4.9,
+        "image": "pexels-enzo-muñoz-6729389.jpg"
     }
 },{
     "pk": 32,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Rain Hoody",
+        "description": "This water-proof hoody is light enough to keep your pet cool whilst keeping them dry. Great for those rainy days.",
+        "price": 19.99,
+        "category": 1,
+        "rating": 4.4,
+        "image": "pexels-erik-mclean-4744617.jpg"
     }
 },{
     "pk": 33,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Chunky Woolen Jumper",
+        "description": "This jumper is made from 100% wool. It's warm and is a great choice for short-haired pets, or just pets that feel the cold, during the winter.",
+        "price": 24.99,
+        "category": 3,
+        "rating": 4.5,
+        "image": "pexels-eun-suk-6866583.jpg"
     }
 },{
     "pk": 34,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "Casual Leather Jacket with Hood",
+        "description": "This jacket is for those more casual pets. It has a thick leather outer layer for protection, with a stylish cotton hood to simply look cool.",
+        "price": 54.99,
+        "category": 1,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "pexels-helena-lopes-7932591.jpg"
     }
 },{
     "pk": 35,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Cozy Woolen Jumper",
+        "description": "Baggy woolen jumper with a fold-down neck and stretchy short arms, ideal for those cooler walks.",
+        "price": 19.99,
+        "category": 3,
+        "rating": 3.3,
+        "image": "pexels-juan-vargas-5922961.jpg"
     }
 },{
     "pk": 36,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Button-up Light Pajamas",
+        "description": "Designed for those early Spring/late Autumn nights to keep your fur-baby nice and toasty.",
+        "price": 14.99,
+        "category": 7,
+        "rating": 3.6,
+        "image": "pexels-kat-smith-568022.jpg"
     }
 },{
     "pk": 37,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Pull-up PJs",
+        "description": "Lycra-style PJs that simply pull up your pets legs and keep their belly warm!",
+        "price": 9.99,
+        "category": 7,
+        "rating": 2.8,
+        "image": "pexels-kelly-l-6468670.jpg"
     }
 },{
     "pk": 38,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Frilly Victorian Dress",
+        "description": "For those pets that were born into the wrong Century!",
+        "price": 19.99,
+        "category": 8,
+        "rating": 3.6,
+        "image": "pexels-koi-san-12134440.jpg"
     }
 },{
     "pk": 39,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "The Tux Look",
+        "description": "Perfect for those special occasions.",
+        "price": 4.99,
+        "category": 8,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "pexels-maria-lindsey-content-creator-6057763.jpg"
     }
 },{
     "pk": 40,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "'The Bumble Bee' Costume",
+        "description": "For those nights that your pet just wants to buzz around.",
+        "price": 13.99,
+        "category": 8,
+        "rating": 3.6,
+        "image": "pexels-mister-mister-5677085.jpg"
     }
 },{
     "pk": 41,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Flower Collar",
+        "description": "Great for weddings, or any event that your pet needs to get dressed up for!",
+        "price": 3.99,
+        "category": 8,
+        "rating": 4.8,
+        "image": "pexels-peng-louis-1643457.jpg"
     }
 },{
     "pk": 42,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "Speedster Jumpsuit",
+        "description": "A cover-all jumpsuit for those faster-than-fast pets.",
+        "price": 19.99,
+        "category": 8,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "pexels-pırıl-şahin-7347556.jpg"
     }
 },{
     "pk": 43,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Thermal Hoody",
+        "description": "Fluffy on the inside, protective on the outside; this jacket is the best of both worlds for your pet. It's warm and snuggly, whilst being padded and having an external water-resistant membrane.",
+        "price": 29.99,
+        "category": 1,
+        "rating": 4.9,
+        "image": "pexels-skyler-ewing-4597757.jpg"
     }
 },{
     "pk": 44,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Prom Dress",
+        "description": "Ideal for those nights out and those fancy evenings.",
+        "price": 14.99,
+        "category": 4,
+        "rating": 4.9,
+        "image": "pom-dress.jpg"
     }
 },{
     "pk": 45,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "The Tartan Jumper",
+        "description": "Beautiful light jumper that is designed to pop and make your pet look great!",
+        "price": 19.99,
+        "category": 3,
+        "rating": 4.2,
+        "image": "puppy-dog-pet-pink-snout-animals-1373478-pxhere.com.jpg"
     }
 },{
     "pk": 46,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "Multi-coloured Tutu",
+        "description": "A beautiful, colourful tutu for those prancing pets.",
+        "price": 4.99,
+        "category": 8,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "reba-spike-Umfua0m8rPc-unsplash.jpg"
     }
 },{
     "pk": 47,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Informal Shirt",
+        "description": "A light short-sleeved shirt with a button up front and a softened collar.",
+        "price": 13.99,
+        "category": 5,
+        "rating": 4.5,
+        "image": "shirt1.png"
     }
 },{
     "pk": 48,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Spongebob Vest",
+        "description": "A light vest for all of the Spongebob fans!",
+        "price": 13.99,
+        "category": 6,
+        "rating": 3.7,
+        "image": "sponge-cat.jpg"
     }
 },{
     "pk": 49,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Santa Outfit",
+        "description": "For the Christmas Party!",
+        "price": 19.99,
+        "category": 8,
+        "rating": 4.9,
+        "image": "woman-carnivore-dog-collar-dog-breed-love-1636520-pxhere.com.jpg"
     }
 },{
     "pk": 50,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Branded Hoody",
+        "description": "Have a favourite brand that you want your pet to share? This hoody is ideal! We can put any name that you want, in our specialised font, across the hood.",
+        "price": 39.99,
+        "category": 2,
+        "rating": 4.9,
+        "image": "karsten-winegeart-oU6KZTXhuvk-unsplash.jpg"
     }
 },{
     "pk": 51,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Present Collar",
+        "description": "A small collar with a little present box on it. Good for holidays, Christmas, and special days. You can even put a small something into the present, like a ring!",
+        "price": 3.99,
+        "category": 8,
+        "rating": 3.6,
+        "image": "karsten-winegeart-QcwLDcfLXkk-unsplash.jpg"
     }
 },{
     "pk": 52,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Elf Outfit",
+        "description": "Perfect for Santa's Little Helper!",
+        "price": 13.99,
+        "category": 8,
+        "rating": 4.1,
+        "image": "karsten-winegeart-qzCgm273HW0-unsplash.jpg"
     }
 },{
     "pk": 53,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Fast Food is the Vest",
+        "description": "For pets that are obsessed with fast food! It's a light vest that can be worn any time.",
+        "price": 9.99,
+        "category": 6,
+        "rating": 2.9,
+        "image": "karsten-winegeart-T7Hxkhv23yY-unsplash.jpg"
     }
 },{
     "pk": 54,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Chequered Rain Coat",
+        "description": "Great for those walks in the rain. Warm and stylish.",
+        "price": 24.99,
+        "category": 1,
+        "rating": 4.7,
+        "image": "karsten-winegeart-TVyp3xmXfec-unsplash.jpg"
     }
 },{
     "pk": 55,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Striped T-Shirt",
+        "description": "A nice little t-shirt, striped and casual for those park days.",
+        "price": 7.99,
+        "category": 6,
+        "rating": 3.5,
+        "image": "karsten-winegeart-XoOXuRDIBPg-unsplash.jpg"
     }
 },{
     "pk": 56,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
+        "product_name": "Super Pet Costume",
+        "description": "Turn your pet into a superhero!",
+        "price": 13.99,
+        "category": 8,
         "rating": 4.6,
-        "image": ".jpg"
+        "image": "kerwin-elias-7-ToFEHzMNw-unsplash.jpg"
     }
 },{
     "pk": 57,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "Freedom Neckerchief",
+        "description": "What better way to show off your pets' love for their freedom than with a neckerchief that shows off the Stars and Stripes?",
+        "price": 4.99,
+        "category": 9,
+        "rating": 4.9,
+        "image": "martin-castro-SGBGU5ZhENo-unsplash.jpg"
     }
 },{
     "pk": 58,
     "model": "products.product",
     "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 59,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 60,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 61,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 62,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 63,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 64,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 65,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
-    }
-},{
-    "pk": 66,
-    "model": "products.product",
-    "fields": {
-        "product_name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 0,
-        "rating": 4.6,
-        "image": ".jpg"
+        "product_name": "The 'Night on the town' Evening Dress",
+        "description": "Lovely little dress with some beautiful details. There's space on the back for a harness ring to fit through, so it's just right for an evening out.",
+        "price": 19.99,
+        "category": 8,
+        "rating": 3.3,
+        "image": "matt-walsh-DyMOyjolcHE-unsplash.jpg"
     }
 }]
