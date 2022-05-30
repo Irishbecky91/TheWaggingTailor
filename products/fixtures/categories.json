@@ -2,70 +2,70 @@
     "pk": 1,
     "model": "products.category",
     "fields": {
-        "name": "coats_jackets",
+        "category_name": "coats_jackets",
         "friendly_name": "Coats & Jackets"
     }
 }, {
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "hoodies",
+        "category_name": "hoodies",
         "friendly_name": "Hoodies"
     }
 }, {
     "pk": 3,
     "model": "products.category",
     "fields": {
-        "name": "sweaters",
+        "category_name": "sweaters",
         "friendly_name": "Sweaters"
     }
 }, {
     "pk": 4,
     "model": "products.category",
     "fields": {
-        "name": "dresses",
+        "category_name": "dresses",
         "friendly_name": "Dresses"
     }
 }, {
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "shirts",
+        "category_name": "shirts",
         "friendly_name": "Shirts"
     }
 }, {
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "t_shirts",
+        "category_name": "t_shirts",
         "friendly_name": "T-Shirts"
     }
 }, {
     "pk": 7,
     "model": "products.category",
     "fields": {
-        "name": "pyjamas",
+        "category_name": "pyjamas",
         "friendly_name": "Pyjamas"
     }
 }, {
     "pk": 8,
     "model": "products.category",
     "fields": {
-        "name": "costumes",
+        "category_name": "costumes",
         "friendly_name": "Costumes"
     }
 }, {
     "pk": 9,
     "model": "products.category",
     "fields": {
-        "name": "hats",
-        "friendly_name": "Hats"
+        "category_name": "hats_accessories",
+        "friendly_name": "Hats & Accessories"
     }
 }, {
     "pk": 10,
     "model": "products.category",
     "fields": {
-        "name": "harnesses",
+        "category_name": "harnesses",
         "friendly_name": "Harnesses"
     }
 }]

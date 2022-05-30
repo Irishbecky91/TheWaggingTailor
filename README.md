@@ -35,9 +35,9 @@
 
 ## Introduction
 
-MadraMail is a subscription site that send packaged toys and treats to customers for their pets. The service caters to dogs, cats, rabbits and birds. The customer would choose the appropriate plan and pay monthly for that subscription. Upon accessing the site, the user will be prompted to signup and fill in a form relating to their pet. This tailors the monthly boxes to the pets interests and favourite flavours.
+The Wagging Tailor is a company which designs and creates custom clothing for pets. This includes anything from harnesses to biker jackets. This site was devevoloped to facilitate the sale and commision of these products, as well as provide information about the business and it's products. This site includes a products list, including individual product pages, a payment feature, and a personal profile for the user to enter their and their pet's information for future use.
 
-There will also be an option on this site to purchase specific items outside of the subscription, such as collars, toys and accessories.
+This site was developed to be intuitive and appealing to users. There are options also for the site owner to add, edit and delete products from the site for future changes and new stock.
 
 [Back to top ⇧](#)
 
@@ -48,26 +48,26 @@ There will also be an option on this site to purchase specific items outside of 
 - Pet Owners
 - Animal Lovers
 - Gift Givers
-- Collectors
-- Busy Professionals
+- Trendy Individuals
+- Fashionable Individuals
 
 
 ### User Stories
 #### Site User:
 - As a Site User I want to be able to view a list of products so that I can select some to purchase.
-- As a Site User I want to be able to view individual product details so that I can identify the price, description, product rating, product image and available options and sizes.
+- As a Site User I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
 - As a Site User I want to be able to quickly identify deals and promotions so that I can take advantage of special savings on products I'd like to purchase.
 - As a Site User I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
-- As a Site User I want to be able to easily register for an account so that I can sign up for a monthly subscription.
 - As a Site User I want to be able to easily log in or log out so that I can access my personal account information.
 - As a Site User I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
 - As a Site User I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
 - As a Site User I want to be able to have a personalised user profile so that I can view my personal order history and order confirmations and save my payment information.
+- As a Site User I want to be able to be able to save my pet's measurements to my user profile so that I can remind myself of the correct sizing when ordering a product.
 - As a Site User I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
 - As a Site User I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
 - As a Site User I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
 - As a Site User I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
-- As a Site User I want to be able to easily select the type, size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity, size or type.
+- As a Site User I want to be able to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity or size.
 - As a Site User I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
 - As a Site User I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
 - As a Site User I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout.
@@ -97,21 +97,27 @@ Broken into three categories, the website will attempt to focus on the following
 
 - **Demographic:**
      - Young to mature adults
-     - Pet Owners
-     - Gift Givers
+     - Pet owners
+     - Gift givers
 
 - **Psychographics:**
     - Personality & Attitudes:
-        - Fun Loving
+        - Fun loving
         - Creative
         - Outgoing
         - Playful
+
     - Values:
-        - Loves Animals
-        - Generous
+        - Loves animals
+        - Fashionable
+        - Trend setter
+
     - Lifestyles:
         - Has or knows someone who does have Pets
-        - Busy Professionals
+        - Keeps up with latest trends
+        - Goes to pet shows
+        - Likes to dress up
+
 
 The website needs to enable the **Site User** to:
 - Select that plan that suits the type of animal, as well as the toys/flavours they prefer.
@@ -125,27 +131,27 @@ The website needs to enable the **Site Owner** to:
 
 With the user stories in mind, the developer created the below strategy table to determine the trade-off of importance and viability with the following results:
 
-![Strategy Table](static/media/README/strategy-table.png)
+![Strategy Table](media/README/strategy-table.png)
 
 #### Scope
 A scope was defined to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
 
 - **Content Requirements**
     - The user will be looking for:
-        - A variety of options for the subscription service
+        - A variety of designs to choose from
         - Details of the products provided
-        - Tailored packages for various species
-        - A personalised Profile Page displaying pet details
+        - A way to search the site according to their preferred category, ie. Shirts
+        - A personalised Profile Page displaying the user's details and their pet's measurements
 - **Functionality Requirements**
     - The user will be able to:
-        - Choose their pets favourite toy types and flavours
+        - Select their desired size for each product, ie. Cat-M or Dog-XS
         - Update their profile with pet details and images
         - Easily navigate the site to find product information.
 
 #### Structure
 The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-![Site Map](static/media/README/site-map.png)
+![Site Map](media/README/site-map.png)
 
 #### Skeleton 
 Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
@@ -153,67 +159,67 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 <details>
 <summary>Home Page:</summary>
 
-![Home Page Wireframe](static/media/README/wireframes/wireframe-home.png)
+![Home Page Wireframe](media/README/wireframes/wireframe-home.png)
 </details>
 
 <details>
 <summary>Products List Page:</summary>
 
-![Product List Page Wireframe](static/media/README/wireframes/wireframe-products.png)
+![Product List Page Wireframe](media/README/wireframes/wireframe-products.png)
 </details>
 
 <details>
 <summary>Product Details Page:</summary>
 
-![Products Page Wireframe](static/media/README/wireframes/wireframe-product-details.png)
+![Products Page Wireframe](media/README/wireframes/wireframe-product-details.png)
 </details>
 
 <details>
 <summary>Shopping Bag Page:</summary>
 
-![Shopping Bag Page Wireframe](static/media/README/wireframes/wireframe-bag.png)
+![Shopping Bag Page Wireframe](media/README/wireframes/wireframe-bag.png)
 </details>
 
 <details>
 <summary>Checkout Page:</summary>
 
-![Checkout Page Wireframe](static/media/README/wireframes/wireframe-checkout.png)
+![Checkout Page Wireframe](media/README/wireframes/wireframe-checkout.png)
 </details>
 
 <details>
 <summary>Order Confirmation Page:</summary>
 
-![Order Confirmation Page Wireframe](static/media/README/wireframes/wireframe-order-confirmation.png)
+![Order Confirmation Page Wireframe](media/README/wireframes/wireframe-order-confirmation.png)
 </details>
 
 <details>
 <summary>Personal Profile Page:</summary>
 
-![Personal Profile Page Wireframe](static/media/README/wireframes/wireframe-profile.png)
+![Personal Profile Page Wireframe](media/README/wireframes/wireframe-profile.png)
 </details>
 
 <details>
 <summary>Edit/Delete Profile Page:</summary>
 
-![Edit/Delete Profile Page Page Wireframe](static/media/README/wireframes/wireframe-user-edit.png)
+![Edit/Delete Profile Page Page Wireframe](media/README/wireframes/wireframe-user-edit.png)
 </details>
 
 <details>
 <summary>Order History Page:</summary>
 
-![Order History Page Wireframe](static/media/README/wireframes/wireframe-order-history.png)
+![Order History Page Wireframe](media/README/wireframes/wireframe-order-history.png)
 </details>
 
 <details>
 <summary>FAQs Page:</summary>
 
-![FAQs Page Wireframe](static/media/README/wireframes/wireframe-faqs.png)
+![FAQs Page Wireframe](media/README/wireframes/wireframe-faqs.png)
 </details>
 
 <details>
 <summary>Edit/Delete Product Page:</summary>
 
-![Edit/Delete Product Page Wireframe](static/media/README/wireframes/wireframe-admin-edit.png)
+![Edit/Delete Product Page Wireframe](media/README/wireframes/wireframe-admin-edit.png)
 </details>
 
 ### Design

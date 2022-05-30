@@ -2,7 +2,7 @@
     "pk": 1,
     "model": "products.product",
     "fields": {
-        "prod_name": "Green Mane Scarf",
+        "product_product_name": "Green Mane Scarf",
         "description": "A Mane Scarf, perfect for when your pet want to look fierce! Comes in a variety of sizes so all kinds can enjoy. Machine washable and a stretch fit for snug and comfortable use. Please check out our sizing guide for the perfect fit!",
         "price": 10.99,
         "category": 8,
@@ -13,7 +13,7 @@
     "pk": 2,
     "model": "products.product",
     "fields": {
-        "name": "Cat's Bowtie Harness",
+        "product_name": "Cat's Bowtie Harness",
         "description": "The perfect fit for cats of any size, this harness is designed with comfort in mind. The padded chest-piece and soft fabric mean your cat will love wearing their harness on walks or supervised outdoor time! This harness secures with a buckle and has a handy D-ring for attaching a leash. You can also adjust the size of the harness using the straps for a more comfortable fit. The design is perfect for casual everyday use or special occassions.",
         "price": 21.99,
         "category": 10,
@@ -24,7 +24,7 @@
     "pk": 3,
     "model": "products.product",
     "fields": {
-        "name": "Checkered Dog Coat",
+        "product_name": "Checkered Dog Coat",
         "description": "This coat is snuggly warm with a soft polar fleece lining and a water resistant layer inside. There is a slit on the back for a leash to connect with a harness underneath. The checkered design is a well-loved classic, and is perfect for everyday use. The coat fastens with a clasp under the belly, an adjustable strap allows for a perfect fit to keep away the cold breeze",
         "price": 24.99,
         "category": 6,
@@ -35,8 +35,8 @@
     "pk": 4,
     "model": "products.product",
     "fields": {
-        "name": "Leather Biker Jacket",
-        "description": "This is the perfect jacket for any biking enthusiast's pet! With the option to personalise with a pet's name, this jacket is not only cool, but very comfortable. Made with a PU leather outer layer and a smooth silk layer inside, your pet will be the most sytlish pet around. Simply choose the right size for your pet and get ready for the next bike meet!",
+        "product_name": "Leather Biker Jacket",
+        "description": "This is the perfect jacket for any biking enthusiast's pet! With the option to personalise with a pet's product_name, this jacket is not only cool, but very comfortable. Made with a PU leather outer layer and a smooth silk layer inside, your pet will be the most sytlish pet around. Simply choose the right size for your pet and get ready for the next bike meet!",
         "price": 45.99,
         "category": 1,
         "rating": 4.8,
@@ -46,7 +46,7 @@
     "pk": 5,
     "model": "products.product",
     "fields": {
-        "name": "Yellow Beanie Hat",
+        "product_name": "Yellow Beanie Hat",
         "description": "This sweet little beanie is the perfect accessory to complete your pet's ensemble. The tie strings are made of soft material for the most comfortable fit.",
         "price": 8.99,
         "category": 9,
@@ -57,7 +57,7 @@
     "pk": 6,
     "model": "products.product",
     "fields": {
-        "name": "Red Beret Hat",
+        "product_name": "Red Beret Hat",
         "description": "A great addition to your pet's wardrobe, this beret is both comfortable and stylish! The tie strings are made of soft material for the most comfortable fit.",
         "price": 12.99,
         "category": 9,
@@ -68,7 +68,7 @@
     "pk": 7,
     "model": "products.product",
     "fields": {
-        "name": "Red Satin Coat With Belt",
+        "product_name": "Red Satin Coat With Belt",
         "description": "This stylish jacket is a perfect red carpet look. A red satin outerlayer with detailed gold buttons is lined with a cosy bland and white knit fabric inside. Toasty warm and fashionable!",
         "price": 34.99,
         "category": 1,
@@ -79,7 +79,7 @@
     "pk": 8,
     "model": "products.product",
     "fields": {
-        "name": "Blue Checkered Shirt",
+        "product_name": "Blue Checkered Shirt",
         "description": "A beautiful shirt designed to make your pet look their best! Mabe from a soft and durable cotton fabric, this shirt is designed to be comfortable during rest and playtime.",
         "price": 23.99,
         "category": 5,
@@ -90,7 +90,7 @@
     "pk": 9,
     "model": "products.product",
     "fields": {
-        "name": "Kitty Pattern Hoodie",
+        "product_name": "Kitty Pattern Hoodie",
         "description": "This hoodie may have a cat design on the hood but it can be mode for any kind of pet. A great casual addition to your pet's wardrobe, the soft cotton fabric is both warm and comfortable to wear",
         "price": 53.99,
         "category": 6,
@@ -101,7 +101,7 @@
     "pk": 10,
     "model": "products.product",
     "fields": {
-        "name": "Party Hat",
+        "product_name": "Party Hat",
         "description": "The perfect way to celebrate your pet's big day is with these gorgeous party hats. These hats have a satin covered cone and an adorable frill. A party just isn't a party without party hats!",
         "price": 1.99,
         "category": 9,
@@ -112,7 +112,7 @@
     "pk": 11,
     "model": "products.product",
     "fields": {
-        "name": "Striped Wool Sweater",
+        "product_name": "Striped Wool Sweater",
         "description": "A warm and cosy choice for any cold day, this sweater is made from soft marino wool. The striped pattern has a very autumn feel, just looking at it will have you craving for a pumpkin spiced latte!",
         "price": 19.99,
         "category": 3,
@@ -123,7 +123,7 @@
     "pk": 12,
     "model": "products.product",
     "fields": {
-        "name": "Patterned Red Hoodie",
+        "product_name": "Patterned Red Hoodie",
         "description": "This sport hoodie will suit any active pup! Made of a soft, breathable cotton fabric, this hoodie will excite and inspire anyone to get up and get active. CAUTION: May cause jealousy in others!",
         "price": 39.99,
         "category": 2,
@@ -134,7 +134,7 @@
     "pk": 13,
     "model": "products.product",
     "fields": {
-        "name": "Cute Pink Frilly Top",
+        "product_name": "Cute Pink Frilly Top",
         "description": "This top is designed to be absolutely adorable! Made using a high quality cotton blend, this outfit is both breathable and cute. No one will be able to resist these pets!",
         "price": 16.99,
         "category": 6,
@@ -145,7 +145,7 @@
     "pk": 14,
     "model": "products.product",
     "fields": {
-        "name": "Black Chef Costume",
+        "product_name": "Black Chef Costume",
         "description": "You pet will be cooking up a storm in this adorable chef's costume! This costumer is made using a fine cotton blend and clasp buttons. A wonderful outfit for Halloween or fancy dress parties!",
         "price": 19.99,
         "category": 8,
@@ -156,7 +156,7 @@
     "pk": 15,
     "model": "products.product",
     "fields": {
-        "name": "Adorable Pink Dress",
+        "product_name": "Adorable Pink Dress",
         "description": "This dress is made from a light knit fabric with a light mesh skirt. This dress is an adorable addition to your pet's wardrobe and will make everyone you pass by go 'awww'!",
         "price": 23.99,
         "category": 4,
@@ -167,7 +167,7 @@
     "pk": 16,
     "model": "products.product",
     "fields": {
-        "name": "White Hoodie",
+        "product_name": "White Hoodie",
         "description": "This cute hoodie is perfect for those chilly days when you want to look good! a smooth cotton blend with a fleece lining makes this the perfect cold weather outfit! Just make sure to avoid those muddy puddles!",
         "price": 21.99,
         "category": 2,
@@ -178,7 +178,7 @@
     "pk": 17,
     "model": "products.product",
     "fields": {
-        "name": "White and Black Butterfly Coat",
+        "product_name": "White and Black Butterfly Coat",
         "description": "This stylish coat is made specially hot summer days, it is perfect for keeping your pet cool with it's ingenius design, this coat is made with a gel inner layer that can be put in the freezer and then put on your pet to keep them cool. The outerlayer is desinged to reflect the light and keep you pet cooler for longer.",
         "price": 24.99,
         "category": 1,
@@ -189,7 +189,7 @@
     "pk": 18,
     "model": "products.product",
     "fields": {
-        "name": "Red Beanie Hat",
+        "product_name": "Red Beanie Hat",
         "description": "A timeless classic. Red beanie's and denim jackets go together like peanut butter & jelly. Why not add this amazing accessory to your pet's wardrobe and see what other combo's you can find!",
         "price": 5.99,
         "category": 9,
@@ -200,7 +200,7 @@
     "pk": 19,
     "model": "products.product",
     "fields": {
-        "name": "Green Sleeveless Jacket",
+        "product_name": "Green Sleeveless Jacket",
         "description": "A classic look that will make you friend's green with envy. This jacket is designed to be light and breathable and also very stylish! You could even pair this with an awesome tee or hat for a complete outfit.",
         "price": 22.99,
         "category": 1,
@@ -211,7 +211,7 @@
     "pk": 20,
     "model": "products.product",
     "fields": {
-        "name": "Sporty 'Woof' Hoodie",
+        "product_name": "Sporty 'Woof' Hoodie",
         "description": "This hoodie is made for sporty and fashionable pets. The bright yellow patterns and 'WOOF' logo all add up to make a wonderful outfit for any pet. You'll want to go that extra mile on a walk just to show off your pet in this hoodie!",
         "price": 32.99,
         "category": 2,
@@ -222,7 +222,7 @@
     "pk": 21,
     "model": "products.product",
     "fields": {
-        "name": "Banana Print Pyjamas Onesie",
+        "product_name": "Banana Print Pyjamas Onesie",
         "description": "Your pet will be all ready for a slumber party with this adorable onesie! Made a stretch cotton blend fabric, this outfit is perfect for you pet to sleep in, no matter how odd their sleeping position!",
         "price": 26.99,
         "category": 7,
@@ -233,7 +233,7 @@
     "pk": 22,
     "model": "products.product",
     "fields": {
-        "name": "'Antisocial Puppy Club' Hoodie",
+        "product_name": "'Antisocial Puppy Club' Hoodie",
         "description": "This hoodie is great for those strong independent pups who stand out from the crowd. Made of a warm and comfortable cotton blend, this hoodie is great for keeping the cold away.",
         "price": 38.99,
         "category": 2,
@@ -244,7 +244,7 @@
     "pk": 23,
     "model": "products.product",
     "fields": {
-        "name": "Simple Red And White Long-Sleeved Tee",
+        "product_name": "Simple Red And White Long-Sleeved Tee",
         "description": "A simple but effective addition to any pet's wardrobe. This can be paired with a smart hoodie or maybe a cute beanie. The only limit is your imagination!",
         "price": 20.99,
         "category": 6,
@@ -255,7 +255,7 @@
     "pk": 24,
     "model": "products.product",
     "fields": {
-        "name": "Red White And Black Hoodie",
+        "product_name": "Red White And Black Hoodie",
         "description": "A stylish and sporty hoodie designed to impress. It's simple, no fuss design is perfect for those who appreciate a minimalist style. Made of a soft cotton blend, this hoodie is both warm and breathable.",
         "price": 47.99,
         "category": 2,
@@ -266,7 +266,7 @@
     "pk": 25,
     "model": "products.product",
     "fields": {
-        "name": "'I Didn't Do It' Hoodie",
+        "product_name": "'I Didn't Do It' Hoodie",
         "description": "Designed with the mischief makers in mind, this hoodie is a great reminder of how cheeky our pet's can be. A soft cotton blend black fabric displays a broken teddy bear and the words 'I DIDN'T DO IT'",
         "price": 24.99,
         "category": 2,
@@ -277,7 +277,7 @@
     "pk": 26,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -288,7 +288,7 @@
     "pk": 27,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -299,7 +299,7 @@
     "pk": 28,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -310,7 +310,7 @@
     "pk": 29,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -321,7 +321,7 @@
     "pk": 30,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -332,7 +332,7 @@
     "pk": 31,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -343,7 +343,7 @@
     "pk": 32,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -354,7 +354,7 @@
     "pk": 33,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -365,7 +365,7 @@
     "pk": 34,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -376,7 +376,7 @@
     "pk": 35,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -387,7 +387,7 @@
     "pk": 36,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -398,7 +398,7 @@
     "pk": 37,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -409,7 +409,7 @@
     "pk": 38,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -420,7 +420,7 @@
     "pk": 39,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -431,7 +431,7 @@
     "pk": 40,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -442,7 +442,7 @@
     "pk": 41,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -453,7 +453,7 @@
     "pk": 42,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -464,7 +464,7 @@
     "pk": 43,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -475,7 +475,7 @@
     "pk": 44,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -486,7 +486,7 @@
     "pk": 45,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -497,7 +497,7 @@
     "pk": 46,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -508,7 +508,7 @@
     "pk": 47,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -519,7 +519,7 @@
     "pk": 48,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -530,7 +530,7 @@
     "pk": 49,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -541,7 +541,7 @@
     "pk": 50,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -552,7 +552,7 @@
     "pk": 51,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -563,7 +563,7 @@
     "pk": 52,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -574,7 +574,7 @@
     "pk": 53,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -585,7 +585,7 @@
     "pk": 54,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -596,7 +596,7 @@
     "pk": 55,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -607,7 +607,7 @@
     "pk": 56,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -618,7 +618,7 @@
     "pk": 57,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -629,7 +629,7 @@
     "pk": 58,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -640,7 +640,7 @@
     "pk": 59,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -651,7 +651,7 @@
     "pk": 60,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -662,7 +662,7 @@
     "pk": 61,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -673,7 +673,7 @@
     "pk": 62,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -684,7 +684,7 @@
     "pk": 63,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -695,7 +695,7 @@
     "pk": 64,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -706,7 +706,7 @@
     "pk": 65,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,
@@ -717,7 +717,7 @@
     "pk": 66,
     "model": "products.product",
     "fields": {
-        "name": "",
+        "product_name": "",
         "description": "",
         "price": 53.99,
         "category": 0,

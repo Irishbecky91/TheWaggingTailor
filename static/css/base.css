@@ -26,9 +26,9 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.carousel-container {
+.carousel-item {
     max-height: 525px;
-    overflow: hidden;
+    overflow: cover;
 }
 
 .carousel-container img {
