@@ -4,6 +4,10 @@ body {
     color: #555;
 }
 
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .image-container {
     position: relative;
 }
@@ -38,6 +42,13 @@ img .intro-img {
 
 .link-colour {
     color: #04212E;
+}
+
+.btn-custom {
+    color: #04212E;
+    background-color: #F4A30E;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
 }
 
 body {
