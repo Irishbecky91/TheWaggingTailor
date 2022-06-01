@@ -7,64 +7,64 @@
         </li>
         <li class="nav-item dropdown">
             <a href="" class="logo-font font-weight-bold nav-link text-light mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="#?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="#?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="#?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a href="" class="logo-font font-weight-bold nav-link text-light mr-5" id="warm-wear-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Keeping Warm
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="warm-wear-link">
-                <a href="#?category=coats_jackets" class="dropdown-item">Coats &amp; Jackets</a>
-                <a href="#?category=hoodies" class="dropdown-item">Hoodies</a>
-                <a href="#?category=sweaters" class="dropdown-item">Sweaters</a>
-                <a href="#?category=coats_jackets,hoodies,sweaters" class="dropdown-item">All Warm Wear</a>
+                <a href="{% url 'products' %}?category=coats_jackets" class="dropdown-item">Coats &amp; Jackets</a>
+                <a href="{% url 'products' %}?category=hoodies" class="dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=sweaters" class="dropdown-item">Sweaters</a>
+                <a href="{% url 'products' %}?category=coats_jackets,hoodies,sweaters" class="dropdown-item">All Warm Wear</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a href="" class="logo-font font-weight-bold nav-link text-light mr-5" id="formal-wear-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Formal Wear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="formal-wear-link">
-                <a href="#?category=dresses" class="dropdown-item">Dresses</a>
-                <a href="#?category=shirts" class="dropdown-item">Shirts</a>
-                <a href="#?category=dresses,shirts" class="dropdown-item">All Formal Wear</a>
+                <a href="{% url 'products' %}?category=dresses" class="dropdown-item">Dresses</a>
+                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
+                <a href="{% url 'products' %}?category=dresses,shirts" class="dropdown-item">All Formal Wear</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a href="" class="logo-font font-weight-bold nav-link text-light mr-5" id="everyday-wear-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Everyday Wear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="everyday-wear-link">
-                <a href="#?category=t_shirts" class="dropdown-item">T-shirts</a>
-                <a href="#?category=pyjamas" class="dropdown-item">Pyjamas</a>
-                <a href="#?category=costumes" class="dropdown-item">Costumes</a>
-                <a href="#?category=t_shirts,pyjamas,costumes" class="dropdown-item">All Everyday Wear</a>
+                <a href="{% url 'products' %}?category=t_shirts" class="dropdown-item">T-shirts</a>
+                <a href="{% url 'products' %}?category=pyjamas" class="dropdown-item">Pyjamas</a>
+                <a href="{% url 'products' %}?category=costumes" class="dropdown-item">Costumes</a>
+                <a href="{% url 'products' %}?category=t_shirts,pyjamas,costumes" class="dropdown-item">All Everyday Wear</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a href="" class="logo-font font-weight-bold nav-link text-light mr-5" id="accessories-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="#?category=hats" class="dropdown-item">Hats</a>
-                <a href="#?category=harnesses" class="dropdown-item">Harnesses</a>
-                <a href="#?category=hats,harnesses" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=hats_accessories" class="dropdown-item">Hats &amp; Accessories</a>
+                <a href="{% url 'products' %}?category=harnesses" class="dropdown-item">Harnesses</a>
+                <a href="{% url 'products' %}?category=hats_accessories,harnesses" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>
