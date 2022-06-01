@@ -20,7 +20,7 @@ def products_list(request):
     direction = None
 
     if request.GET:
-        if 'sort'in request.GET:
+        if 'sort' in request.GET:
             sort_key = request.GET['sort']
             sort = sort_key
             if sort_key == 'product_name':
@@ -33,6 +33,7 @@ def products_list(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sort_key = f'-{sort_key}'
+                    
             products = products.order_by(sort_key)
 
         if 'category' in request.GET:
