@@ -44,6 +44,17 @@ img .intro-img {
     color: #04212E;
 }
 
+a.category-badge > span.badge {
+    background-color: #04212E;
+    color: #EFF5F8 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.category-badge > span.badge:hover {
+    background-color: #F4A30E !important;
+    color: #04212E !important;
+}
+
 .btn-custom {
     color: #04212E;
     background-color: #F4A30E;

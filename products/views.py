@@ -26,6 +26,8 @@ def products_list(request):
             if sort_key == 'product_name':
                 sort_key = 'lower_name'
                 products = products.annotate(lower_name=Lower('product_name'))
+            if sort_key == 'category':
+                sort_key = 'category__category_name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
