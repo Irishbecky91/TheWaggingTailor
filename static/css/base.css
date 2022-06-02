@@ -8,6 +8,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+div.image-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .image-container {
     position: relative;
 }

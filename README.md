@@ -1,3 +1,5 @@
+README.md
+
 # The Wagging Tailor
 
 ![The Wagging Tailor  Logo](file path)
@@ -28,7 +30,7 @@
      3. [Creating a Clone](#Creating-a-Clone)
 8. [Credits](#Credits)
      1. [Content](#Content)
-     2. [Media](#Media)
+     2. [static/Media](#static/Media)
      3. [Code](#Code)
 9. [Acknowledgements](#Acknowledgements)
 ***
@@ -37,7 +39,7 @@
 
 The Wagging Tailor is a company which designs and creates custom clothing for pets. This includes anything from harnesses to biker jackets. This site was devevoloped to facilitate the sale and commision of these products, as well as provide information about the business and it's products. This site includes a products list, including individual product pages, a payment feature, and a personal profile for the user to enter their and their pet's information for future use.
 
-This site was developed to be intuitive and appealing to users. There are options also for the site owner to add, edit and delete products from the site for future changes and new stock.
+This site was developed to be intuitive and appealing to users, with a clean, attractive appearance and easy to use features. There are options also for the site owner to add, edit and delete products from the site for future changes and new stock.
 
 [Back to top ⇧](#)
 
@@ -120,10 +122,11 @@ Broken into three categories, the website will attempt to focus on the following
 
 
 The website needs to enable the **Site User** to:
-- Select that plan that suits the type of animal, as well as the toys/flavours they prefer.
-- Purchase a subscription which renews each month unless instructed otherwise.
-- View a selection of products not included in the subscription service.
-- Create a personalised profile relating to their pet type and preferences
+- Find attractive products designed for pets, including various sizes specific to pet types.
+- Add their desired products to the shopping bag for purchasing.
+- Filter products according to name, categories, rating and prices.
+- Search products by name or description.
+- Create a personalised profile relating to their pet type and measurements.
 
 The website needs to enable the **Site Owner** to:
 - Add, edit and delete products on the site.
@@ -131,7 +134,7 @@ The website needs to enable the **Site Owner** to:
 
 With the user stories in mind, the developer created the below strategy table to determine the trade-off of importance and viability with the following results:
 
-![Strategy Table](media/README/strategy-table.png)
+![Strategy Table](static/media/README/strategy-table.png)
 
 #### Scope
 A scope was defined to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
@@ -140,7 +143,8 @@ A scope was defined to identify what needed to be done to align features with th
     - The user will be looking for:
         - A variety of designs to choose from
         - Details of the products provided
-        - A way to search the site according to their preferred category, ie. Shirts
+        - A way to search the site using name or description fields.
+        - A filtering function by rating, name, price and category
         - A personalised Profile Page displaying the user's details and their pet's measurements
 - **Functionality Requirements**
     - The user will be able to:
@@ -151,7 +155,7 @@ A scope was defined to identify what needed to be done to align features with th
 #### Structure
 The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
-![Site Map](media/README/site-map.png)
+![Site Map](static/media/README/site-map.png)
 
 #### Skeleton 
 Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
@@ -159,109 +163,175 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 <details>
 <summary>Home Page:</summary>
 
-![Home Page Wireframe](media/README/wireframes/wireframe-home.png)
+![Home Page Wireframe](static/media/README/wireframes/wireframe-home.png)
 </details>
 
 <details>
 <summary>Products List Page:</summary>
 
-![Product List Page Wireframe](media/README/wireframes/wireframe-products.png)
+![Product List Page Wireframe](static/media/README/wireframes/wireframe-products.png)
 </details>
 
 <details>
 <summary>Product Details Page:</summary>
 
-![Products Page Wireframe](media/README/wireframes/wireframe-product-details.png)
+![Products Page Wireframe](static/media/README/wireframes/wireframe-product-details.png)
 </details>
 
 <details>
 <summary>Shopping Bag Page:</summary>
 
-![Shopping Bag Page Wireframe](media/README/wireframes/wireframe-bag.png)
+![Shopping Bag Page Wireframe](static/media/README/wireframes/wireframe-bag.png)
 </details>
 
 <details>
 <summary>Checkout Page:</summary>
 
-![Checkout Page Wireframe](media/README/wireframes/wireframe-checkout.png)
+![Checkout Page Wireframe](static/media/README/wireframes/wireframe-checkout.png)
 </details>
 
 <details>
 <summary>Order Confirmation Page:</summary>
 
-![Order Confirmation Page Wireframe](media/README/wireframes/wireframe-order-confirmation.png)
+![Order Confirmation Page Wireframe](static/media/README/wireframes/wireframe-order-confirmation.png)
 </details>
 
 <details>
 <summary>Personal Profile Page:</summary>
 
-![Personal Profile Page Wireframe](media/README/wireframes/wireframe-profile.png)
+![Personal Profile Page Wireframe](static/media/README/wireframes/wireframe-profile.png)
 </details>
 
 <details>
 <summary>Edit/Delete Profile Page:</summary>
 
-![Edit/Delete Profile Page Page Wireframe](media/README/wireframes/wireframe-user-edit.png)
+![Edit/Delete Profile Page Page Wireframe](static/media/README/wireframes/wireframe-user-edit.png)
 </details>
 
 <details>
 <summary>Order History Page:</summary>
 
-![Order History Page Wireframe](media/README/wireframes/wireframe-order-history.png)
+![Order History Page Wireframe](static/media/README/wireframes/wireframe-order-history.png)
 </details>
 
 <details>
 <summary>FAQs Page:</summary>
 
-![FAQs Page Wireframe](media/README/wireframes/wireframe-faqs.png)
+![FAQs Page Wireframe](static/media/README/wireframes/wireframe-faqs.png)
 </details>
 
 <details>
 <summary>Edit/Delete Product Page:</summary>
 
-![Edit/Delete Product Page Wireframe](media/README/wireframes/wireframe-admin-edit.png)
+![Edit/Delete Product Page Wireframe](static/media/README/wireframes/wireframe-admin-edit.png)
 </details>
 
 ### Design
 
 #### Colour Scheme
-Sample text relating to colour
+The colour scheme was influenced by the home page photo. The yellow colour of the dog's sweater was chosen for the message bar to tie the photo in and make an attractive appearance. The navy coloured font, logo and nav background was influenced by the writing on the dog's ascot.
+
+A clean white background was chosen for the top header to help give a pleasant, uncluttered appearance. The main background chosen was a white background with a very faint blue/gray pawprint pattern to give a subtle but playful design.
 
 #### Typography
-Sample text relating to Typography
+The font chosen for the headings and important text was Libre Baskerville for it's simple, easy-to-read format. To complement this font, Open Sans was chosen for the standard text in text blocks and buttons, as well as the message bar.
 
 #### Imagery
-Sample text relating to Imagery
+The imagery used in this site is entirely related to the products being sold, namely animals in clothing. A logo was also chosen to represent the company, showing an old style sewing machine on top and a pawprint underneath.
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Features
 
 ### Design Features
-Nav Feature Desciption:
-- Details of feature
+**Navigation & Header**
+
+Each page of the website features a consistent responsive navigational system:
+
+- **Logo** - The Logo image is linked to the home page, clicking it will bring the user back to the home page.
+
+- **Search Bar** - The search bar is coded to display results of the user's search request, using the product name and description as parameters.
+
+- **User & Shopping Bag Icons** - There is an icon for both the user options dropdown, and link to the shopping bag showing the current bag total. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. Each has varying options to choose from.
+
+- **Links to Category Pages** - On the second row there are links to a variety of categories of product pages. These pages show products in a number of categories linked to a specific type, eg. All Warm Wear would have Coats & Jackets, Hoodies and Sweaters categories displaying on the products screen.
+
+- **Custom Orders Message** - Underneath the main navigation links, there is a section asking the user to click a link to be brought to a form submission page to request a custom order from the store owner.
+
+**Footer**
+
+The footer displays a small piece of text thanking the user for using this site. There are also links to the site's business Instagram and Facebook profiles, and the developer's LinkedIn and GitHub profiles.
 
 
 <dl>
-  <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
-  <dd>description of page:
-     <ul>
-          <li><strong>feature</strong> - description.
-          </li>
-          <li><strong>feature</strong> - description.
-          </li>
-     </ul>
-  </dd>
-
-  <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
-  <dd>description of page:
-     <ul>
-          <li><strong>feature</strong> - description.
-          </li>
-          <li><strong>feature</strong> - description.
-          </li>
-     </ul>
-  </dd>
+    <dt><a href="#" target="_blank" alt="Home Page">Home Page</a></dt>
+    <dd>The home page is the main entry page to the site, it introduces the people involved in the store and gives a sneak peek into some of the products:
+        <ul>
+            <li><strong>Main Image</strong> - This feature is an image underneath the navigation bar and Custom Orders message bar. The image displayed is a of a dog wearing an outfit sold in the store, with the company name and logo also displayed.
+            </li>
+            <li><strong>Introduction Cards</strong> - Directly underneath the Main Image is a welcome message and a set of three cards that display the person/pet's name, image and a short text piece about each one.
+            </li>
+            <li><strong>Product Carousel</strong> - Next is the Product Carousel which displays some of products sold in the store. Clicking on the button will bring you to that specific products page.
+            </li>
+            <li><strong>Category Cards</strong> - These cards invite the user to view products related to the categories 'Warm Wear' and 'Accessories'. There is a short description of the category and a link for the user to go to the category's product page.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="#" target="_blank" alt="Products Page">Products Page</a></dt>
+    <dd>This page displays a list of all products. The user can use filters and search queries to filter the list to their desired results:
+        <ul>
+            <li><strong>Product Category Links</strong> - Directly below the 'Products' heading are a set of button links that filter the list of products to the selected category.
+            </li>
+            <li><strong>Products Home Link</strong> - There is a link to bring the user back to the 'Products Home', this will display all products rather than filtering by category or search queries.
+            </li>
+            <li><strong>Search Results/Product Counter</strong> - Right next to the link to the 'Products Home' is a counter that tells the user how many products are displayed on the page. If the user has entered a search query, the counter will advise how many products were found for that specific search query.
+            </li>
+            <li><strong>Sort By Selector</strong> - This selector allows the user to order the products displayed by name, rating, price and category in both ascending and descending orders.
+            </li>
+            <li><strong>Product Cards</strong> - The product cards display the products listed on the site. The information show on each card is the products image, name, price, category and rating. There is a single card for each product.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="#" target="_blank" alt="Product Info Page">Product Info Page</a></dt>
+    <dd>This page will render the information for the chosen product and allow the user to select a size and add theitem to the shopping bag:
+        <ul>
+            <li><strong>Product Details</strong> - The product details change for each individual product. This would include the product image, name, description, price, rating and category.
+            </li>
+            <li><strong>Size Selector</strong> - The size selector can be used to select the specific size the user wishs to purchase, eg. Dog XS (Teacup Chihuahua) or Cat XL (Maine Coon)
+            </li>
+            <li><strong>Add to Bag Button</strong> - When the user has selected their chosen size, they would click the Add to Bag Button to add the desired product and size to their shopping bag for purchasing.
+            </li>
+            <li><strong>Comments Section</strong> - Underneath the product information is a commenting feature where users can leave comments about the product. These comments can only be added by users who have an account.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
+    <dd>description of page:
+        <ul>
+            <li><strong>feature</strong> - description.
+            </li>
+            <li><strong>feature</strong> - description.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
+    <dd>description of page:
+        <ul>
+            <li><strong>feature</strong> - description.
+            </li>
+            <li><strong>feature</strong> - description.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
+    <dd>description of page:
+        <ul>
+            <li><strong>feature</strong> - description.
+            </li>
+            <li><strong>feature</strong> - description.
+            </li>
+        </ul>
+    </dd>
 </dl>
  
 ### Existing Features
@@ -355,7 +425,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ### Content
 - sample text.
 
-### Media
+### static/Media
 - images sourced from .
 - Text sourced from .
 
