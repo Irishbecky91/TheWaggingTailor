@@ -16,11 +16,11 @@ class Category(models.Model):
         """
         verbose_name_plural = 'Categories'
 
-    category_name = models.CharField(max_length=254)
+    name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return str(self.category_name)
+        return str(self.name)
 
     def get_friendly_name(self):
         """
@@ -34,7 +34,7 @@ class Product(models.Model):
     Defines the Product Model used to show each product in the shop and in
     the product details pages.
     """
-    product_name = models.CharField(max_length=254)
+    name = models.CharField(max_length=254)
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
     description = models.TextField()
@@ -45,4 +45,4 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        return str(self.product_name)
+        return str(self.name)

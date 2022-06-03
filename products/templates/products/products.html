@@ -21,7 +21,7 @@
         <div class="col text-center mt-3">
             <h2>Products</h2>
             {% for category in current_categories %}
-            <a href="{% url 'products' %}?category={{ category.category_name }}" class="category-badge text-decoration-none">
+            <a href="{% url 'products' %}?category={{ category.name }}" class="category-badge text-decoration-none">
                 <span
                     class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ category.friendly_name }}</span>
             </a>
@@ -63,17 +63,17 @@
                     <div class="card h-100 bg-card">
                         {% if product.image %}
                         <a href="{% url 'product_info' product.id %}">
-                            <img src="{{ product.image.url }}" alt="{{ product.product_name }}"
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}"
                                 class="card-img-top img-fluid product-img">
                         </a>
                         {% else %}
                         <a href="{% url 'product_info' product.id %}">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}"
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
                                 class="card-img-top img-fluid product-img">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ product.product_name }}</p>
+                            <p class="mb-0">{{ product.name }}</p>
                         </div>
                         <div class="card-footer pt-0 border-0 text-left">
                             <div class="row">
@@ -81,7 +81,7 @@
                                     <p class="lead mb-0 text-left font-weight bold">€{{ product.price }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
-                                        <a href="{% url 'products' %}?category={{ product.category.category_name }}" class="text-muted">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
                                     </p>

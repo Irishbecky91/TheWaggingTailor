@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
     """
     list_display = (
         'pk',
-        'product_name',
+        'name',
         'category',
         'description',
         'price',
@@ -21,7 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
-    ordering = ('product_name',)
+    ordering = ('name',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -29,7 +29,7 @@ class CategoryAdmin(admin.ModelAdmin):
     Defines how the Category is used and displayed in Admin
     """
     list_display = (
-        'category_name',
+        'name',
         'friendly_name',
     )
 
