@@ -60,6 +60,17 @@ a.category-badge > span.badge:hover {
     color: #04212E !important;
 }
 
+.btt-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btt-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .btn-custom {
     color: #04212E;
     background-color: #F4A30E;
