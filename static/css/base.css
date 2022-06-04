@@ -82,8 +82,8 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
+p, .open-sans-text {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .carousel-item {
