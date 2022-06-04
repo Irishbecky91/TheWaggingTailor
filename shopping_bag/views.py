@@ -18,12 +18,24 @@ def add_to_shopping_bag(request, item_id):
     """
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    size = None
+    if 'product_size' in request.POST:
+        size = request.POST['size']
     shopping_bag = request.session.get('shopping_bag', {})
 
-    if item_id in list(shopping_bag.keys()):
-        shopping_bag[item_id] += quantity
+    if size:
+        if item_id in list(shopping_bag.keys()):
+            if size in shopping_bag[item_id]['items_by_size'].keys():
+                shopping_bag[item_id]['items_by_size'][size] += quantity
+            else:
+                shopping_bag[item_id]['items_by_size']= quantity
+        else:
+            shopping_bag[item_id] = {'items_by_size': {size: quantity}}
     else:
-        shopping_bag[item_id] = quantity
+        if item_id in list(shopping_bag.keys()):
+            shopping_bag[item_id] += quantity
+        else:
+            shopping_bag[item_id] = quantity
 
     request.session['shopping_bag'] = shopping_bag
     return redirect(redirect_url)

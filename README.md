@@ -136,7 +136,7 @@ With the user stories in mind, the developer created the below strategy table to
 
 ![Strategy Table](static/media/README/strategy-table.png)
 
-#### Scope
+#### **Scope**
 A scope was defined to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
 
 - **Content Requirements**
@@ -152,12 +152,13 @@ A scope was defined to identify what needed to be done to align features with th
         - Update their profile with pet details and images
         - Easily navigate the site to find product information.
 
-#### Structure
+#### **Structure**
 The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
 ![Site Map](static/media/README/site-map.png)
 
-#### Skeleton 
+#### **Skeleton**
+
 Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
 
 <details>
@@ -226,17 +227,24 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 ![Edit/Delete Product Page Wireframe](static/media/README/wireframes/wireframe-admin-edit.png)
 </details>
 
+
+#### **Database Structure**
+In addition to wireframes, a Database ER Disgram was mocked up to show the relationship between the various database structures.
+
+![Database ER Diagram](static/media/README/database-diagram.png)
+
+
 ### Design
 
-#### Colour Scheme
+#### **Colour Scheme**
 The colour scheme was influenced by the home page photo. The yellow colour of the dog's sweater was chosen for the message bar to tie the photo in and make an attractive appearance. The navy coloured font, logo and nav background was influenced by the writing on the dog's ascot.
 
 A clean white background was chosen for the top header to help give a pleasant, uncluttered appearance. The main background chosen was a white background with a very faint blue/grey pawprint pattern to give a subtle but playful design.
 
-#### Typography
+#### **Typography**
 The font chosen for the headings and important text was Libre Baskerville for its simple, easy-to-read format. To complement this font, Open Sans was chosen for the standard text in text blocks and buttons, as well as the message bar.
 
-#### Imagery
+#### **Imagery**
 The imagery used in this site is entirely related to the products being sold, namely animals in clothing. A logo was also chosen to represent the company, showing an old-style sewing machine on top and a pawprint underneath.
 
 [Back to top ⇧](#)
@@ -260,7 +268,11 @@ Each page of the website features a consistent responsive navigational system:
 
 **Footer**
 
-The footer displays a small piece of text thanking the user for using this site. There are also links to the site's business Instagram and Facebook profiles, and the developer's LinkedIn and GitHub profiles.
+Each page of the website features a consistent responsive footer design:
+
+- **'Thank You' Text** - The footer displays a small piece of text thanking the user for using this site. It also asks the user to get in touch regarding custom orders by clicking on a link.
+
+- **Social Media Links** - These links connect the site user to the store's business profiles on Instagram and Facebook, and also the developer's LinkedIn and GitHub profiles.
 
 
 <dl>
