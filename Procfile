@@ -1,0 +1,1 @@
+web: gunicorn wagging_tailor.wsgi
