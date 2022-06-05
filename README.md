@@ -395,7 +395,40 @@ This project was developed using .
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
-1. 
+### Deploying on Heroku
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+1. Create the Heroku App:
+    - Select "Create new app" in Heroku.
+    - Choose a name for your app and select the location.
+
+2. Attach the Postgres database:
+    - In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
+
+3. Prepare the environment and settings.py file:
+    - In the Settings tab, click on Reveal Config Vars and copy the url next to DATABASE_URL.
+    - In your GitPod workspace, create an env.py file in the main directory. 
+    - Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+    - Add the SECRET_KEY value to the Config Vars in Heroku.
+    - Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
+    - Update the Config Vars with the Cloudinary url, adding into the settings.py file also.
+    - In settings.py add the following sections:
+        - STATIC_URL
+        - STATICFILES_DIRS
+        - MEDIA_URL
+        - MEDIA_ROOT
+        - TEMPLATES_DIR
+        - Update DIRS in TEMPLATES with TEMPLATES_DIR
+        - Update ALLOWED_HOSTS with ['app_name.herokuapp.com', 'localhost']
+
+4. Set DISABLE_COLLECTSTATIC and Deploy to Heroku:
+    - Create three directories in the main directory; media, storage and templates.
+    - Create a file named "Procfile" in the main directory and add the following:
+        - web: gunicorn project-name.wsgi
+    - in the terminal, log in to Heroku and then enter the following:
+        - heroku config:set DISABLE_COLLECTSTATIC=1 --app (Heroku App Name)
+    - Go to Deploy tab on Heroku and connect to the GitHub, then to the required recpository.
+    Click on Delpoy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku. 
 
 ### Forking the Repository
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
