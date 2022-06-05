@@ -4,6 +4,18 @@ body {
     color: #555;
 }
 
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p, .open-sans-text {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
 .banner-text {
     font-family: 'Open Sans', sans-serif;
 }
@@ -76,14 +88,6 @@ a.category-badge > span.badge:hover {
     background-color: #F4A30E;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-}
-
-body {
-    font-family: 'Libre Baskerville', serif;
-}
-
-p, .open-sans-text {
-    font-family: 'Open Sans', sans-serif !important;
 }
 
 .carousel-item {
