@@ -46,3 +46,32 @@ class Product(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+
+class Comment(models.Model):
+    """
+    Comment class
+    """
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE,
+        related_name='comments'
+        )
+    name = models.CharField(max_length=75)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        """
+        Ordering comments in order of when they were created
+        """
+        ordering = ['-created_on']
+
+    def __str__(self):
+        """
+        Returns a string showing the user's name
+        and the content of the comment.
+        """
+        return f"Comment {self.body} by {self.name}"
