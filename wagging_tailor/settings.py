@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-++&=*(1+b-bw%73b6_=mj5$inv@41_oik5&4c!*iq&)(blgsv-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['wagging_tailor.heroku.com', 'localhost']
+ALLOWED_HOSTS = ['the_wagging_tailor.heroku.com', 'localhost']
 
 
 # Application definition
@@ -105,12 +105,17 @@ WSGI_APPLICATION = 'wagging_tailor.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
