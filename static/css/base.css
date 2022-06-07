@@ -107,6 +107,23 @@ footer, footer a {
     color: #F4A30E !important;
 }
 
+.message-container {
+    position: fixed;
+    top: 135px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* ----------- Media Queries ----------- */
+
 /* Add responsiveness - screens 550 pixels and less */
 @media screen and (max-width: 991px) {
     .mobile-colour {
