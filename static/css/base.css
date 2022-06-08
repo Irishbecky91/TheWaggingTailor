@@ -109,9 +109,9 @@ footer, footer a {
 
 .message-container {
     position: fixed;
-    top: 135px;
+    top: 72px;
     right: 15px;
-    z-index: 9999999999;
+    z-index: 99999999999;
 }
 
 .custom-toast {
