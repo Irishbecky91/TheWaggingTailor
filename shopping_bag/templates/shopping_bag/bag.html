@@ -31,7 +31,7 @@
 
                     {% for item in bag_items %}
                     <tr>
-                        <td class="p-3 w-25">
+                        <td class="py-3 w-25">
                             <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="img-fluid rounded">
                         </td>
                         <td class="py-3">
@@ -48,7 +48,7 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-sm btn-custom rounded-0"
-                                                data-bs-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                 <span>
                                                     <i class="fas fa-minus fa-sm"></i>
                                                 </span>
@@ -56,10 +56,10 @@
                                         </div>
                                         <input class="form-control form-control-sm qty_input open-sans-text"
                                             type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                            data-bs-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                            data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-sm btn-custom rounded-0"
-                                                data-bs-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                 <span>
                                                     <i class="fas fa-plus fa-sm"></i>
                                                 </span>
@@ -72,8 +72,8 @@
                                 </div>
                             </form>
                             <a class="update-link text-primary open-sans-text"><small>Update</small></a>
-                            <a class="remove-item text-danger float-end open-sans-text" id="remove_{{ item.item_id }}"
-                                data-bs-product_size="{{ item.size }}"><small>Remove</small></a>
+                            <a class="remove-item text-danger float-right open-sans-text" id="remove_{{ item.item_id }}"
+                                data-product_size="{{ item.size }}"><small>Remove</small></a>
                         </td>
                         <td class="py-3">
                             <p class="my-0">€{{ item.product.price | calculate_subtotal:item.quantity }}</p>
@@ -81,7 +81,7 @@
                     </tr>
                     {% endfor %}
                     <tr>
-                        <td colspan="5" class="pt-5 text-end open-sans-text">
+                        <td colspan="5" class="pt-5 text-right open-sans-text">
                             <h6><strong>Shopping Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                             <h6>Shipping: €{{ shipping|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
@@ -94,7 +94,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-end">
+                        <td colspan="5" class="text-right">
                             <a href="{% url 'products' %}" class="btn btn-custom rounded-0 btn-lg">
                                 <span class="icon">
                                     <i class="fas fa-circle-chevron-left"></i>
