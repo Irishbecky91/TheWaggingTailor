@@ -41,11 +41,11 @@ img .intro-img {
     object-fit: cover;
 }
 
-img .rounded-custom {
-    border: 1px solid !important;
+.rounded-custom {
     border-radius: 50% !important;
     width: 200px !important;
     height: 200px !important;
+    object-fit: cover;
     }
 
 .bg-custom {
@@ -121,7 +121,7 @@ footer, footer a {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 100px;
     right: 15px;
     z-index: 99999999999;
 }

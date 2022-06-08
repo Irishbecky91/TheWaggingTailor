@@ -31,7 +31,7 @@ def add_to_shopping_bag(request, item_id):
         if item_id in list(shopping_bag.keys()):
             if size in shopping_bag[item_id]['items_by_size'].keys():
                 shopping_bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'You updated the number of {size.upper()} {product.name} in your shopping bag to {shopping_bag["items_by_size"][size]}')
+                messages.success(request, f'You updated the number of {size.upper()} {product.name} in your shopping bag to {shopping_bag[item_id]["items_by_size"][size]}')
             else:
                 shopping_bag[item_id]['items_by_size'][size] = quantity
                 messages.success(request, f'You added {size.upper()} {product.name} to your shopping bag')
@@ -62,7 +62,7 @@ def adjust_shopping_bag(request, item_id):
     if size:
         if quantity > 0:
             shopping_bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'You updated the number of {size.upper()} {product.name} in your shopping bag to {shopping_bag["items_by_size"][size]}')
+            messages.success(request, f'You updated the number of {size.upper()} {product.name} in your shopping bag to {shopping_bag[item_id]["items_by_size"][size]}')
         else:
             del shopping_bag[item_id]['items_by_size'][size]
             if not shopping_bag[item_id]['items_by_size']:
