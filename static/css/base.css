@@ -52,7 +52,8 @@ img .intro-img {
     background-color: #F4A30E;
 }
 
-.bg-custom-nav {
+.bg-custom-nav,
+.bg-custom-toast {
     background-color: #04212E;
 }
 
@@ -133,6 +134,59 @@ footer, footer a {
 .toast-capper {
     height: 2px;
 }
+
+/* FROM CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenienece classes with  colours copied from Bootstrap */
+
+.arrow-primary {
+    border-bottom-color: #007BFF;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6C757D;
+}
+
+.arrow-success {
+    border-bottom-color: #28A745;
+}
+
+.arrow-danger {
+    border-bottom-color: #DC3545;
+}
+
+.arrow-warning {
+    border-bottom-color: #FFC107;
+}
+
+.arrow-info {
+    border-bottom-color: #17A2B8;
+}
+
+.arrow-light {
+    border-bottom-color: #F8F9FA;
+}
+
+.arrow-dark {
+    border-bottom-color: #343A40;
+}
+
+.shopping-bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /* ----------- Media Queries ----------- */
 

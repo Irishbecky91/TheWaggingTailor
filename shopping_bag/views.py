@@ -8,7 +8,7 @@ from products.models import Product
 
 
 # Create your views here.
-def view_bag(request):
+def view_shopping_bag(request):
     """
     This renders the bag contents to be inspected
     """
@@ -77,7 +77,7 @@ def adjust_shopping_bag(request, item_id):
             messages.success(request, f'You removed {product.name} from your shopping bag')
 
     request.session['shopping_bag'] = shopping_bag
-    return redirect(reverse('view_bag'))
+    return redirect(reverse('view_shopping_bag'))
 
 
 def remove_from_shopping_bag(request, item_id):

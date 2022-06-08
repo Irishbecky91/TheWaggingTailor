@@ -8,6 +8,47 @@
         </button>
     </div>
     <div class="toast-body bg-white">
-        {{ message }}        
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <hr class="mt-1 mb-3" width="90%">
+            </div>
+        </div>
+        {% if grand_total %}
+        <p class="bg-white text-navy py-1">Your Shopping Bag: {{ product.count }}</p>
+        <div class="shopping-bag-notification-wrapper">
+            {% for item in bag_items %}
+            <div class="row">
+                <div class="col-3 my-1">
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="w-100">
+                </div>
+                <div class="col-9">
+                    <p class="my-0">{{ item.product.name }}</p>
+                    <p class="my-0 small">Size: {% if item.product.sizes_available %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                    <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col">
+                <strong><p class="mt-3 mb-1 text-navy">
+                    Total{% if free_shipping_delta > 0 %} (Exc. shipping){% endif %}
+                    <span class="float-right">€{{ total|floatformat:2 }}</span>
+                </p></strong>
+                {% if free_shipping_delta > 0 %}
+                <p class="mb-0 p-2 bg-custom-toast shadow-sm text-light text-center">
+                    Spend <strong class="text-warning">€{{ free_shipping_delta }}</strong> more to get free shipping to the UK and Ireland.
+                </p>
+                {% endif %}
+                <a href="{% url 'view_shopping_bag' %}" class="btn btn-custom btn-block rounded-0">
+                    <span class="text-uppercase">Go To Secure Checkout</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>
