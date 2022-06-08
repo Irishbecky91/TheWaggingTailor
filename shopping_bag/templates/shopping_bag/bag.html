@@ -21,18 +21,18 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-navy">
                         <tr>
-                            <th class="col">Product Information</th>
-                            <th class="col"></th>
-                            <th class="col">Price</th>
-                            <th class="col">Quantity</th>
-                            <th class="col">Subtotal</th>
+                            <th class="col-3">Product Information</th>
+                            <th class="col-2"></th>
+                            <th class="col-2">Price</th>
+                            <th class="col-2">Quantity</th>
+                            <th class="col-2">Subtotal</th>
                         </tr>
                     </thead>
 
                     {% for item in bag_items %}
                     <tr>
-                        <td class="py-3 w-25">
-                            <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="img-fluid rounded">
+                        <td class="py-3">
+                            <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="img-thumbnail rounded-circle intro-img">
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>

@@ -41,6 +41,13 @@ img .intro-img {
     object-fit: cover;
 }
 
+img .rounded-custom {
+    border: 1px solid !important;
+    border-radius: 50% !important;
+    width: 200px !important;
+    height: 200px !important;
+    }
+
 .bg-custom {
     background-color: #F4A30E;
 }
@@ -105,6 +112,11 @@ a.category-badge > span.badge:hover {
 footer, footer a {
     background-color: #04212E;
     color: #F4A30E !important;
+}
+
+.img-thumbnail {
+    height: 300px;
+    width: 300px;
 }
 
 .message-container {
