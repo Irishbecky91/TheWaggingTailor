@@ -1,27 +1,32 @@
+"""
+Checkout Forms
+"""
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
     """
-    Checkout form
+    Order form used to enter shipping and user details when
+    placing an order
     """
-    model = Order
-    fields = (
-        'full_name',
-        'email',
-        'phone_number',
-        'street_address1',
-        'street_address2',
-        'town_or_city',
-        'county',
-        'postcode',
-        'country',
-    )
+    class Meta:
+        model = Order
+        fields = (
+            'full_name',
+            'email',
+            'phone_number',
+            'street_address1',
+            'street_address2',
+            'town_or_city',
+            'county',
+            'postcode',
+            'country',
+        )
 
     def __init__(self, *args, **kwargs):
         """
-        Adds placeholders and classes, remove auto-generated
+        Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
@@ -40,9 +45,9 @@ class OrderForm(forms.ModelForm):
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
-                placeholders = f'{placeholders[field]} *'
+                placeholder = f'{placeholders[field]} *'
             else:
-                placeholders = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholders
+                placeholder = placeholders[field]
+            self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
