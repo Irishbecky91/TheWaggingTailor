@@ -44,7 +44,9 @@ img .intro-img {
 .rounded-custom {
     border-radius: 50% !important;
     width: 200px !important;
+    max-width: 200px !important;
     height: 200px !important;
+    max-height: 200px !important;
     object-fit: cover;
     }
 

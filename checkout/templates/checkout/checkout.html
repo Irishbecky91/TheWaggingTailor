@@ -3,7 +3,7 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'checkout/css/secure_checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block extra_title %}
@@ -67,12 +67,12 @@
             <p class="text-muted">Please fill out all fields in the form below to complete your order.</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
-                <fieldset class="rounded px-3 mb-5">
+                <fieldset class="rounded px-3 mb-5 open-sans-text">
                     <legend class="fieldset_label small text-navy px-2 w-auto">Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
+                <fieldset class="rounded px-3 mb-5 open-sans-text">
                     <legend class="fieldset_label small text-navy px-2 w-auto">Shipping</legend>
                     {{ order_form.phone_number | as_crispy_field }}
                     {{ order_form.street_address1 | as_crispy_field }}
@@ -97,12 +97,13 @@
                     </div>
                 </fieldset>
                 <fieldset class="px-3">
-                    <legend class="fieldset_label small text-navy px-2 w-auto">Payment</legend>
-                    <!-- The Stripe card element goes here -->
+                    <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                    <!-- A Stripe card element will go here -->
                     <div class="mb-3" id="card-element"></div>
-
-                    <!-- This is used to display form errors -->
+                    <!-- Used to display form errors -->
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                    <!-- Pass the client secret to the view so we can get the payment intent id -->
+                    <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
                 <div class="submit-button text-right mt-5 mb-2">
@@ -129,4 +130,11 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
