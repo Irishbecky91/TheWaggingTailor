@@ -4,7 +4,7 @@ Checkout Views
 import uuid
 
 from django.db import models
-from django.db.models import Sum
+from django.db.models import Sum, aggregates
 from django.conf import settings
 
 from products.models import Product
@@ -34,6 +34,38 @@ class Order(models.Model):
     grand_total = models.DecimalField(max_digits=10, decimal_places=2,
                                       null=False, default=0)
 
+    def _create_order_number(self):
+        """
+        Creates a unique order number at random for the user and site owner to
+        track a purchase
+        """
+        return uuid.uuid4().hex.upper()
+
+    def update_total(self):
+        """
+        Updates the grand total of the shopping bag each time a line item is
+        added, taking shipping costs into account.
+        """
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        if self.order_total < settings.FREE_SHIPPING_THRESHOLD:
+            self.shipping_cost = self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
+        else:
+            self.shipping_cost = 0
+        self.grand_total = self.order_total + self.shipping_cost
+        self.save()
+
+    def save(self, *args, **kwargs):
+        """
+        Overrides the initial save method to set the order number in case
+        it has not already been set.
+        """
+        if not self.order_number:
+            self.order_number = self._create_order_number()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
+
 
 class OrderLineItem(models.Model):
     """
@@ -49,3 +81,14 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
                                          null=False, blank=False,
                                          editable=False)
+
+    def save(self, *args, **kwargs):
+        """
+        Overrides the initial save method to set the lineitem_total in case
+        and also update the order_total.
+        """
+        self.lineitem_total = self.product.price * self.quantity
+        super().save(*args, **kwargs)
+    
+    def __str__(self):
+        return self.order.order_number
