@@ -116,67 +116,69 @@
     {% if s %}
     <div class="row float-left text-navy mb-4">
         <div class="col-sm-12 col-md-7">
-            <h4>Sizing Guide</h4>
-            <table class="table table-sm">
-                <thead>
-                    <tr>
-                        <th class="col">Size</th>
-                        <th class="col">Breed Example</th>
-                        <th class="col">Back (cm)</th>
-                        <th class="col">Chest (cm)</th>
-                        <th class="col">Neck (cm)</th>
+            <div class="table-responsive rounded">
+                <h4>Sizing Guide</h4>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th class="col-2">Size</th>
+                            <th class="col-4">Breed Example</th>
+                            <th class="col-2">Back (cm)</th>
+                            <th class="col-2">Chest (cm)</th>
+                            <th class="col-2">Neck (cm)</th>
+                        </tr>
+                    </thead>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">XS</td>
+                        <td>Puppies and Kittens</td>
+                        <td>20</td>
+                        <td>26-30</td>
+                        <td>16-19</td>
                     </tr>
-                </thead>
-                <tr class="open-sans-text">
-                    <td class="text-bold">XS</td>
-                    <td>Puppies and Kittens</td>
-                    <td>20</td>
-                    <td>26-30</td>
-                    <td>16-19</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">S</td>
-                    <td>Chihuahuas and Munchkin Cats</td>
-                    <td>23</td>
-                    <td>30-35</td>
-                    <td>19-22</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">M</td>
-                    <td>Small Maltese and Sphinx</td>
-                    <td>30</td>
-                    <td>35-40</td>
-                    <td>22-26</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">L</td>
-                    <td>Corgi and Maine Coon</td>
-                    <td>33</td>
-                    <td>40-46</td>
-                    <td>26-30</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">XL</td>
-                    <td>Cocker Spaniel and Savannah Cats</td>
-                    <td>40</td>
-                    <td>46-52</td>
-                    <td>33-38</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">XXL</td>
-                    <td>Small Collie and Staffys</td>
-                    <td>45</td>
-                    <td>52-60</td>
-                    <td>36-41</td>
-                </tr>
-                <tr class="open-sans-text">
-                    <td class="text-bold">XXXL</td>
-                    <td>Labradors and German Shepherds</td>
-                    <td>50</td>
-                    <td>60-70</td>
-                    <td>39-44</td>
-                </tr>
-            </table>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">S</td>
+                        <td>Chihuahuas and Munchkin Cats</td>
+                        <td>23</td>
+                        <td>30-35</td>
+                        <td>19-22</td>
+                    </tr>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">M</td>
+                        <td>Small Maltese and Sphinx</td>
+                        <td>30</td>
+                        <td>35-40</td>
+                        <td>22-26</td>
+                    </tr>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">L</td>
+                        <td>Corgi and Maine Coon</td>
+                        <td>33</td>
+                        <td>40-46</td>
+                        <td>26-30</td>
+                    </tr>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">XL</td>
+                        <td>Cocker Spaniel and Savannah Cats</td>
+                        <td>40</td>
+                        <td>46-52</td>
+                        <td>33-38</td>
+                    </tr>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">XXL</td>
+                        <td>Small Collie and Staffys</td>
+                        <td>45</td>
+                        <td>52-60</td>
+                        <td>36-41</td>
+                    </tr>
+                    <tr class="open-sans-text">
+                        <td class="text-bold">XXXL</td>
+                        <td>Labradors and German Shepherds</td>
+                        <td>50</td>
+                        <td>60-70</td>
+                        <td>39-44</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="col-sm-12 col-md-5 align-self-center">
             <img src="{% static 'media/site-images/measure.png' %}" alt="Image of how to measure a dog" width="100%">
