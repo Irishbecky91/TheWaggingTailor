@@ -9,6 +9,7 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from products.models import Product
+from my_profile.models import UsersProfile
 
 
 # Create your models here.
@@ -18,6 +19,9 @@ class Order(models.Model):
     which will also display in the order confirmation and history.
     """
     order_number = models.CharField(max_length=32, null=False, editable=False)
+    users_profile = models.ForeignKey(UsersProfile, on_delete=models.SET_NULL,
+                                      null=True, blank=True,
+                                      related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
