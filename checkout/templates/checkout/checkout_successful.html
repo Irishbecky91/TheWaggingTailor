@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block extra_title %}
+- Thank You!
+{% endblock %}
+
+{% block content %}
+<div class="container mb-4">
+    <div class="row">
+        <div class="col">
+            <h1 class="mt-5 mb-5 text-navy text-center">Thank You For Your Order!</h1>
+            <p class="mb-5 text-navy">
+               Please see below for your order information. A confirmation email has been sent to your email <strong>{{ order.email }}</strong>. 
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-7 mb-5">
+            {% for item in order.lineitems.all %}
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p class="small mb-0 text-black font-weight-bold">
+                        {{ item.product.name }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}      
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-7 text-right">
+            <a href="" class="btn btn-custom rounded-0 my-2">
+                <span class="icon">
+                    <i class="fas fa-paw"></i>
+                </span>
+                <span class="text-uppercase">Why not check out our accessories!</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
