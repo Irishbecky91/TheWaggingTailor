@@ -5,26 +5,33 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django_countries.fields import CountryField
 
 
 # Create your models here.
 class UsersProfile(models.Model):
     """
-    A User Profile model for mainting default delivery information,
-    order history and pets' information.
+    A User Profile model
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
-    default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
-    default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
-    default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
-    default_county = models.CharField(max_length=80, null=True, blank=True)
-    default_postcode = models.CharField(max_length=20, null=True, blank=True)
-    default_country = CountryField(blank_label='Country', null=True, blank=True)
 
     def __str__(self):
         return self.user.username
+
+
+class PetProfile(models.Model):
+    """
+    The Pet Profile Model
+    """
+    pet = models.ForeignKey(UsersProfile, on_delete=models.CASCADE)
+    pet_name = models.CharField(max_length=254, null=False, blank=False)
+    breed = models.CharField(max_length=100, null=True, blank=True)
+    measurement_a = models.IntegerField()
+    measurement_b = models.IntegerField()
+    measurement_c = models.IntegerField()
+    pet_image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return str(self.pet_name)
 
 
 @receiver(post_save, sender=User)

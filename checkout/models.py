@@ -19,7 +19,7 @@ class Order(models.Model):
     which will also display in the order confirmation and history.
     """
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    users_profile = models.ForeignKey(UsersProfile, on_delete=models.SET_NULL,
+    user_profile = models.ForeignKey(UsersProfile, on_delete=models.SET_NULL,
                                       null=True, blank=True,
                                       related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)

@@ -1,16 +1,19 @@
 """
 Checkout Views
 """
+import json
+import stripe
+
 from django.shortcuts import render, redirect, reverse, \
     get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-import stripe
-import json
 
 from shopping_bag.contexts import bag_contents
 from products.models import Product
+from my_profile.models import UsersProfile
+from my_profile.forms import PetProfileForm
 from .models import OrderLineItem, Order
 from .forms import OrderForm
 
@@ -18,6 +21,9 @@ from .forms import OrderForm
 # Create your views here.
 @require_POST
 def cache_checkout_data(request):
+    """
+    Stripe checkout cache
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -113,6 +119,8 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set this in your environment?')
+    
+    print(shopping_bag)
 
     template = 'checkout/checkout.html'
     context = {
@@ -131,12 +139,15 @@ def checkout_successful(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
     messages.success(request, f'Your order has been successfully processed. \
         You order number is {order_number}. A confirmation email will be sent \
             to your email {order.email}.')
 
     if 'shopping_bag' in request.session:
         del request.session['shopping_bag']
+
+    print(save_info)
 
     template = 'checkout/checkout_successful.html'
     context = {
