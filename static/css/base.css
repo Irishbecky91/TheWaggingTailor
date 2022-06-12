@@ -63,6 +63,10 @@ img .intro-img {
     background-color: #EFF5F8;
 }
 
+input[name='q']::placeholder {
+    color: #AAB7C4;
+}
+
 .text-navy {
     color: #04212E;
 }
