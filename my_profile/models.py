@@ -25,6 +25,7 @@ class PetProfile(models.Model):
     pet = models.ForeignKey(UsersProfile, on_delete=models.CASCADE)
     pet_name = models.CharField(max_length=254, null=False, blank=False)
     breed = models.CharField(max_length=100, null=True, blank=True)
+    gender = 
     measurement_a = models.IntegerField()
     measurement_b = models.IntegerField()
     measurement_c = models.IntegerField()
