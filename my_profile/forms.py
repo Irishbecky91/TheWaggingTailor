@@ -18,6 +18,7 @@ class PetProfileForm(forms.ModelForm):
         fields = (
             'pet_name',
             'breed',
+            'gender',
             'measurement_a',
             'measurement_b',
             'measurement_c',
@@ -33,6 +34,7 @@ class PetProfileForm(forms.ModelForm):
         placeholders = {
             'pet_name': "Pet's Name",
             'breed': "Pet's Breed",
+            'gender': "Pet's Gender",
             'measurement_a': 'Back Measurement (cm)',
             'measurement_b': 'Chest Measurement (cm)',
             'measurement_c': 'Neck Measurement (cm)',

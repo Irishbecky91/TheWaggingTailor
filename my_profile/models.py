@@ -8,6 +8,13 @@ from django.dispatch import receiver
 
 
 # Create your models here.
+GENDER_CHOICES = (
+    ('female', 'Female'),
+    ('male', 'Male'),
+    ('other', 'Other'),
+)
+
+
 class UsersProfile(models.Model):
     """
     A User Profile model
@@ -15,20 +22,22 @@ class UsersProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.user.username
+        return self.user.name
 
 
 class PetProfile(models.Model):
     """
     The Pet Profile Model
     """
-    pet = models.ForeignKey(UsersProfile, on_delete=models.CASCADE)
+    pet_owner = models.ForeignKey(UsersProfile, blank=False, null=False,
+                                  on_delete=models.CASCADE)
     pet_name = models.CharField(max_length=254, null=False, blank=False)
     breed = models.CharField(max_length=100, null=True, blank=True)
-    gender = 
-    measurement_a = models.IntegerField()
-    measurement_b = models.IntegerField()
-    measurement_c = models.IntegerField()
+    gender = models.CharField(max_length=6, choices=GENDER_CHOICES,
+                              default='other', null=False, blank=False)
+    measurement_a = models.IntegerField(null=True, blank=True)
+    measurement_b = models.IntegerField(null=True, blank=True)
+    measurement_c = models.IntegerField(null=True, blank=True)
     pet_image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -43,4 +52,4 @@ def create_update_user_profile(sender, instance, created, **kwargs):
     if created:
         UsersProfile.objects.create(user=instance)
     # Existing users: just save the profile
-    instance.usersprofile.save
+    instance.userprofile.save()
