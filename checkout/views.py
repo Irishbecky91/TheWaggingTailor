@@ -119,8 +119,6 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set this in your environment?')
-    
-    print(shopping_bag)
 
     template = 'checkout/checkout.html'
     context = {
@@ -140,14 +138,18 @@ def checkout_successful(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
+    if request.user.is_authenticated:
+        profile = UsersProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_profile = profile
+        order.save()
+
     messages.success(request, f'Your order has been successfully processed. \
         You order number is {order_number}. A confirmation email will be sent \
             to your email {order.email}.')
 
     if 'shopping_bag' in request.session:
         del request.session['shopping_bag']
-
-    print(save_info)
 
     template = 'checkout/checkout_successful.html'
     context = {

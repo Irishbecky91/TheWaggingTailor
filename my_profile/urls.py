@@ -9,4 +9,5 @@ urlpatterns = [
     path('', views.profile, name='profile'),
     path('my_order_history/<order_number>', views.my_order_history,
          name='my_order_history'),
+    path('add_pet/', views.add_pet, name='add_pet'),
 ]
