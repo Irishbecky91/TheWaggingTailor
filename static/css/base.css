@@ -34,6 +34,7 @@ div.image-container {
     height: 20vw;
     object-fit: cover;
     min-height: 200px;
+    
 }
 
 img .intro-img {
@@ -49,6 +50,10 @@ img .intro-img {
     max-height: 200px !important;
     object-fit: cover;
     }
+
+.img_border {
+    border: 5px solid #04212E !important;
+}
 
 .bg-custom {
     background-color: #F4A30E;

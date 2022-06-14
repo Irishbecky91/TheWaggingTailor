@@ -9,9 +9,9 @@ from django.dispatch import receiver
 
 # Create your models here.
 GENDER_CHOICES = (
-    ('female', 'Female'),
-    ('male', 'Male'),
-    ('other', 'Other'),
+    ('Female', 'Female'),
+    ('Male', 'Male'),
+    ('Other', 'Other'),
 )
 
 
@@ -19,10 +19,11 @@ class UsersProfile(models.Model):
     """
     A User Profile model
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE,
+                                related_name='userprofile')
 
     def __str__(self):
-        return self.user.name
+        return self.user.username
 
 
 class PetProfile(models.Model):
@@ -34,7 +35,7 @@ class PetProfile(models.Model):
     pet_name = models.CharField(max_length=254, null=False, blank=False)
     breed = models.CharField(max_length=100, null=True, blank=True)
     gender = models.CharField(max_length=6, choices=GENDER_CHOICES,
-                              default='other', null=False, blank=False)
+                              default='Other', null=False, blank=False)
     measurement_a = models.IntegerField(null=True, blank=True)
     measurement_b = models.IntegerField(null=True, blank=True)
     measurement_c = models.IntegerField(null=True, blank=True)
@@ -51,5 +52,7 @@ def create_update_user_profile(sender, instance, created, **kwargs):
     """
     if created:
         UsersProfile.objects.create(user=instance)
-    # Existing users: just save the profile
-    instance.userprofile.save()
+        instance.userprofile.save()
+    else:
+        # Existing users: just save the profile
+        instance.userprofile.save()

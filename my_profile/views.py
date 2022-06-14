@@ -36,9 +36,11 @@ def add_pet(request):
     Renders the add pet form
     """
     if request.method == 'POST':
-        add_pet_form = PetProfileForm(request.POST)
+        add_pet_form = PetProfileForm(request.POST, request.FILES)
         if add_pet_form.is_valid():
-            add_pet_form.save()
+            pet = add_pet_form.save(commit=False)
+            pet.pet_owner = request.user.userprofile
+            pet.save()
             messages.success(request,
                              'You successfuly added a pet to your profile!')
             return redirect(reverse('profile'))

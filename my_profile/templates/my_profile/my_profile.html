@@ -19,8 +19,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-lg-5">
-            <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="row mb-5">
                 <div class="col-12 text-center">
                     <h2 class="mb-5 text-navy">My Pets</h2>
                     <a href="{% url 'add_pet' %}" class="btn btn-custom rounded-0">
@@ -31,9 +31,28 @@
                     </a>
                 </div>
             </div>
-            <h4 class="text-navy uppercase">{{ my_profile.pet_name }}</h4>
+            {% for pet in pets %}
+            <div class="row mb-4">
+                <div class="col-12 col-md-6">
+                    <h4 class="text-navy uppercase">{{ pet.pet_name }}</h4>
+                    <p class="small text-navy">Breed: <span class="text-muted">{{ pet.breed }}</span></p>
+                    <p class="small text-navy">Gender: <span class="text-muted">{{ pet.gender|upper }}</span></p>
+                    <p class="small text-navy">Pet Measurement A: <span class="text-muted">{{ pet.measurement_a }}cm</span></p>
+                    <p class="small text-navy">Pet Measurement B: <span class="text-muted">{{ pet.measurement_b }}cm</span></p>
+                    <p class="small text-navy">Pet Measurement C: <span class="text-muted">{{ pet.measurement_c }}cm</span></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    {% if pet.pet_image %}
+                    <img src="{{ pet.pet_image.url }}" alt="{{ pet.pet_name }}" class="w-100 rounded-custom img_border">
+                    {% else %}
+                    <img src="{{ MEDIA_URL }}pet_profile_pic.png" alt="{{ pet.pet_name }}" class="w-100 rounded-custom img_border">
+                    {% endif %}
+                    <img src="" alt="" class="w-100">
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-lg-6">
             <h2 class="mb-3 text-navy text-center">Order History</h2>
             <div class="order-history table-responsive">
                 <table class="table table-sm table-borderless">
