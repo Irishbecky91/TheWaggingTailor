@@ -26,6 +26,7 @@ urlpatterns = [
     path('shopping_bag/', include('shopping_bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('my_profile.urls')),
+    path('queries/', include('queries.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = "wagging_tailor.views.page_not_found_view"
