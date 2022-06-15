@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['the-wagging-tailor.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['the-wagging-tailor.herokuapp.com/checkout/', 'localhost']
 
 
 # Application definition
