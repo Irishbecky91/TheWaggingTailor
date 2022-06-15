@@ -347,7 +347,18 @@ Each page of the website features a consistent responsive footer design:
 </dl>
  
 ### Existing Features
-- **Feature** - feature description.
+- **Search bar** - This feature is user to find items on the site, matching the queries keywords to the items name or description. These results are shown in the products page with an indicator of how many items were found using the keyword(s).
+- **Shopping Bag Icon** - This feature shows the user the current total cost of the items in the shopping bag, including shipping.
+- **Back-to-Top Button** - This feature is only available on certain pages and will bring the user back to the top of the page when clicked.
+- **Query Form** - This feature allows the user to contact the store owner to ask a question, as well as request a quote. It includes a picture upload feature to help with queries and quotes.
+- **Category Buttons** - This feature is a selections of buttons which filters the selection of products by the user's desired categories.
+- **Sort-By Selector** - This feature is a selector box whose selections sort the product list by name, category, rating and price in both ascending and descending order.
+- **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes. Underneath the product information, a sizing guide and measurement instruction image also appears for the users convenience.
+- **Increment/Decrement Quantity Buttons** - This feature is visible in the product info and shopping bag pages. It allows the user to cick a button to update the item quantity instead of typing it in manually.
+- **Success Message - Add A Product** - This feature appears each time the user adds an item to the shopping bag. It details the current shopping bag items, including quantity, sizes, names and images, as well as how much the user still  needs to spend to qualify for free shipping.
+- **Checkout Form** - This feature allows the user to enter payment details, allowing them to purchase the items in their shopping bag. The form has required fields ensuring the user has all relevant fields filled in correctly before purchasing.
+- **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided in the checkout page as the shipping address. A similar page is shown throught the profile page showing each previous order's confirmation details.
+- **Pet Profile** - feature description.
 - **Feature** - feature description.
 - **Feature** - feature description.
 
