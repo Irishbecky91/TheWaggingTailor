@@ -12,6 +12,7 @@ from .forms import PetProfileForm
 
 
 # Create your views here.
+@login_required
 def profile(request):
     """
     Renders the profile page
@@ -19,6 +20,10 @@ def profile(request):
     profile = get_object_or_404(UsersProfile, user=request.user)
     pets = PetProfile.objects.all()
     orders = profile.orders.all()
+    if not profile:
+        messages.error(request,
+                       "I'm sorry, you need to log in first")
+        return redirect(reverse('home'))
 
     template = 'my_profile/my_profile.html'
     context = {
@@ -59,6 +64,7 @@ def add_pet(request):
     return render(request, template, context)
 
 
+@login_required
 def my_order_history(request, order_number):
     """
     Renders the order history
