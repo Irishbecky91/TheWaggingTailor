@@ -91,10 +91,40 @@ def add_product(request):
                             "Please check your form and try again."))
     else:
         product_form = ProductForm()
-    
+
     template = 'products/add_product.html'
     context = {
         'product_form': product_form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_product(request, product_id):
+    """
+    Used to add a product in the store
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST, request.FILES,
+                                   instance=product)
+        if product_form.is_valid():
+            product_form.save()
+            messages.success(request,
+                             (f'You sucessfully edited {product.name}!'))
+            return redirect(reverse('product_info', args=[product.id]))
+        else:
+            messages.error(request,
+                           (f"I'm sorry, you were unable to edit {product.name}. "
+                            "Please check your form and try again."))
+    else:
+        product_form = ProductForm(instance=product)
+        messages.info(request, f'You are editing the product {product.name}.')
+
+    template = 'products/edit_product.html'
+    context = {
+        'product_form': product_form,
+        'product': product,
     }
 
     return render(request, template, context)

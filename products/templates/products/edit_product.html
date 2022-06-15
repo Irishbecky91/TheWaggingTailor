@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-- Product Management - Add A Product
+- Product Management - Edit A Product
 {% endblock %}
 
 {% block content %}
@@ -12,17 +12,17 @@
     <div class="row">
         <div class="col">
             <h1 class="mt-5 mb-3 text-navy text-center">Product Management</h1>
-            <h5 class="text-muted text-center mb-4">Add A Product</h5>
+            <h5 class="text-muted text-center mb-4">Edit A Product</h5>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-md-6 offset-md-3 open-sans-text">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-3" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-3" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ product_form | crispy }}
                 <div class="text-right mt-4">
                     <a href="{% url 'home' %}" class="btn btn-custom rounded-0 mb-5">Cancel</a>
-                    <button class="btn btn-custom rounded-0 mb-5" type="submit">Add A Product</button>
+                    <button class="btn btn-custom rounded-0 mb-5" type="submit">Edit A Product</button>
                 </div>
             </form>
         </div>
