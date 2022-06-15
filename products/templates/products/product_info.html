@@ -37,8 +37,7 @@
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <a class="update-link text-primary open-sans-text" href="{% url 'edit_product' product.id %}"><small>Update</small></a>
-                <a class="remove-item text-danger open-sans-text" id="remove_{{ item.item_id }}"
-                    data-product_size="{{ item.size }}"><small>Remove</small></a>
+                <a class="remove-item text-danger open-sans-text" href="{% url 'delete_product' product.id %}"><small>Remove</small></a>
                 {% endif %}
                 {% endif %}
 
