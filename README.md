@@ -276,7 +276,7 @@ Each page of the website features a consistent responsive footer design:
 
 
 <dl>
-    <dt><a href="#" target="_blank" alt="Home Page">Home Page</a></dt>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/" target="_blank" alt="Home Page">Home Page</a></dt>
     <dd>The home page is the main entry page to the site, it introduces the people involved in the store and gives a sneak peek into some of the products:
         <ul>
             <li><strong>Main Image</strong> - This feature is an image underneath the navigation bar and Custom Orders message bar. The image displayed is of a dog wearing an outfit sold in the store, with the company name and logo also displayed.
@@ -289,7 +289,7 @@ Each page of the website features a consistent responsive footer design:
             </li>
         </ul>
     </dd>
-    <dt><a href="#" target="_blank" alt="Products Page">Products Page</a></dt>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/products/" target="_blank" alt="Products Page">Products Page</a></dt>
     <dd>This page displays a list of all products. The user can use filters and search queries to filter the list to their desired results:
         <ul>
             <li><strong>Product Category Links</strong> - Directly below the 'Products' heading are a set of button links that filter the list of products to the selected category.
@@ -304,7 +304,7 @@ Each page of the website features a consistent responsive footer design:
             </li>
         </ul>
     </dd>
-    <dt><a href="#" target="_blank" alt="Product Info Page">Product Info Page</a></dt>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/products/1/" target="_blank" alt="Product Info Page">Product Info Page</a></dt>
     <dd>This page will render the information for the chosen product and allow the user to select a size and add the item to the shopping bag:
         <ul>
             <li><strong>Product Details</strong> - The product details change for each product. This would include the product image, name, description, price, rating and category.
@@ -317,17 +317,19 @@ Each page of the website features a consistent responsive footer design:
             </li>
         </ul>
     </dd>
-    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
-    <dd>description of page:
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/shopping_bag/" target="_blank" alt="Shopping Bag Page">Shopping Bag Page</a></dt>
+    <dd>This page allows the user to view, edit and delete items in their shopping bag before going to the checkout screen:
         <ul>
-            <li><strong>feature</strong> - description.
+            <li><strong>Product Information</strong> - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product. If more than one size a single product is selected, separate entries are shown on the page, showing the quantity of each size of the item.
             </li>
-            <li><strong>feature</strong> - description.
+            <li><strong>Update/Remove Buttons</strong> - These features allow the user to update the quantity of an item in their shopping bag, or remove it entirely. Updating the quantity to '0' remove the item from the shopping bag.
+            </li>
+            <li><strong>Updated Total, Shipping and Grand Total</strong> - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to 10% of the user's total cost, which is then added to create the grand total.
             </li>
         </ul>
     </dd>
-    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
-    <dd>description of page:
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/checkout/" target="_blank" alt="Checkout Page">Checkout Page</a></dt>
+    <dd>This page allows the user to securely enter their payment information before they :
         <ul>
             <li><strong>feature</strong> - description.
             </li>

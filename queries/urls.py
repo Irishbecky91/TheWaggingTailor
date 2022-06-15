@@ -6,5 +6,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.query_request, name='query_request'),
+    path('', views.query, name='query'),
 ]

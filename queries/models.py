@@ -19,9 +19,7 @@ class Query(models.Model):
     query_type = models.CharField(max_length=20, choices=QUERY_CHOICES)
     description = models.TextField()
     query_date = models.DateField(auto_now_add=True)
-    query_image = models.ImageField()
-    username = models.ForeignKey(User, blank=False, null=False,
-                                 on_delete=models.CASCADE)
+    query_image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return str(self.id)
