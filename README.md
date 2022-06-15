@@ -356,44 +356,87 @@ Each page of the website features a consistent responsive footer design:
 - **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes. Underneath the product information, a sizing guide and measurement instruction image also appears for the users convenience.
 - **Increment/Decrement Quantity Buttons** - This feature is visible in the product info and shopping bag pages. It allows the user to cick a button to update the item quantity instead of typing it in manually.
 - **Success Message - Add A Product** - This feature appears each time the user adds an item to the shopping bag. It details the current shopping bag items, including quantity, sizes, names and images, as well as how much the user still  needs to spend to qualify for free shipping.
+- **Update/Delete Buttons** - This feature is shown across the site. Examples are on the items in the shopping bag, on the pet profiles in the users profile, and on the products when logged in a a superuser.
 - **Checkout Form** - This feature allows the user to enter payment details, allowing them to purchase the items in their shopping bag. The form has required fields ensuring the user has all relevant fields filled in correctly before purchasing.
 - **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided in the checkout page as the shipping address. A similar page is shown throught the profile page showing each previous order's confirmation details.
-- **Pet Profile** - feature description.
+- **Pet Profile** - This feature displays a profile for each of the user's pets, including their measurements to assist with purchases. The profiles display the pet name, gender, breed, measurements and an image. A placeholder image is available if none is provided.
+- **Add a pet form** - This feature allows the user to add profiles for each of their pets, including their name, gender, breed, measurements and an image. Each form filled adds a new 'pet profile' to the user's profile page.
+- **Add/Edit Product Form** - This feature allows the site admin to add or edit a product on the site. If editing, all fields are populated for the admin to edit. If adding a product, a blank form is provided. The admin can add if sizes are available, a price, a title, a description, and an image. If no image is provided, a placeholder will be used instead.
+- **** - feature description.
 - **Feature** - feature description.
 - **Feature** - feature description.
 
 ### Features to Implement in the future
 - **Feature Name**
-     - **Feature** - description.
-     - **Reason for not featuring in this release** - reason.
+     - **Comments/Reviews section** - A comment or review section will be implemented in the future to allow users to add their thoughts on the products.
+     - **Reason for not featuring in this release** - Time constraints in the development prevented this feature from being implemented before deployment. Further development of this site will see the implementation of this feature.
  
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Issues and Bugs 
-Sample text about bugs
+The developer ran into several issues during the development of the website, with the noteworthy ones listed below, along with solutions or ideas to implement in the future.
+
+**Increment/Decrement Product Buttons** - In production it was found that the increment/decrement buttons on the product page and shopping bag page were increasing/decreasing by 2 instead of 1. The developer invesigated and found this was caused by two activations of the same code on each button press instead of one.
+- ***Solution***: The developer discovered the code was being activated twice as the code was referenced in both the templates and the base.html. By removing the code from the base.html, the issue was resolved.
+
+**Updating Quantity When Sizes Are Involved** - If there was more than one size of a specific item in the shopping bag and the user attempted to adjust the amount of a specific size, all other sizes were removed. In addition, the size indicator for the remaining item was removed so it was unclear which size the user is purchasing.
+- ***Solution***: This issue was caused by a small section of code being mistyped. In line 33 of shopping_bag views.py, the developer had missed out **[size]** in the following line of code. Adding this in rectified the issue:
+
+```
+shopping_bag[item_id]['items_by_size'][size] = quantity
+```
+
+**Toast Messages Not Appearing** - When a user added an item to their shopping bag, a success message was to appear in the top right corner of the screen. This did not happen and so the user was not able to see what the current shopping bag displayed.
+- ***Solution***: The developer found the issues was caused by the version of Bootstrap they were using. The developer was using the JS control from Bootstrap4 but was using Bootstrap5 in the html. The developer decided to convert all Bootstrap5 code to Boostrap4 in an effort to keep with the deadline for the project. Reverting to Bootstrap4 across the site corrected the issues.
+
+**Remove Item Button In Shopping Bag** - The button used to remove a product from the shopping bag was not activating when clicked. This meant users were unable to remove items from their shopping bag.
+- ***Solution***: This issue was resolved by adding the minified JQuery link in the html head, which was not added when the developer was reverting to Bootstrap4 from Bootstrap5 which did not require the link. When added, the user was able to remove any item from the shopping bag.
+
+**Pet Profile Form Not Saving Pet Info** - There was an issue with the pet profiles where the form, when submitted, did not save the pet information to the profile user. This meant the information was not visible on the profile.
+- ***Solution***: The issue was rectified by correcting the 'add_pet' view in the 'my_profile' app. In lines 41-43, the code was changed to not commit the save initially, register the userprofile as the pet_owner, and then commit the save. below is the corrected code:
+
+```
+if add_pet_form.is_valid():
+    pet = add_pet_form.save(commit=False)
+    pet.pet_owner = request.user.userprofile
+    pet.save()
+```
+
+**Sorting Selector Not Filter Products** - The Sort-by selector did not work on the products page, meaning the user was unable to filter the products by name, category, price or rating.
+- ***Solution***: This issue was also resolved by adding the jQuery link to the base.html head. Adding this link allowed the code to work as it should allowing the user to filter in both ascending and descending order on the named filtering options.
 
 **Bug** - bug description.
-	- ***Solution***: description
+- ***Solution***: description
 
 **Bug** - bug description.
-	- ***Solution***: description
+- ***Solution***: description
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Technologies Used
 ### Main Languages Used
-- [Technology](Wiki Link "description of link")
-- [Technology](Wiki Link "description of link")
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Wiki Page for Python")
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Wiki Page for JavaScript")
+- [CSS](https://en.wikipedia.org/wiki/CSS "Wiki Page for CSS")
+- [HTML](https://en.wikipedia.org/wiki/HTML "WikiPage for HTML")
 
-### Additional Languages Used
-- [Technology](Wiki Link "description of link")
-     - Used to .
+### Frameworks, Libraries, Programs and Additional Languages Used
+- [Django](https://en.wikipedia.org/wiki/Django_(web_framework) "WikiPage for Django")
+     - Used to build the pages used in the site, from the models and forms to the views and page templates used.
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework) "Wiki Page for Bootstrap")
+     - Used to add uniform styling to the site without the use of css large amounts of.
+- [GitPod](https://gitpod.io/ "GitPod Site")
+     - Used for writing code, committing, and then pushing to GitHub.
+- [GitHub](https://github.com/ "GitHub Site")
+     - Used to store the project after pushing.
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/ "django-allauth Docs")
+     - Used to store the project after pushing.
+- [Lucid](https://lucid.app/ "Lucid Site")
+     - Used to create a flowchart of information, making the logic of the game easily understood.
+- [AmIResponsive](https://ui.dev/amiresponsive "AmIResponsive Site")
+     - Used to generate mockup imagery of the terminal showing the game in use on Heroku.
 
-### Frameworks, Libraries & Programs Used
-- [Technology](Wiki Link "description of link")
-     - Used to .
-
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Testing
 
@@ -467,9 +510,11 @@ How to run this project within a local IDE, such as VSCode:
 5. In your local IDE open the terminal.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type 'git clone', and then paste the URL you copied in Step 3.
+
 ```
 git clone https://github.com/USERNAME/REPOSITORY
 ```
+
 8. Press Enter. Your local clone will be created.
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting")
@@ -479,27 +524,70 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ## Credits 
 
 ### Content
-- sample text.
+- The webpage [GitHub Docs - Fork a Repo](https://docs.github.com/en/github-ae@latest/get-started/quickstart/fork-a-repo 'Link to GithHub Docs - Fork a Repo') was used to get instructions on forking and cloning a repository. This information was used in the Deployment section of the README file.
 
-### static/Media
-- images sourced from .
-- Text sourced from .
+### Static/Media
+- Most images on the site were sourced from [Unsplash](https://unsplash.com/ 'Link to Unsplash'), [Pexels](https://www.pexels.com/ 'Link to Unsplash') and [PXHere](https://pxhere.com/ 'Link to Unsplash'). Below is the list of artists whose images were used in this project.
+
+**UNSPLASH ARTISTS**
+
+- Mocna Fotografia
+- Karsten Winegeart
+- FLOUFFY
+- charlesdeluvio
+- Matt Walsh
+- Jay Wennington
+- Alexandra Novitskaya
+- Martin Castro
+- Max Simonov
+- Pearl Lynn
+- Kerwin Elias
+- Aneta Voborilova
+- Sophia Kunkel
+- Delaney Dawson
+- Reba Spike
+- Đồng Phục Hải Triều
+- Amber Kipp
+- The3dragons
+- Paul Hanaoka
+
+**PEXELS ARTISTS**
+
+- Alice Castro
+- Kat Smith
+- Peng Louis
+- Pırıl Şahin
+- Mister Mister
+- Breno Cardoso
+- Skyler Ewing
+- Eric Mclean
+- Enzo Muñoz
+- Maria Lindsey Content Creator
+- Juan Vargas
+- Kelly L
+- Eun Suk
+- Koi San
+
+**PXHERE ARTISTS**
+- typertitor
 
 ### Code 
 Did the developer use outside references when building code?
 - [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
 - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
 - [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
+- [Django Docs](https://docs.djangoproject.com/en/4.0/ 'Link to Django Docs')
 - etc.
 
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Acknowledgements
 
 - I would like to thank my friends and family for their valued opinions and critic during the process of design and development.
-- I would also like to thank my mentor, Name, for his/her invaluable help and guidance throughout the process.
+- I would like to give a massive thank you to the Tutor support network who guided me through fixing many of the bugs on this site.
+- I would also like to thank my mentor, Chris, for his invaluable help and guidance throughout the process.
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ***
