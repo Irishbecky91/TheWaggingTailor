@@ -18,7 +18,7 @@ def profile(request):
     Renders the profile page
     """
     profile = get_object_or_404(UsersProfile, user=request.user)
-    pets = PetProfile.objects.all()
+    pets = PetProfile.objects.filter(pet_owner=profile)
     orders = profile.orders.all()
     if not profile:
         messages.error(request,
