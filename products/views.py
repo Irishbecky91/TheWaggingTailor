@@ -90,7 +90,7 @@ def add_product(request):
             product = product_form.save()
             messages.success(request, 'You have successfully added a new \
                 product')
-            return redirect(reverse('product_info', args=[product]))
+            return redirect(reverse('product_info', args=[product.id]))
         else:
             messages.error(request,
                            ("I'm sorry, that product was not added. "

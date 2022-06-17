@@ -398,8 +398,8 @@ shopping_bag[item_id]['items_by_size'][size] = quantity
 - ***Solution***: The issue was rectified by correcting the 'add_pet' view in the 'my_profile' app. In lines 41-43, the code was changed to not commit the save initially, register the userprofile as the pet_owner, and then commit the save. below is the corrected code:
 
 ```
-if add_pet_form.is_valid():
-    pet = add_pet_form.save(commit=False)
+if pet_form.is_valid():
+    pet = pet_form.save(commit=False)
     pet.pet_owner = request.user.userprofile
     pet.save()
 ```

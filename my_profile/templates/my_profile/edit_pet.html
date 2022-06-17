@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block extra_title %}
-- My Profile - Add a Pet
+- My Profile - Edit Pet
 {% endblock %}
 
 {% block content %}
@@ -26,14 +26,14 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-6 offset-md-3 open-sans-text">
-            <form method="POST" action="{% url 'add_pet' %}" class="form mb-3" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_pet' pet.id %}" class="form mb-3" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ pet_form | crispy }}
                 <div class="text-right mt-4">
                     <a href="{% url 'profile' %}" class="btn btn-custom rounded-0 mb-5">
                         Cancel
                     </a>
-                    <button class="btn btn-custom rounded-0 mb-5" type="submit">Add Pet</button>
+                    <button class="btn btn-custom rounded-0 mb-5" type="submit">Edit a Pet</button>
                 </div>
             </form>
         </div>

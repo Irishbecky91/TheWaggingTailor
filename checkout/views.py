@@ -13,7 +13,6 @@ from django.conf import settings
 from shopping_bag.contexts import bag_contents
 from products.models import Product
 from my_profile.models import UsersProfile
-from my_profile.forms import PetProfileForm
 from .models import OrderLineItem, Order
 from .forms import OrderForm
 

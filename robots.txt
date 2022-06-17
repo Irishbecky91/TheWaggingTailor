@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow:
+
+Sitemap: https://the-wagging-tailor.herokuapp.com/site-map.xml

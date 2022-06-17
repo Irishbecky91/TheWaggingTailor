@@ -41,9 +41,9 @@ def add_pet(request):
     Renders the add pet form
     """
     if request.method == 'POST':
-        add_pet_form = PetProfileForm(request.POST, request.FILES)
-        if add_pet_form.is_valid():
-            pet = add_pet_form.save(commit=False)
+        pet_form = PetProfileForm(request.POST, request.FILES)
+        if pet_form.is_valid():
+            pet = pet_form.save(commit=False)
             pet.pet_owner = request.user.userprofile
             pet.save()
             messages.success(request,
@@ -54,14 +54,67 @@ def add_pet(request):
                            ('Failed to add a pet to your profile. '
                             'Please ensure the form is valid.'))
     else:
-        add_pet_form = PetProfileForm()
+        pet_form = PetProfileForm()
 
-    template = 'my_profile/add_pet_form.html'
+    template = 'my_profile/pet_form.html'
     context = {
-        'add_pet_form': add_pet_form,
+        'pet_form': pet_form,
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_pet(request, pet_id):
+    """
+    Used to add a product in the store
+    """
+    if not request.user:
+        messages.error(request, "Sorry, you don't have permission to do that.")
+        return redirect(reverse('home'))
+
+    pet = get_object_or_404(PetProfile, pk=pet_id)
+    if request.method == 'POST':
+        pet_form = PetProfileForm(request.POST, request.FILES,
+                                  instance=pet)
+        if pet_form.is_valid():
+            pet_form.save()
+            messages.success(request,
+                             (f"You sucessfully edited {pet.pet_name}'s \
+                                profile!"))
+            return redirect(reverse('profile'))
+        else:
+            messages.error(request,
+                           (f"I'm sorry, you were unable to edit \
+                            {pet.pet_name}'s profile. "
+                            "Please check your form and try again."))
+    else:
+        pet_form = PetProfileForm(instance=pet)
+        messages.info(request, f'You are editing the product {pet.pet_name}.')
+
+    template = 'my_profile/edit_pet.html'
+    context = {
+        'pet_form': pet_form,
+        'pet': pet,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_pet(request, pet_id):
+    """
+    Remove the the product from the store
+    """
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, you don't have permission to do that.")
+        return redirect(reverse('home'))
+
+    pet = get_object_or_404(PetProfile, pk=pet_id)
+    pet.delete()
+    messages.success(request, f'You deleted {pet.pet_name} from the store.')
+    return redirect(reverse('profile'))
+
 
 
 @login_required
