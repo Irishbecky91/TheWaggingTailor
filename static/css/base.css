@@ -114,7 +114,7 @@ a.category-badge > span.badge:hover {
 }
 
 .carousel-item {
-    max-height: 525px;
+    max-height: 520px;
     overflow: cover;
 }
 
@@ -203,9 +203,40 @@ footer, footer a {
 
 /* ----------- Media Queries ----------- */
 
-/* Add responsiveness - screens 550 pixels and less */
+/* Add responsiveness - screens 991 pixels and less */
 @media screen and (max-width: 991px) {
     .mobile-colour {
         color: #EFF5F8 !important;
+    }
+
+    .carousel-item {
+        max-height: 350px;
+        overflow: cover;
+    }
+}
+
+
+/* Add responsiveness - screens 767 pixels and less */
+@media screen and (max-width: 767px) {
+    .carousel-item {
+        max-height: 280px;
+        overflow: cover;
+    }
+}
+
+
+/* Add responsiveness - screens 550 pixels and less */
+@media screen and (max-width: 550px) {
+    .carousel-item {
+        max-height: 200px;
+    }
+
+}
+
+
+/* Add responsiveness - screens 350 pixels and less */
+@media screen and (max-width: 350px) {
+    .carousel-item {
+        max-height: 160px;
     }
 }
