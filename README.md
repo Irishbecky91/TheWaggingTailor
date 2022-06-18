@@ -313,7 +313,7 @@ Each page of the website features a consistent responsive footer design:
             </li>
             <li><strong>Add to Bag Button</strong> - When the user has selected their chosen size, they would click the Add to Bag button to add the desired product and size to their shopping bag for purchasing.
             </li>
-            <li><strong>Comments Section</strong> - Underneath the product information is a commenting feature where users can leave comments about the product. These comments can only be added by users who have an account.
+            <li><strong>Update/Delete Links</strong> - Visible only to an authorised user, underneath the product name are two links. One brings the autorised user to the edit product page, the other one deletes the product. Selecting the delete button will immediately delete the product.
             </li>
         </ul>
     </dd>
@@ -387,14 +387,14 @@ Each page of the website features a consistent responsive footer design:
     <dt><a href="https://the-wagging-tailor.herokuapp.com/products/add_product/" target="_blank" alt="Add Product Page">Add Product Page</a></dt>
     <dd>This page allows the authorised user to add a product to the store:
         <ul>
-            <li><strong>Add Pet Form</strong> - This form allows the user to add the product's details (name, description, rating, category, sizes available and price) to the new products page. Each product added appears on the store's products page. All field's are mandatory, aside from the sizes available and image fields. If an image is not provided, a default image is displayed instead.
+            <li><strong>Add Pet Form</strong> - This form allows the authorised user to add the product's details (name, description, rating, category, sizes available and price) to the new products page. Each product added appears on the store's products page. All field's are mandatory, aside from the sizes available and image fields. If an image is not provided, a default image is displayed instead.
             </li>
         </ul>
     </dd>
-    <dt><a href="https://the-wagging-tailor.herokuapp.com/profile/edit_pet/5/" target="_blank" alt="Edit Product Page">Edit Product Page</a></dt>
-    <dd>This page allows the user to edit a pet profile to their own profile:
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/products/edit_product/16/" target="_blank" alt="Edit Product Page">Edit Product Page</a></dt>
+    <dd>This page allows the authorised user to edit a product in the store:
         <ul>
-            <li><strong>Edit Pet Form</strong> - This form allows the user to edit their pet's details (name, breed, gender, measurements and image) which are prepopulated on the form. Saving this form updates the pet profile on the profile page with the updated information.
+            <li><strong>Edit Product Form</strong> - This form allows the authorised user to edit the product's details, specifically the name, description, rating, category, sizes available and price. All field's are mandatory, aside from the sizes available and image fields. If an image is not provided, a default image is displayed instead. All changes are displayed on the specific product's info page.
             </li>
         </ul>
     </dd>
@@ -489,6 +489,9 @@ if pet_form.is_valid():
 
 [Heroku](https://heroku.com/ "Heroku Site")
 - Used to store the project after pushing.
+
+[AWS](https://aws.amazon.com/ "Link to AWS Site")
+- Used to store MEDIA and STATIC files for deployed site.
 
 [django-allauth](https://django-allauth.readthedocs.io/en/latest/ "django-allauth Docs")
 - Used to store the project after pushing.
