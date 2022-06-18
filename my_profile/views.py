@@ -121,7 +121,6 @@ def delete_pet(request, pet_id):
     return redirect(reverse('profile'))
 
 
-
 @login_required
 def my_order_history(request, order_number):
     """

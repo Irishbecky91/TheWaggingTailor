@@ -7,7 +7,7 @@ from .models import Product, Category
 
 class ProductForm(forms.ModelForm):
     """
-    The Product form allows the user to 
+    The Product form allows the user to add a product to the store.
     """
     class Meta:
         model = Product
@@ -21,4 +21,3 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-navy rounded-0'
-
