@@ -78,6 +78,8 @@ input[name='q']::placeholder {
 
 .link-colour {
     color: #04212E;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 a.category-badge > span.badge {
