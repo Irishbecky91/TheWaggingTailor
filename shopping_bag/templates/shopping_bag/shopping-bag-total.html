@@ -1,0 +1,9 @@
+<h6><strong>Shopping Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+<h6>Shipping: €{{ shipping|floatformat:2 }}</h6>
+<h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+{% if free_shipping_delta > 0 %}
+<p class="mb-1 text-danger mb-3">
+    You only need to spend another <strong>€{{ free_shipping_delta }}</strong> to qualify
+    for free Ireland and UK shipping.
+</p>
+{% endif %}
