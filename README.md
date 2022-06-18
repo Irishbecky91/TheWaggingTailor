@@ -4,7 +4,7 @@ README.md
 
 ![The Wagging Tailor  Logo](file path)
 
-[View the live project here](depolyed link)
+[View the live project here](https://the-wagging-tailor.herokuapp.com/ 'Link to the deployed Heroku site for The Wagging Tailor')
 
 ## Table of contents
 1. [Introduction](#Introduction)
@@ -37,9 +37,9 @@ README.md
 
 ## Introduction
 
-The Wagging Tailor is a company which designs and creates custom clothing for pets. This includes anything from harnesses to biker jackets. This site was devoloped to facilitate the sale and commission of these products, as well as provide information about the business and its products. This site includes a products list, including individual product pages, a payment feature, and a personal profile for the user to enter their and their pet's information for future use.
+The Wagging Tailor is a company which designs and creates custom clothing for pets. This includes anything from harnesses to biker jackets. This site was developed to facilitate the sale and commission of these products, as well as provide information about the business and its products. This site includes a products list, including individual product pages, a payment feature, and a personal profile for the user to enter their and their pet's information for future use.
 
-This site was developed to be intuitive and appealing to users, with a clean, attractive appearance and easy to use features. There are options also for the site owner to add, edit and delete products from the site for future changes and new stock.
+This site was developed to be intuitive and appealing to users, with a clean, attractive appearance and easy-to-use features. There are options also for the site owner to add, edit and delete products from the site for future changes and new stock.
 
 [Back to top ⇧](#)
 
@@ -80,7 +80,7 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 
 #### Store Owner
 - As a Store Owner, I want to be able to add a product so that I can add new items to my store.
-- As a store Owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.
+- As a Store Owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.
 - As a Store Owner, I want to be able to delete a product so that I can remove items that are no longer for sale.
 
 ### **Development Planes**
@@ -229,7 +229,7 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 
 
 #### **Database Structure**
-In addition to wireframes, a Database ER Disgram was mocked up to show the relationship between the various database structures.
+In addition to wireframes, a Database ER Diagram was mocked up to show the relationship between the various database structures.
 
 ![Database ER Diagram](static/media/README/database-diagram.png)
 
@@ -237,7 +237,7 @@ In addition to wireframes, a Database ER Disgram was mocked up to show the relat
 ### Design
 
 #### **Colour Scheme**
-The colour scheme was influenced by the home page photo. The yellow colour of the dog's sweater was chosen for the message bar to tie the photo in and make an attractive appearance. The navy coloured font, logo and nav background was influenced by the writing on the dog's ascot.
+The colour scheme was influenced by the home page photo. The yellow colour of the dog's sweater was chosen for the message bar to tie the photo in and make an attractive appearance. The navy-coloured font, logo and nav background was influenced by the writing on the dog's ascot.
 
 A clean white background was chosen for the top header to help give a pleasant, uncluttered appearance. The main background chosen was a white background with a very faint blue/grey pawprint pattern to give a subtle but playful design.
 
@@ -251,7 +251,7 @@ The imagery used in this site is entirely related to the products being sold, na
 
 ## Features
 
-### Design Features
+## Design Features
 **Navigation & Header**
 
 Each page of the website features a consistent responsive navigational system:
@@ -262,7 +262,7 @@ Each page of the website features a consistent responsive navigational system:
 
 - **User & Shopping Bag Icons** - There is an icon for both the user options dropdown and a link to the shopping bag showing the current bag total. The user icon's dropdown selection is updated depending on whether the user is logged in, logged out, or if they a logged in as a superuser. Each has varying options to choose from.
 
-- **Links to Category Pages** - On the second row there are links to several categories of product pages. These pages show products in a number of categories linked to a specific type, eg. All Warm Wear would have Coats & Jackets, Hoodies And Sweaters categories displayed on the products screen.
+- **Links to Category Pages** - On the second row there are links to several categories of product pages. These pages show products of certain categories grouped by the type of clothing or category, eg. All Warm Wear would have Coats & Jackets, Hoodies And Sweaters categories displayed on the products screen.
 
 - **Custom Orders Message** - Underneath the main navigation links, there is a section asking the user to click a link to be brought to a form submission page to request a custom order from the store owner.
 
@@ -270,7 +270,7 @@ Each page of the website features a consistent responsive navigational system:
 
 Each page of the website features a consistent responsive footer design:
 
-- **'Thank You' Text** - The footer displays a small piece of text thanking the user for using this site. It also asks the user to get in touch regarding custom orders by clicking on a link.
+- **A 'Thank You' Piece Of Text** - The footer displays a small piece of text thanking the user for using this site. It also asks the user to get in touch regarding custom orders by clicking on a link.
 
 - **Social Media Links** - These links connect the site user to the store's business profiles on Instagram and Facebook, and also the developer's LinkedIn and GitHub profiles.
 
@@ -320,11 +320,11 @@ Each page of the website features a consistent responsive footer design:
     <dt><a href="https://the-wagging-tailor.herokuapp.com/shopping_bag/" target="_blank" alt="Shopping Bag Page">Shopping Bag Page</a></dt>
     <dd>This page allows the user to view, edit and delete items in their shopping bag before going to the checkout screen:
         <ul>
-            <li><strong>Product Information</strong> - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product. If more than one size a single product is selected, separate entries are shown on the page, showing the quantity of each size of the item.
+            <li><strong>Product Information</strong> - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product. If more than one size of a single product is selected, separate entries are shown on the page, showing the quantity of each size of the item.
             </li>
             <li><strong>Update/Remove Buttons</strong> - These features allow the user to update the quantity of an item in their shopping bag, or remove it entirely. Updating the quantity to '0' remove the item from the shopping bag.
             </li>
-            <li><strong>Updated Total, Shipping and Grand Total</strong> - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to 10% of the user's total cost, which is then added to create the grand total.
+            <li><strong>Updated Total, Shipping and Grand Total</strong> - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to be 10% of the user's total cost, which is then added to create the grand total.
             </li>
         </ul>
     </dd>
@@ -349,18 +349,18 @@ Each page of the website features a consistent responsive footer design:
 </dl>
  
 ### Existing Features
-- **Search bar** - This feature is user to find items on the site, matching the queries keywords to the items name or description. These results are shown in the products page with an indicator of how many items were found using the keyword(s).
+- **Search bar** - This feature is used to find items on the site, matching the query's keywords to the item's name or description. These results are shown on the products page with an indicator of how many items were found using the keyword(s).
 - **Shopping Bag Icon** - This feature shows the user the current total cost of the items in the shopping bag, including shipping.
 - **Back-to-Top Button** - This feature is only available on certain pages and will bring the user back to the top of the page when clicked.
 - **Query Form** - This feature allows the user to contact the store owner to ask a question, as well as request a quote. It includes a picture upload feature to help with queries and quotes.
-- **Category Buttons** - This feature is a selections of buttons which filters the selection of products by the user's desired categories.
+- **Category Buttons** - This feature is a selection of buttons which filters the selection of products by the user's desired categories.
 - **Sort-By Selector** - This feature is a selector box whose selections sort the product list by name, category, rating and price in both ascending and descending order.
-- **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes. Underneath the product information, a sizing guide and measurement instruction image also appears for the users convenience.
-- **Increment/Decrement Quantity Buttons** - This feature is visible in the product info and shopping bag pages. It allows the user to cick a button to update the item quantity instead of typing it in manually.
+- **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes. Underneath the product information, a sizing guide and measurement instruction image also appears for the user's convenience.
+- **Increment/Decrement Quantity Buttons** - This feature is visible in the product info and shopping bag pages. It allows the user to click a button to update the item quantity instead of typing it in manually.
 - **Success Message - Add A Product** - This feature appears each time the user adds an item to the shopping bag. It details the current shopping bag items, including quantity, sizes, names and images, as well as how much the user still  needs to spend to qualify for free shipping.
-- **Update/Delete Buttons** - This feature is shown across the site. Examples are on the items in the shopping bag, on the pet profiles in the users profile, and on the products when logged in a a superuser.
+- **Update/Delete Buttons** - This feature is shown across the site. Examples are on the items in the shopping bag, on the pet profiles in the user's profile, and the products page when logged in as a superuser.
 - **Checkout Form** - This feature allows the user to enter payment details, allowing them to purchase the items in their shopping bag. The form has required fields ensuring the user has all relevant fields filled in correctly before purchasing.
-- **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided in the checkout page as the shipping address. A similar page is shown throught the profile page showing each previous order's confirmation details.
+- **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided on the checkout page as the shipping address. A similar page is shown through the profile page showing each previous order's confirmation details.
 - **Pet Profile** - This feature displays a profile for each of the user's pets, including their measurements to assist with purchases. The profiles display the pet name, gender, breed, measurements and an image. A placeholder image is available if none is provided.
 - **Add a pet form** - This feature allows the user to add profiles for each of their pets, including their name, gender, breed, measurements and an image. Each form filled adds a new 'pet profile' to the user's profile page.
 - **Add/Edit Product Form** - This feature allows the site admin to add or edit a product on the site. If editing, all fields are populated for the admin to edit. If adding a product, a blank form is provided. The admin can add if sizes are available, a price, a title, a description, and an image. If no image is provided, a placeholder will be used instead.
@@ -378,24 +378,24 @@ Each page of the website features a consistent responsive footer design:
 ## Issues and Bugs 
 The developer ran into several issues during the development of the website, with the noteworthy ones listed below, along with solutions or ideas to implement in the future.
 
-**Increment/Decrement Product Buttons** - In production it was found that the increment/decrement buttons on the product page and shopping bag page were increasing/decreasing by 2 instead of 1. The developer invesigated and found this was caused by two activations of the same code on each button press instead of one.
+**Increment/Decrement Product Buttons** - In production, it was found that the increment/decrement buttons on the product page and shopping bag page were increasing/decreasing by 2 instead of 1. The developer investigated and found this was caused by two activations of the same code on each button press instead of one.
 - ***Solution***: The developer discovered the code was being activated twice as the code was referenced in both the templates and the base.html. By removing the code from the base.html, the issue was resolved.
 
 **Updating Quantity When Sizes Are Involved** - If there was more than one size of a specific item in the shopping bag and the user attempted to adjust the amount of a specific size, all other sizes were removed. In addition, the size indicator for the remaining item was removed so it was unclear which size the user is purchasing.
-- ***Solution***: This issue was caused by a small section of code being mistyped. In line 33 of shopping_bag views.py, the developer had missed out **[size]** in the following line of code. Adding this in rectified the issue:
+- ***Solution***: This issue was caused by a small section of code being mistyped. In line 33 of shopping_bag views.py, the developer had missed out **[size]** in the following line of code. Adding this piece of code rectified the issue:
 
 ```
 shopping_bag[item_id]['items_by_size'][size] = quantity
 ```
 
 **Toast Messages Not Appearing** - When a user added an item to their shopping bag, a success message was to appear in the top right corner of the screen. This did not happen and so the user was not able to see what the current shopping bag displayed.
-- ***Solution***: The developer found the issues was caused by the version of Bootstrap they were using. The developer was using the JS control from Bootstrap4 but was using Bootstrap5 in the html. The developer decided to convert all Bootstrap5 code to Boostrap4 in an effort to keep with the deadline for the project. Reverting to Bootstrap4 across the site corrected the issues.
+- ***Solution***: The developer found the issue was caused by the version of Bootstrap they were using. The developer was using the JS control from Bootstrap4 but was using Bootstrap5 in the HTML. The developer decided to convert all Bootstrap5 code to Boostrap4 to keep with the deadline for the project. Changing to Bootstrap4 across the site corrected the issues.
 
-**Remove Item Button In Shopping Bag** - The button used to remove a product from the shopping bag was not activating when clicked. This meant users were unable to remove items from their shopping bag.
-- ***Solution***: This issue was resolved by adding the minified JQuery link in the html head, which was not added when the developer was reverting to Bootstrap4 from Bootstrap5 which did not require the link. When added, the user was able to remove any item from the shopping bag.
+**Remove Item Button In Shopping Bag** - The button used to remove a product from the shopping bag was not activating when clicked. This meant users were unable to remove items from the shopping bag.
+- ***Solution***: This issue was resolved by adding the minified JQuery link in the HTML head, which was not added when the developer was reverting to Bootstrap4 from Bootstrap5 which did not require the link. When added, the user was able to remove any item from the shopping bag.
 
 **Pet Profile Form Not Saving Pet Info** - There was an issue with the pet profiles where the form, when submitted, did not save the pet information to the profile user. This meant the information was not visible on the profile.
-- ***Solution***: The issue was rectified by correcting the 'add_pet' view in the 'my_profile' app. In lines 41-43, the code was changed to not commit the save initially, register the userprofile as the pet_owner, and then commit the save. below is the corrected code:
+- ***Solution***: The issue was rectified by correcting the 'add_pet' view in the 'my_profile' app. In lines 41-43, the code was changed to not commit the save initially, register the 'userprofile' as the 'pet_owner', and then commit the save. below is the corrected code:
 
 ```
 if pet_form.is_valid():
@@ -407,36 +407,45 @@ if pet_form.is_valid():
 **Sorting Selector Not Filter Products** - The Sort-by selector did not work on the products page, meaning the user was unable to filter the products by name, category, price or rating.
 - ***Solution***: This issue was also resolved by adding the jQuery link to the base.html head. Adding this link allowed the code to work as it should allowing the user to filter in both ascending and descending order on the named filtering options.
 
-**Bug** - bug description.
-- ***Solution***: description
+**User Database not updating on Heroku** - When a user attempted to log in to the site or register on the deployed site only, they were met with a 500 error. This was due to the database not correctly updating and saving the user information from the development site.
+- ***Solution***: To start, the developer corrected a line of code in the settings.py file following this, the developer assigned the DATABASE_URL ket to the GitPod variables and restarted the workspace. Next, the current database was dropped and the user migrated all changes again. Following this, the developer was able to test on both the local and deployed sites and found the functionality had returned.
 
-**Bug** - bug description.
-- ***Solution***: description
+**All User' Pet Info Showing Instead Of Only Current User** - On the profile page, when more than one user created a pet profile, all users' pet info was displayed on all users' profiles.
+- ***Solution***: The developer had accidentally added '.all()' in the profile view, causing all available pet profiles to be called. This was rectified by correcting this to '.filter(pet_owner=profile)'. Now only the current user's pet info is displayed.
 
 [Back to top ⇧](#)
 
 ## Technologies Used
 ### Main Languages Used
-- [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Wiki Page for Python")
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Wiki Page for JavaScript")
-- [CSS](https://en.wikipedia.org/wiki/CSS "Wiki Page for CSS")
-- [HTML](https://en.wikipedia.org/wiki/HTML "WikiPage for HTML")
+[Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Wiki Page for Python")
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript "Wiki Page for JavaScript")
+[CSS](https://en.wikipedia.org/wiki/CSS "Wiki Page for CSS")
+[HTML](https://en.wikipedia.org/wiki/HTML "WikiPage for HTML")
 
 ### Frameworks, Libraries, Programs and Additional Languages Used
-- [Django](https://en.wikipedia.org/wiki/Django_(web_framework) "WikiPage for Django")
-     - Used to build the pages used in the site, from the models and forms to the views and page templates used.
-- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework) "Wiki Page for Bootstrap")
-     - Used to add uniform styling to the site without the use of css large amounts of.
-- [GitPod](https://gitpod.io/ "GitPod Site")
-     - Used for writing code, committing, and then pushing to GitHub.
-- [GitHub](https://github.com/ "GitHub Site")
-     - Used to store the project after pushing.
-- [django-allauth](https://django-allauth.readthedocs.io/en/latest/ "django-allauth Docs")
-     - Used to store the project after pushing.
-- [Lucid](https://lucid.app/ "Lucid Site")
-     - Used to create a flowchart of information, making the logic of the game easily understood.
-- [AmIResponsive](https://ui.dev/amiresponsive "AmIResponsive Site")
-     - Used to generate mockup imagery of the terminal showing the game in use on Heroku.
+[Django](https://en.wikipedia.org/wiki/Django_(web_framework) "WikiPage for Django")
+- Used to build the pages used in the site, from the models and forms to the views and page templates used.
+
+[Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework) "Wiki Page for Bootstrap")
+- Used to add uniform styling to the site without the use of large amounts of CSS.
+
+[GitPod](https://gitpod.io/ "GitPod Site")
+- Used for writing code, committing, and then pushing to GitHub.
+
+[GitHub](https://github.com/ "GitHub Site")
+- Used to store the project after pushing.
+
+[Heroku](https://heroku.com/ "Heroku Site")
+- Used to store the project after pushing.
+
+[django-allauth](https://django-allauth.readthedocs.io/en/latest/ "django-allauth Docs")
+- Used to store the project after pushing.
+
+[Lucid](https://lucid.app/ "Lucid Site")
+- Used to create a flowchart of information, making the logic of the game easily understood.
+
+[AmIResponsive](https://ui.dev/amiresponsive "AmIResponsive Site")
+- Used to generate mockup imagery of the terminal showing the game in use on Heroku.
 
 [Back to top ⇧](#)
 
@@ -446,7 +455,7 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 
 ## Deployment
 
-This project was developed using .
+This project was developed using a [GitPod](https://gitpod.io/ "GitPod Site") workspace. The code was committed to Git and pushed to [GitHub](https://github.com/ "GitHub Site") using the terminal. The code was then remotely deployed to [Heroku](https://heroku.com/ "Heroku Site").
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
@@ -462,12 +471,12 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
 
 3. Prepare the environment and settings.py file:
-    - In the Settings tab, click on Reveal Config Vars and copy the url next to DATABASE_URL.
+    - In the Settings tab, click on Reveal Config Vars and copy the URL next to DATABASE_URL.
     - In your GitPod workspace, create an env.py file in the main directory. 
     - Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
     - Add the SECRET_KEY value to the Config Vars in Heroku.
     - Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
-    - Update the Config Vars with the Cloudinary url, adding into the settings.py file also.
+    - Update the Config Vars with the Cloudinary URL, adding into the settings.py file also.
     - In settings.py add the following sections:
         - STATIC_URL
         - STATICFILES_DIRS
@@ -483,8 +492,8 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
         - web: gunicorn project-name.wsgi
     - in the terminal, log in to Heroku and then enter the following:
         - heroku config:set DISABLE_COLLECTSTATIC=1 --app (Heroku App Name)
-    - Go to Deploy tab on Heroku and connect to the GitHub, then to the required recpository.
-    Click on Delpoy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku. 
+    - Go to the 'Deploy' tab on Heroku and connect to GitHub, then to the required repository.
+    Click on 'Deploy Branch' and wait for the build to load. When the build is complete, the app can be opened through Heroku. 
 
 ### Forking the Repository
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
@@ -501,12 +510,12 @@ How to run this project locally:
 3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
 2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/KryanLive "Link to GitHub Repo").
 5. Click the green "GitPod" button in the top right corner of the repository.
-This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+This will trigger a new GitPod workspace to be created from the code in GitHub where you can work locally.
 
 How to run this project within a local IDE, such as VSCode:
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](repo url "Link to GitHub Repo").
+2. Locate the [GitHub Repository](repo URL "Link to GitHub Repo").
 3. Under the repository name, click "Clone or download".
 4. In the Clone with HTTPs section, copy the clone URL for the repository.
 5. In your local IDE open the terminal.
@@ -521,7 +530,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting")
 
-[Back to top ⇧](#Project-Name)
+[Back to top ⇧](#)
 
 ## Credits 
 
@@ -586,7 +595,7 @@ Did the developer use outside references when building code?
 
 ## Acknowledgements
 
-- I would like to thank my friends and family for their valued opinions and critic during the process of design and development.
+- I would like to thank my friends and family for their valued opinions and criticism during the process of design and development.
 - I would like to give a massive thank you to the Tutor support network who guided me through fixing many of the bugs on this site.
 - I would also like to thank my mentor, Chris, for his invaluable help and guidance throughout the process.
 

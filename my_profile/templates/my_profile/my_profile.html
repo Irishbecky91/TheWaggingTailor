@@ -12,9 +12,14 @@
 {% block content %}
 <div class="container mb-4">
     <div class="row">
-        <div class="col">
-            <h1 class="mt-5 mb-5 text-navy text-center">My Profile</h1>
-            <h1 class="mt-5 mb-5 text-navy text-center">{{ request.user }}</h1>
+        <div class="col-12 col-md-10 offset-md-1 text-center mt-5 mb-5">
+            <h1 class="text-navy">{{ request.user|title }}'s Profile</h1>
+            <p class="text-navy open-sans-text">
+                Welcome to your profile page, {{ request.user|title }}! Here you will be able to view your order history, and
+                also add profiles for each of your pets. You can even add their measurements to help you when purchasing
+                the perfect size for your pets! Feel free to contact us also to ask for a quote on custom orders, we
+                cater to everything from everyday items to weddings.
+            </p>
         </div>
     </div>
     <div class="row">
@@ -32,16 +37,23 @@
                     <h4 class="text-navy uppercase font-weight-bold">{{ pet.pet_name }}</h4>
                     <p class="small text-navy">Breed: <span class="text-muted">{{ pet.breed }}</span></p>
                     <p class="small text-navy">Gender: <span class="text-muted">{{ pet.gender|upper }}</span></p>
-                    <p class="small text-navy">Pet Measurement A: <span class="text-muted">{{ pet.measurement_a }}cm</span></p>
-                    <p class="small text-navy">Pet Measurement B: <span class="text-muted">{{ pet.measurement_b }}cm</span></p>
-                    <p class="small text-navy">Pet Measurement C: <span class="text-muted">{{ pet.measurement_c }}cm</span></p>
+                    <p class="small text-navy">Pet Measurement A: <span
+                            class="text-muted">{% if pet.measurement_a %}{{ pet.measurement_a }}cm{% else %}N/A{% endif %}</span>
+                    </p>
+                    <p class="small text-navy">Pet Measurement B: <span
+                            class="text-muted">{% if pet.measurement_b %}{{ pet.measurement_b }}cm{% else %}N/A{% endif %}</span>
+                    </p>
+                    <p class="small text-navy">Pet Measurement C: <span
+                            class="text-muted">{% if pet.measurement_c %}{{ pet.measurement_c }}cm{% else %}N/A{% endif %}</span>
+                    </p>
                 </div>
-                
+
                 <div class="col-12 col-md-6">
                     {% if pet.pet_image %}
                     <img src="{{ pet.pet_image.url }}" alt="{{ pet.pet_name }}" class="w-100 rounded-custom img_border">
                     {% else %}
-                    <img src="{{ MEDIA_URL }}pet_profile_pic.png" alt="{{ pet.pet_name }}" class="w-100 rounded-custom img_border">
+                    <img src="{{ MEDIA_URL }}pet_profile_pic.png" alt="{{ pet.pet_name }}"
+                        class="w-100 rounded-custom img_border">
                     {% endif %}
                     <img src="" alt="" class="w-100">
                 </div>
@@ -51,8 +63,10 @@
                 <div class="col mb-5">
                     {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                    <a class="update-link text-primary open-sans-text mx-4" href="{% url 'edit_pet' pet.id %}"><small>Update</small></a>
-                    <a class="remove-item text-danger open-sans-text mx-4" href="{% url 'delete_pet' pet.id %}"><small>Remove</small></a>
+                    <a class="update-link text-primary open-sans-text mx-4"
+                        href="{% url 'edit_pet' pet.id %}"><small>Update</small></a>
+                    <a class="remove-item text-danger open-sans-text mx-4"
+                        href="{% url 'delete_pet' pet.id %}"><small>Remove</small></a>
                     {% endif %}
                     {% endif %}
                 </div>
@@ -87,29 +101,29 @@
 
                     <tbody class="open-sans-text">
                         {% for order in orders %}
-                            <tr>
-                                <td>
-                                    <a href="{% url 'my_order_history' order.order_number %}"
+                        <tr>
+                            <td>
+                                <a href="{% url 'my_order_history' order.order_number %}"
                                     title="{{ order.order_number }}">
-                                        {{ order.order_number|truncatechars:6 }}
-                                    </a>
-                                </td>
+                                    {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </td>
 
-                                <td class="small">{{ order.date }}</td>
+                            <td class="small">{{ order.date }}</td>
 
-                                <td>
-                                    <ul class="list-unstyled">
+                            <td>
+                                <ul class="list-unstyled">
                                     {% for item in order.lineitems.all %}
-                                        <li class="small">
-                                            {% if item.product.sizes_available %}
-                                                Size {{ item.product.size|upper }}
-                                            {% endif %}{{ item.product.name }} x{{ item.quantity }}
-                                        </li>
+                                    <li class="small">
+                                        {% if item.product.sizes_available %}
+                                        Size {{ item.product.size|upper }}
+                                        {% endif %}{{ item.product.name }} x{{ item.quantity }}
+                                    </li>
                                     {% endfor %}
-                                    </ul>
-                                </td>
-                                <td>€{{ order.grand_total }}</td>
-                            </tr>
+                                </ul>
+                            </td>
+                            <td>€{{ order.grand_total }}</td>
+                        </tr>
                         {% endfor %}
                     </tbody>
                 </table>

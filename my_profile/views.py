@@ -40,6 +40,11 @@ def add_pet(request):
     """
     Renders the add pet form
     """
+    if not profile:
+        messages.error(request,
+                       "I'm sorry, you need to log in first")
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         pet_form = PetProfileForm(request.POST, request.FILES)
         if pet_form.is_valid():
@@ -56,7 +61,7 @@ def add_pet(request):
     else:
         pet_form = PetProfileForm()
 
-    template = 'my_profile/pet_form.html'
+    template = 'my_profile/add_pet_form.html'
     context = {
         'pet_form': pet_form,
     }
