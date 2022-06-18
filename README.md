@@ -329,20 +329,72 @@ Each page of the website features a consistent responsive footer design:
         </ul>
     </dd>
     <dt><a href="https://the-wagging-tailor.herokuapp.com/checkout/" target="_blank" alt="Checkout Page">Checkout Page</a></dt>
-    <dd>This page allows the user to securely enter their payment information before they :
+    <dd>This page allows the user to securely enter their payment information before pay for their items:
         <ul>
-            <li><strong>feature</strong> - description.
+            <li><strong>Shipping Info Form</strong> - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
             </li>
-            <li><strong>feature</strong> - description.
+            <li><strong>Order Summary</strong> - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
+            </li>
+            <li><strong>Stripe Payment Feature</strong> - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
             </li>
         </ul>
     </dd>
-    <dt><a href="#" target="_blank" alt="Page">Page</a></dt>
-    <dd>description of page:
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/checkout/checkout_successful/FC97E14FBC884795AFC89CE219CC2AAA" target="_blank" alt="Order Confirmation Page">Orer Confirmation Page</a></dt>
+    <dd>This page shows the order details of the purchase that was just carried out:
         <ul>
-            <li><strong>feature</strong> - description.
+            <li><strong>Order summary</strong> - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
             </li>
-            <li><strong>feature</strong> - description.
+            <li><strong>Return To Store Button</strong> - This button brings the user back to the store where they can continue to peruse the products on offer. This button specifically brings the user to the formal wear section to entice them to spend further.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/profile/" target="_blank" alt="Profile Page">Profile Page</a></dt>
+    <dd>This page displays the users profile, with information regarding their pets and past orders:
+        <ul>
+            <li><strong>User's Profile Heading</strong> - The heading updates to the user's chosen username, making the first letter capitalised for a more asthetic appearance.
+            </li>
+            <li><strong>Pet Profile</strong> - The pet profile section diplays all the pets the user has added to their profile. It shows the pet's name, gender, breed, measurement information, and an image. If an image is not provided, a default placeholder image is instead displayed.
+            </li>
+            <li><strong>Add/Delete Pet Profiles</strong> - Under each pet profile are two links, one to update the user's pet profile, and another to delete a pet profile. The update link brings the user to a prepopulated form where they can addm update or remove pet information.
+            </li>
+            <li><strong>Order History Log</strong> - This feature is a list of past orders placed while logged in. There are links on each order which allows the user to go to the order history page to get a detailed view of the order placed.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/profile/add_pet/" target="_blank" alt="Add Pet Page">Add Pet Page</a></dt>
+    <dd>This page allows the user to add a pet profile to their own profile:
+        <ul>
+            <li><strong>Add Pet Form</strong> - This form allows the user to add their pet's details (name, breed, gender, measurements and image) to their profile. Each pet added appears on the user's profile. All field's are optional and can be edited from the profile page.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/profile/edit_pet/5/" target="_blank" alt="Edit Pet Page">Edit Pet Page</a></dt>
+    <dd>This page allows the user to edit a pet profile to their own profile:
+        <ul>
+            <li><strong>Edit Pet Form</strong> - This form allows the user to edit their pet's details (name, breed, gender, measurements and image) which are prepopulated on the form. Saving this form updates the pet profile on the profile page with the updated information.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="" target="_blank" alt="Order History Page">Order History Page</a></dt>
+    <dd>This page shows the order details of the order they selected from their order history on the profile page:
+        <ul>
+            <li><strong>Order summary</strong> - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+            </li>
+            <li><strong>Return To Profile Button</strong> - This button brings the user back to the user profile where they can select another order from their history, add/edit/delete a pet profile, or view an existing pet profile.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/products/add_product/" target="_blank" alt="Add Product Page">Add Product Page</a></dt>
+    <dd>This page allows the authorised user to add a product to the store:
+        <ul>
+            <li><strong>Add Pet Form</strong> - This form allows the user to add the product's details (name, description, rating, category, sizes available and price) to the new products page. Each product added appears on the store's products page. All field's are mandatory, aside from the sizes available and image fields. If an image is not provided, a default image is displayed instead.
+            </li>
+        </ul>
+    </dd>
+    <dt><a href="https://the-wagging-tailor.herokuapp.com/profile/edit_pet/5/" target="_blank" alt="Edit Product Page">Edit Product Page</a></dt>
+    <dd>This page allows the user to edit a pet profile to their own profile:
+        <ul>
+            <li><strong>Edit Pet Form</strong> - This form allows the user to edit their pet's details (name, breed, gender, measurements and image) which are prepopulated on the form. Saving this form updates the pet profile on the profile page with the updated information.
             </li>
         </ul>
     </dd>
