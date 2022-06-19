@@ -4,7 +4,7 @@
             aria-haspopup="true" aria-expanded="false" aria-label="Dropdown option for the Search Bar">
             <div class="text-center mobile-colour">
                 <div><i class="fas fa-search nav-icon"></i></div>
-                <p class="my-0">Search</p>
+                <p class="my-0 nav-icon-text">Search</p>
             </div>
         </a>
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
@@ -29,7 +29,7 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for user options">
             <div class="text-center mobile-colour">
                 <div><i class="fas fa-user nav-icon"></i></div>
-                <p class="my-0">My Account</p>
+                <p class="my-0">Account</p>
             </div>
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="user-options-mob">
@@ -50,7 +50,7 @@
         </div>
     </li>
     <li class="list-inline-item">
-        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" id="shopping-bag-mob"
             href="{% url 'view_shopping_bag' %}" aria-label="Link to view the items in your shopping bag">
             <div class="text-center mobile-colour">
                 <div><i class="fas fa-shopping-bag nav-icon"></i></div>

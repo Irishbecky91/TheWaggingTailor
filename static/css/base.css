@@ -224,11 +224,13 @@ footer, footer a {
         overflow: cover;
     }
 
-    .display4 .text-navy {
-        font-size: 2rem;
+    p.nav-icon-text {
+        font-size: 1rem !important;
     }
 
-    .nav-link {
+    a#mobile-search,
+    a#user-options-mob,
+    a#shopping-bag-mob {
         padding: 0.10rem;
     }
 
