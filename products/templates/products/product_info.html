@@ -22,11 +22,9 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <!-- Product Image -->
             {% if product.image %}
-            <img src="{{ product.image.url }}" alt="{{ product.name }}"
-                class="card-img-top img-fluid mt-3 mb-md-5">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid mt-3 mb-md-5">
             {% else %}
-            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                class="card-img-top img-fluid mt-3 mb-md-5">
+            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top img-fluid mt-3 mb-md-5">
             {% endif %}
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -36,8 +34,10 @@
 
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <a class="update-link text-primary open-sans-text" href="{% url 'edit_product' product.id %}"><small>Update</small></a>
-                <a class="remove-item text-danger open-sans-text mx-4" href="{% url 'delete_product' product.id %}"><small>Remove</small></a>
+                <a class="update-link text-primary open-sans-text"
+                    href="{% url 'edit_product' product.id %}"><small>Update</small></a>
+                <a class="remove-item text-danger open-sans-text mx-4"
+                    href="{% url 'delete_product' product.id %}"><small>Remove</small></a>
                 {% endif %}
                 {% endif %}
 
@@ -64,7 +64,8 @@
                         {% if s %}
                         <div class="col-12">
                             <p><strong>Size:</strong></p>
-                            <select class="form-control rounded-0 w-50 open-sans-text" name="product_size" id="id_product_size">
+                            <select class="form-control rounded-0 w-50 open-sans-text" name="product_size"
+                                id="id_product_size">
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m" selected>M</option>
@@ -81,20 +82,21 @@
                             <div class="form-group w-50">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-custom rounded-0" 
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <button class="decrement-qty btn btn-custom rounded-0" role="button"
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}"
+                                            aria-label="This button decreases the quantity of the item you wish to purchase">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input" type="number"
-                                        name="quantity" value="1" min="1" max="99"
-                                        data-item_id="{{ product.id }}"
-                                        id="id_qty_{{ product.id }}">
+                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
+                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}"
+                                        aria-label="This field allows you to specify the quantity of this item you wish to purchase">
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-custom rounded-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        <button class="increment-qty btn btn-custom rounded-0" role="button"
+                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}"
+                                            aria-label="This button increases the quantity of the item you wish to purchase">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -190,7 +192,9 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-5 align-self-center">
-            <img src="{% static 'media/site-images/measure.png' %}" alt="How to measure your pet - The back is shown measured from the base of the neck to the base of the tail, the chest is measured around the widest part of the ribcage and the neck is measured around the neck where a collar would sit" width="100%">
+            <img src="{% static 'media/site-images/measure.png' %}"
+                alt="How to measure your pet - The back is shown measured from the base of the neck to the base of the tail, the chest is measured around the widest part of the ribcage and the neck is measured around the neck where a collar would sit"
+                width="100%">
         </div>
     </div>
     {% endif %}
@@ -199,6 +203,6 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    {% include 'products/includes/quantity_input_script.html' %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
