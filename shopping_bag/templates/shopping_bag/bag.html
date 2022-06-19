@@ -41,7 +41,7 @@
     </div>
     {% else %}
     <div class="row">
-        <div class="col align-self-right"">
+        <div class="col align-self-right">
             <p class="lead mb-5">Your shopping bag is empty.</p>
             <a href="{% url 'products' %}" class="btn btn-custom rounded-0 btn-lg">
                 <span class="icon text-navy">
@@ -59,7 +59,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
