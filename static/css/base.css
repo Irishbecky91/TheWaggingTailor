@@ -248,12 +248,6 @@ footer, footer a {
         font-size: 1rem !important;
     }
 
-    a#mobile-search,
-    a#user-options-mob,
-    a#shopping-bag-mob {
-        padding: 0.10rem !important;
-    }
-
     .nav-link i.nav-icon {
         font-size: 1rem !important;
     }
@@ -284,6 +278,11 @@ footer, footer a {
         max-height: 200px;
     }
 
+    a#mobile-search,
+    a#user-options-mob,
+    a#shopping-bag-mob {
+        padding: 0.05rem !important;
+    }
 }
 
 
