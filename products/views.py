@@ -4,11 +4,12 @@ Products Views
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, CommentForm
 
 
 # Create your views here.
@@ -68,8 +69,23 @@ def product_info(request, product_id):
     The Product Info view displays the information for individual products.
     """
     product = get_object_or_404(Product, pk=product_id)
+    if request.user:
+        if request.method == 'POST':
+            form = CommentForm(request.POST)
+
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.author = request.user
+                comment.product = product
+                comment.save()
+
+                return redirect(reverse('product_info', args=[product.id]))
+        else:
+            form = CommentForm()
+
     context = {
         'product': product,
+        'form': form,
     }
 
     return render(request, 'products/product_info.html', context)

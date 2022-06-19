@@ -192,13 +192,50 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-5 align-self-center">
-            <img src="{% static 'media/site-images/measure.png' %}"
+            <img src="{% static 'media/site-images/measure.png' %}" class="w-100"
                 alt="How to measure your pet - The back is shown measured from the base of the neck to the base of the tail, the chest is measured around the widest part of the ribcage and the neck is measured around the neck where a collar would sit">
         </div>
     </div>
     {% endif %}
     {% endwith %}
 </div>
+
+<div class="container text-navy mb-5 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="mb-5 text-center">View Comments</h3>
+            {% if not product.comments.all %}
+            <div class="comment">
+                <p>No comments yet... Will you be the first to comment?</p>
+            </div>
+            {% else %}
+            {% for comment in product.comments.all %}
+            <div class="comment mb-5">
+                <p><strong>{{ comment.title }}</strong></p>
+                <p>{{ comment.body }}</p>
+                <small class="text-muted">Comment by {{ comment.author|title }} on {{ comment.date_created }}</small>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <h3 class="mb-5">Add A Comment</h3>
+            {% if request.user.is_authenticated %}
+            <form action="." method="POST" class="text-left">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" value="Add Comment" class="btn btn-custom">
+            </form>
+            {% else %}
+            <p>I'm sorry, you must be logged in to leave a comment. Please log in here.</p>
+            <a href="{% url 'account_login' %}" class="btn btn-custom rounded-0">
+                <span class="font-weight-bold">Log In</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}

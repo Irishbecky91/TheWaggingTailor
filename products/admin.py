@@ -2,7 +2,7 @@
 Product Admin
 """
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, Comment
 
 
 # Register your models here.
@@ -33,5 +33,16 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class CommentAdmin(admin.ModelAdmin):
+    """
+    This class defines the appearance and control over the comments in
+    the admin.
+    """
+    list_display = ('author', 'title', 'product', 'date_created')
+    list_filter = ('product', 'date_created')
+    search_fields = ['author', 'title']
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Comment, CommentAdmin)
