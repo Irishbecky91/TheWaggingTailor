@@ -126,7 +126,7 @@ a.category-badge > span.badge:hover {
 
 .carousel-item {
     max-height: 520px;
-    overflow: cover;
+    overflow: hidden;
 }
 
 .carousel-container img {
@@ -241,7 +241,7 @@ footer, footer a {
 
     .carousel-item {
         max-height: 350px;
-        overflow: cover;
+        overflow: hidden;
     }
 
     p.nav-icon-text {
@@ -267,7 +267,7 @@ footer, footer a {
 @media screen and (max-width: 767px) {
     .carousel-item {
         max-height: 280px;
-        overflow: cover;
+        overflow: hidden;
     }
 }
 

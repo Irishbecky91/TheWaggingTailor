@@ -12,7 +12,6 @@
 2. [Manual Testing](#Manual-Testing)
 3. [Automated Testing](#Automated-Testing) 
      - [Code Validation](#Code-Validation)
-     - [Browser Validation](#Browser-Validation)
 4. [User Testing](#User-Testing)
 
 
@@ -77,26 +76,26 @@
     - The shopping bag icon in the header gives an up-to-date counter of the current shopping bag total. In addition, each item added to the shopping bag activates a pop-up which details your current bag summary, prices, total cost and shipping. It also advises the user how much more they need to spend to qualify for free shipping.
 
 - As a Site User, I want to be able to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.
-    - .
+    - There is a shopping bag page which allows the user to view all products currently sleected, their sizes and quantities, and the total cost with and without shipping if applicable. Here the user can also update and delete items from the shopping bag if required.
 
 - As a Site User, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
-    - .
+    - The link to the shopping bag page advises the checkout is secure, and the payment information input is set to ensure the user's information is correct and valid before purchasing.
 
 - As a Site User, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
-    - .
+    - On submitting a purchase, the user is shown the order confirmation page which briefly details the order information, the shipping details, product information and the total cost. This information can also be viewed on the user profile in the order history section
 
 #### Store Owner
 - As a Store Owner, I want to be able to add a product so that I can add new items to my store.
-    - .
+    - There is a page accessible only by superusers where store owners add products to the store. The link for this page is in the user acconut dropdown in the header. This link takes the user to the add product page where they can fill the product details in the form. Each product added generates a new product id and individual product info page.
 
 - As a Store Owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.
-    - .
+    - On the individual products' pages, superusers can can see a link to update the product information. Clicking the link brings the store owner to a prepopulated form where adjustments can be made to the specific product.
 
 - As a Store Owner, I want to be able to delete a product so that I can remove items that are no longer for sale.
-    - .
+    - On the individual products' pages, superusers can can see a link to delete the product information. Clicking the link immediately deletes the product page and information.
 
 
-[Back to top](#Student-Rations---Testing)
+[Back to top](#)
 
 ## Manual Testing
 
@@ -105,150 +104,268 @@ Manual testing was conducted on the following elements that appear on every page
 
 - Test that Logo redirects to home screen.
 
-    ![Test that Logo redirects to home screen](static/media/TESTING/logo-redirects.gif)
+    ![Test that Logo redirects to home screen](static/media/TESTING)
 
 - Test that Nav Links work.
 
-    ![Test that Nav Links work.](static/media/TESTING/nav-links-work.gif)
+    ![Test that Nav Links work.](static/media/TESTING)
 
 - Test that Footer Links work.
 
-    ![Test that Footer Links work.](static/media/TESTING/footer-links-work.gif)
+    ![Test that Footer Links work.](static/media/TESTING)
 
 - Test that Social Links work.
 
-    ![Test that Social Links work.](static/media/TESTING/social-links-work.gif)
+    ![Test that Social Links work.](static/media/TESTING)
 
 
 ### Home Page
-Manual testing was conducted on the following elements of the [Home Page](https://student-rations.herokuapp.com/):
+Manual testing was conducted on the following elements of the [Home Page]():
      
 - Test that user welcome message displays username.
 
-    ![Test that user welcome message displays username](static/media/TESTING/welcome-message-username.gif)
+    ![Test that user welcome message displays username](static/media/TESTING)
 
 - Test that recipe cards redirect user to recipe pages.
 
-    ![Test that recipe cards redirect user to recipe pages](static/media/TESTING/cards-redirect-to-recipe.gif)
+    ![Test that recipe cards redirect user to recipe pages](static/media/TESTING)
 
 ### Recipe Page/Edit Recipe Page
-Manual testing was conducted on the following elements of the [Recipe Page](https://student-rations.herokuapp.com/best-ever-chocolate-brownies-recipe/) and [Edit Recipe Page](https://student-rations.herokuapp.com/edit-a-recipe/best-ever-chocolate-brownies-recipe):
+Manual testing was conducted on the following elements of the [Recipe Page]() and [Edit Recipe Page]():
 
 - Test that recipes can be edited by author only.
 
-    ![Test that recipes can be edited by author only](static/media/TESTING/can-edit-recipe.gif)
+    ![Test that recipes can be edited by author only](static/media/TESTING)
 
 - Test that recipes can only be deleted by author.
 
-    ![Test that recipes can only be deleted by author](static/media/TESTING/can-delete-recipe.gif)
+    ![Test that recipes can only be deleted by author](static/media/TESTING)
      
 - Test that recipes can be liked and unliked when logged in.
 
-    ![Test that recipes can be liked and unliked when logged in](static/media/TESTING/like-unlike-recipe.gif)
+    ![Test that recipes can be liked and unliked when logged in](static/media/TESTING)
      
 - Test that comments can be submitted and approved.
 
-    ![Test that comments can be submitted and approved](static/media/TESTING/comment-on-recipe.gif)
+    ![Test that comments can be submitted and approved](static/media/TESTING)
 
 ### Share Recipe Page
-Manual testing was conducted on the following elements of the [Share recipe Page](https://student-rations.herokuapp.com/share-a-recipe/):
+Manual testing was conducted on the following elements of the [Share recipe Page]():
 
 - Test that recipes create unique slugs
 
-    ![Test that recipes create unique slugs](static/media/TESTING/unique-slug-url.gif)
+    ![Test that recipes create unique slugs](static/media/TESTING)
      
 - Test that recipes are saved.
 
-    ![Test that recipes are saved](static/media/TESTING/recipe-saves.gif)
+    ![Test that recipes are saved](static/media/TESTING)
      
 ### Sign in/Sign Out/Sign Up Pages
 Manual testing was conducted on the following elements of the [Sign In Page](Link), [Sign Out Page](Link) and [Sign Up Page](Link):
 
 - Users can register, log in and logout.
 
-    ![Users can register, log in and logout](static/media/TESTING/signup-signout-signin.gif)
+    ![Users can register, log in and logout](static/media/TESTING)
 
 ### Pages are Responsive
 - Manual testing was conducted on the following pages for responsiveness on large, medium and small screens
 
-    ![Responsive Home](static/media/TESTING/responsive-home.gif)
+    ![Responsive Home](static/media/TESTING)
 
-    ![Responsive About](static/media/TESTING/responsive-about.gif)
+    ![Responsive About](static/media/TESTING)
 
-    ![Responsive Recipe](static/media/TESTING/responsive-recipe.gif)
+    ![Responsive Recipe](static/media/TESTING)
 
-    ![Responsive Form](static/media/TESTING/responsive-form.gif)
+    ![Responsive Form](static/media/TESTING)
 
-    ![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING/responsive-signin-signout-signup.gif)
+    ![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING)
 
-[Back to top](#Student-Rations---Testing)
+[Back to top](#)
 
 ## Automated Testing
 
 ### Code Validation
-The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Validator Site") service was used to validate the `HTML` and `CSS` code used. The [PEP8 Python Validator](http://pep8online.com/ "Link to the PEP8 Python Validator Site") was used to validate the `Python`code used.
+The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Validator Site") service was used to validate the `HTML` and `CSS` code used. The [PEP8 Python Validator](http://pep8online.com/ "Link to the PEP8 Python Validator Site") was used to validate the `Python`code used. The [JSHint JavaScript Validator](https://jshint.com/ "Link to the JSHint JavaScript Validator Site") was used to validate the `JavaScript` code used.
 
-**Results:**
+#### **Results:**
 
-- HTML Pages
+##### **HTML Pages**
 <details>
-<summary>HTML Pages - Code Validation</summary>
+<summary>HTML Pages - HTML Validation</summary>
 
-![Home Page HTML Validation Results](static/media/TESTING/html-valitadtion-home.png)
+![Home Page HTML Validation Results](static/media/TESTING/valid-html-home.png)
 
-![About Page HTML Validation Results](static/media/TESTING/html-validation-about.png)
+![Products Page HTML Validation Results](static/media/TESTING/valid-html-products.png)
 
-![Recipe Page HTML Validation Results](static/media/TESTING/html-validation-recipe.png)
+![Product Info Page HTML Validation Results](static/media/TESTING/valid-html-product-info.png)
 
-![Share Recipe Page HTML Validation Results](static/media/TESTING/validate-html-recipe-form.gif)
+![Add Product Page HTML Validation Results](static/media/TESTING/valid-html-add-a-product.png)
 
-![Edit Recipe Page HTML Validation Results](static/media/TESTING/validate-html-edit-recipe-form.gif)
+![Edit Product Page HTML Validation Results](static/media/TESTING/valid-html-edit-a-product.png)
 
-![Sign In Page HTML Validation Results](static/media/TESTING/html-validation-sign-in.png)
+![Shopping Bag Page HTML Validation Results](static/media/TESTING/valid-html-shopping-bag.png)
 
-![Sign Up Page HTML Validation Results](static/media/TESTING/html-validation-sign-up.png)
+![Checkout Page HTML Validation Results](static/media/TESTING/valid-html-checkout.png)
 
-![Sign Out Page HTML Validation Results](static/media/TESTING/html-validation-sign-out.png)
+![Order Confirmation Page HTML Validation Results](static/media/TESTING/valid-html-checkout-successful.png)
+
+![Order History Page HTML Validation Results](static/media/TESTING/valid-html-my-order-history.png)
+
+![Profile Page HTML Validation Results](static/media/TESTING/valid-html-profile.png)
+
+![Add Pet Page HTML Validation Results](static/media/TESTING/valid-html-add-a-pet.png)
+
+![Edit Pet Page HTML Validation Results](static/media/TESTING/valid-html-edit-a-pet.png)
+
+![Queries Page HTML Validation Results](static/media/TESTING/valid-html-queries.png)
 
 </details>
 
-- CSS stylesheet
+##### **CSS stylesheets**
 <details>
-<summary>CSS Stylesheet - Code Validation</summary>
+<summary>CSS Stylesheets - CSS Validation</summary>
 
-![Style sheet validation results](static/media/TESTING/css-validation.png)
+![Style sheet validation results - base.css](static/media/TESTING/w3c-valid-base-css.png)
+
+![Style sheet validation results - checkout.css](static/media/TESTING/w3c-valid-checkout-css.png)
+
+![Style sheet validation results - my_profile.css](static/media/TESTING/w3c-valid-profile-css.png)
 
 </details>
 
-- Python Files
+##### **JavaScript Files**
 <details>
-<summary>Python Files - Code Validation</summary>
+<summary>JavaScript Files - JS Validation</summary>
 
-![Python Validation - student_rations - urls.py](static/media/TESTING/python-validation-urls-sr.png)
+![JS validation results - base.html - postloadjs](static/media/TESTING/jshint-valid-base-postloadjs.png)
 
-![Python Validation - settings.py](static/media/TESTING/python-validation-settings.png)
+![JS validation results - checkout_stripe_elements.js](static/media/TESTING/jshint-valid-checkout-stripe-elements.png)
 
-![Python Validation - admin.py](static/media/TESTING/python-validation-admin.png)
+![JS validation results - index - postloadjs](static/media/TESTING/jshint-valid-index-postloadjs.png)
 
-![Python Validation - forms.py](static/media/TESTING/python-validation-forms.png)
+![JS validation results - product_quantity_input_script](static/media/TESTING/jshint-valid-product-quantity-input-script.png)
 
-![Python Validation - models.py](static/media/TESTING/python-validation-models.png)
+![JS validation results - products - postloadjs](static/media/TESTING/jshint-valid-products-postloadjs.png)
 
-![Python Validation - recipes - urls.py](static/media/TESTING/python-validation-urls-recipes.png)
-
-![Python Validation - views.py](static/media/TESTING/python-validation-views.png)
+![JS validation results - shooping_bag - postloadjs](static/media/TESTING/jshint-valid-shopping-bag-postloadjs.png)
 
 </details>
 
-### Browser Validation
-- **Chrome** - ![Validate Chrome](static/media/TESTING/validate-browser-chrome.png)
-- **Edge** - ![Validate Edge](static/media/TESTING/validate-browser-edge.png)
-- **Opera** - ![Validate Opera](static/media/TESTING/validate-browser-opera.png)
-- **Firefox** - ![Validate Firefox](static/media/TESTING/validate-browser-firefox.png)
+##### **Python Files**
+- Checkout
+    <details>
+    <summary>Checkout Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-checkout-admin.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-checkout-apps.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-checkout-forms.png)
+
+    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-checkout-models.png)
+
+    ![Python Validation - models.py](static/media/TESTING/pep8-valid-checkout-signals.png)
+
+    ![Python Validation - recipes - urls.py](static/media/TESTING/pep8-valid-checkout-urls.png)
+
+    ![Python Validation - views.py](static/media/TESTING/pep8-valid-checkout-views.png)
+
+    </details>
+
+
+- Home
+    <details>
+    <summary>Home Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-home-urls.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-home-views.png)
+
+    </details>
+
+
+- Products
+    <details>
+    <summary>Product Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-product-admin.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-product-forms.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-product-models.png)
+
+    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-product-urls.png)
+
+    ![Python Validation - models.py](static/media/TESTING/pep8-valid-product-views.png)
+
+    </details>
+
+
+- Profile
+    <details>
+    <summary>Profile Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-profile-admin.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-profile-forms.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-profile-models.png)
+
+    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-profile-urls.png)
+
+    ![Python Validation - models.py](static/media/TESTING/pep8-valid-profile-views.png)
+
+    </details>
+
+
+- Queries
+    <details>
+    <summary>Queries Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-queries-admin.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-queries-forms.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-queries-models.png)
+
+    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-queries-urls.png)
+
+    ![Python Validation - models.py](static/media/TESTING/pep8-valid-queries-views.png)
+
+    </details>
+
+
+- Shopping Bag
+    <details>
+    <summary>Shopping Bag Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-shopping-bag-contexts.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-shopping-bag-urls.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-shopping-bag-views.png)
+
+    </details>
+
+
+- The Wagging Tailor
+
+    <details>
+    <summary>The Wagging Tailor Files - Python Validation</summary>
+
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-wagging-tailor-settings.png)
+
+    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-wagging-tailor-urls.png)
+
+    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-wagging-tailor-views.png)
+
+    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-wagging-tailor-wsgi.png)
+
+    </details>
 
 ## User testing 
 My husband and the lovely people of Slack were asked to review the site and documentation to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to a few small UX changes in order to create a better experience. 
 
-[Back to top ⇧](#Student-Rations---Testing)
+[Back to top ⇧](#)
 
 ***
