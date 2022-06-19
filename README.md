@@ -69,7 +69,6 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 - As a Site User, I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
 - As a Site User, I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
 - As a Site User, I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
-- As a Site User, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
 - As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
 ##### **Details**
 - As a Site User, I want to be able to view a list of products so that I can select some to purchase.
@@ -77,7 +76,7 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 - As a Site User, I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
 - As a Site User, I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
 - As a Site User, I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
-- As a Site User, I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
+- As a Site User, I want to be able to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.
 - As a Site User, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
 - As a Site User, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
 
