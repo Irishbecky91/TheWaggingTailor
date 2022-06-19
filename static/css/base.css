@@ -211,6 +211,25 @@ footer, footer a {
     overflow-y: auto;
 }
 
+/* Mail Chimp Styling */
+#mc_embed_signup {
+    background-color: #04212E;
+    color: #FFF;
+    font: 14px 'Open Sans', sans-serif;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.text-gold {
+    color: #F4A30E;
+}
+
+.baskerville {
+    font-family: 'Libre Baskerville', serif !important;
+    font-size: 25px !important;
+}
+
 
 /* ----------- Media Queries ----------- */
 
