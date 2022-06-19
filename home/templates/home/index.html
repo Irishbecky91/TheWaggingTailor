@@ -68,7 +68,7 @@
             <div class="card border-0 h-100 bg-card">
                 <img src="{% static 'media/site-images/rolo.png' %}" class="card-img-top rounded-circle intro-img"
                     alt="Image of Rolo - A Collie Cross who is one of the founding members of The Wagging Tailor.">
-                <div class="card-body" py-1>
+                <div class="card-body">
                     <h3 class="card-title">Rolo</h3>
                     <p class="card-text text-left">The original inspiration for our business, this stylish pup has been
                         known to
@@ -117,7 +117,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{% static 'media/site-images/shirt2.jpg' %}" class="d-block w-100" max-height="400px"
+                        <img src="{% static 'media/site-images/shirt2.jpg' %}" class="d-block w-100"
                             alt="Image of Informal Shirt">
                     </div>
                     <div class="carousel-item">
@@ -187,16 +187,16 @@
 {% block postloadjs %}
 {{ block.super }}
 <!-- Back To Top Button -->
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
 
 <!-- Mail Chimp -->
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
 </script>
-<script type='text/javascript'>
+<script>
     (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
