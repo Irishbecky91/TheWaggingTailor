@@ -48,9 +48,12 @@ def products_list(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query)
+            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -142,8 +145,8 @@ def edit_product(request, product_id):
             return redirect(reverse('product_info', args=[product.id]))
         else:
             messages.error(request,
-                           (f"I'm sorry, you were unable to edit {product.name}. "
-                            "Please check your form and try again."))
+                           (f"I'm sorry, you were unable to edit {product.name}. \
+                            Please check your form and try again."))
     else:
         product_form = ProductForm(instance=product)
         messages.info(request, f'You are editing the product {product.name}.')

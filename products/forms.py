@@ -22,7 +22,7 @@ class ProductForm(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-navy rounded-0'
 
-    
+
 class CommentForm(forms.ModelForm):
     """
     The Comment Form allows users to add comments to the site.

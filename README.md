@@ -2,7 +2,7 @@ README.md
 
 # The Wagging Tailor
 
-![The Wagging Tailor  Logo](file path)
+![The Wagging Tailor Responsive View](static/media/README/responsive-site.png)
 
 [View the live project here](https://the-wagging-tailor.herokuapp.com/ 'Link to the deployed Heroku site for The Wagging Tailor')
 
@@ -56,25 +56,28 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 
 ### User Stories
 #### Site User:
-- As a Site User, I want to be able to view a list of products so that I can select some to purchase.
-- As a Site User, I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
-- As a Site User, I want to be able to quickly identify deals and promotions so that I can take advantage of special savings on products I'd like to purchase.
-- As a Site User, I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
+##### **Activities**
+- As a Site User, I want to be able to save my pet's measurements to my user profile so that I can remind myself of the correct sizing when ordering a product.
+- As a Site User, I want to be able to leave a comment on a product so that others can see my thoughts regarding the product.
+##### **Steps**
+- As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
+- As a Site User, I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
+- As a Site User, I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+- As a Site User, I want to be able to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity or size.
+- As a Site User, I want to be able to adjust the number of individual items in my bag so that I can easily make changes to my purchase before checkout.
 - As a Site User, I want to be able to easily log in or log out so that I can access my personal account information.
 - As a Site User, I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
 - As a Site User, I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
-- As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
-- As a Site User, I want to be able to save my pet's measurements to my user profile so that I can remind myself of the correct sizing when ordering a product.
-- As a Site User, I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
-- As a Site User, I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
-- As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
-- As a Site User, I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
-- As a Site User, I want to be able to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity or size.
-- As a Site User, I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
-- As a Site User, I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
-- As a Site User, I want to be able to adjust the number of individual items in my bag so that I can easily make changes to my purchase before checkout.
-- As a Site User, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
 - As a Site User, I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
+- As a Site User, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
+- As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
+##### **Details**
+- As a Site User, I want to be able to view a list of products so that I can select some to purchase.
+- As a Site User, I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
+- As a Site User, I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
+- As a Site User, I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
+- As a Site User, I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
+- As a Site User, I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
 - As a Site User, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
 - As a Site User, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
 
@@ -188,7 +191,7 @@ The information architecture was organized in a hierarchical tree structure to e
 
 #### **Skeleton**
 
-Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results:
+Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to Balsamiq's site"), providing a positive user experience with the following results. The site was designed loosley follwing these wireframes, with changes made for better UX and appearance:
 
 <details>
 <summary>Home Page:</summary>
@@ -242,12 +245,6 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 <summary>Order History Page:</summary>
 
 ![Order History Page Wireframe](static/media/README/wireframes/wireframe-order-history.png)
-</details>
-
-<details>
-<summary>FAQs Page:</summary>
-
-![FAQs Page Wireframe](static/media/README/wireframes/wireframe-faqs.png)
 </details>
 
 <details>
@@ -348,6 +345,12 @@ Each page of the website features a consistent responsive footer design:
             <li><strong>Add to Bag Button</strong> - When the user has selected their chosen size, they would click the Add to Bag button to add the desired product and size to their shopping bag for purchasing.
             </li>
             <li><strong>Update/Delete Links</strong> - Visible only to an authorised user, underneath the product name are two links. One brings the autorised user to the edit product page, the other one deletes the product. Selecting the delete button will immediately delete the product.
+            </li>
+            <li><strong>Size Guide</strong> - Visible only when a product has a size option, this feature displays a table of size information and a guidance image for measuring your pet.
+            </li>
+            <li><strong>Comment List</strong> - The feature displays any comments available for a certain product. Each comment can be deleted by it's author and no-one else.
+            </li>
+            <li><strong>Comments Form</strong> - Visible only to a logged in user, this feature allows logged in users to add a comment to the product page. If the user is not logged in, a log in button appears with a message advising the user they are unable to leave a comment unless they log in.
             </li>
         </ul>
     </dd>
@@ -450,13 +453,11 @@ Each page of the website features a consistent responsive footer design:
 - **Pet Profile** - This feature displays a profile for each of the user's pets, including their measurements to assist with purchases. The profiles display the pet name, gender, breed, measurements and an image. A placeholder image is available if none is provided.
 - **Add a pet form** - This feature allows the user to add profiles for each of their pets, including their name, gender, breed, measurements and an image. Each form filled adds a new 'pet profile' to the user's profile page.
 - **Add/Edit Product Form** - This feature allows the site admin to add or edit a product on the site. If editing, all fields are populated for the admin to edit. If adding a product, a blank form is provided. The admin can add if sizes are available, a price, a title, a description, and an image. If no image is provided, a placeholder will be used instead.
-- **** - feature description.
-- **Feature** - feature description.
-- **Feature** - feature description.
+- **Comments Form and List** - This feature allows users to add their own comments to a product info page as long as they are logged in. All comments submitted immediately appear in the comments section of the specific product.
 
 ### Features to Implement in the future
 - **Feature Name**
-     - **Comments/Reviews section** - A comment or review section will be implemented in the future to allow users to add their thoughts on the products.
+     - **Ratings Feature** - A ratings feature will be implemented in the future to allow users to add their own ratings to products. This will include a calculation which will get the average of ratings provided.
      - **Reason for not featuring in this release** - Time constraints in the development prevented this feature from being implemented before deployment. Further development of this site will see the implementation of this feature.
  
 [Back to top ⇧](#)

@@ -51,9 +51,13 @@ class Order(models.Model):
         Updates the grand total of the shopping bag each time a line item is
         added, taking shipping costs into account.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.order_total = (
+            self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        )
         if self.order_total < settings.FREE_SHIPPING_THRESHOLD:
-            self.shipping_cost = self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
+            self.shipping_cost = (
+                self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
+            )
         else:
             self.shipping_cost = 0
         self.grand_total = self.order_total + self.shipping_cost

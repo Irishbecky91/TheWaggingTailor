@@ -39,7 +39,7 @@ card.addEventListener('change', function (event) {
                 <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-        `
+        `;
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
@@ -55,7 +55,7 @@ form.addEventListener('submit', function (ev) {
     card.update({
         'disabled': true
     });
-    $('#submit-button').attr('disabled', true)
+    $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
 
@@ -110,7 +110,7 @@ form.addEventListener('submit', function (ev) {
                 $('#payment-form').fadeToggle(100);
                 $('#loading-overlay').fadeToggle(100);
                 card.update({'disabled': false});
-                $('#submit-button').attr('disabled', false)
+                $('#submit-button').attr('disabled', false);
             } else {
                 // The payment has been processed!
                 if (result.paymentIntent.status === 'succeeded') {
@@ -121,5 +121,5 @@ form.addEventListener('submit', function (ev) {
     }).fail(function () {
         // just reload the page, the error will be in django messages
         location.reload();
-    })
+    });
 });
