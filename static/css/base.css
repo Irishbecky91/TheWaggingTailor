@@ -107,6 +107,7 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 99999999999;
 }
 
 .btt-link,
@@ -231,7 +232,7 @@ footer, footer a {
     a#mobile-search,
     a#user-options-mob,
     a#shopping-bag-mob {
-        padding: 0.10rem;
+        padding: 0.10rem !important;
     }
 
     .nav-link i.nav-icon {
