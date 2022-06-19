@@ -134,7 +134,32 @@ The website needs to enable the **Site Owner** to:
 
 With the user stories in mind, the developer created the below strategy table to determine the trade-off of importance and viability with the following results:
 
+<details>
+<summary>Strategy Table:</summary>
+
 ![Strategy Table](static/media/README/strategy-table.png)
+</details>
+
+##### **eCommerce Application Type and Marketing Strategy**
+To create a site that fit the user's needs, the developer planned the site using the following methods:
+- **eCommerce Type:**
+    - **B2C** - The marketing strategies used for this business were SEO (Search Engine Optimisation), Content Marketing in the form of a newsletter, and Social Media Marketing in the form of a Facebook and Instagram page.
+
+- Marketing Types:
+    - **SEO** - SEO is useful for ensuring a good online presence, incredibly important today with people's dependence on technology. SEO must be carefully managed to not be treated as spam. This was done by avoiding keyword stuffing in the page content but filling the meta tag with valuable keywords and a useful description.
+
+    - **Content Marketing** - Content Marketing in the form of a newsletter was used. This form of marketing can be useful and engaging to the consumer. Content is created to attract a certain type of customer or relevant client to the store. It allows the store to show off its expertise and position itself as a reliable, trustworthy source of information and products. Other useful forms of content marketing are eBooks, webinars and blog posts.
+
+    - **Social Media Marketing** - Organic Social Media Marketing was chosen as a free and easy way to become identifiable in the community. The site can be shared with others and special events or sales can be shared free of charge. This form of marketing allows the store to connect directly with the consumer and build relationships and loyalty in the customer base. This form of marketing can also be used to improve the store's customer service and support. There is also the potential to add a paid service which will allow the store to be marketed by the social media provider to become more visible to a larger audience. The social media chosen for this project was [Facebook](https://www.facebook.com/TheWaggingTailors 'Link to the official Facebook page for The Wagging Tailor') and [Instagram](https://www.instagram.com/thewaggingtailor/ 'Link to the official Instagram page for The Wagging Tailor').
+
+<details>
+<summary>Social Media Screenshots:</summary>
+
+![Official Facebook Page for The Wagging Tailor](static/media/README/facebook.png)
+
+![Official Facebook Page for The Wagging Tailor](static/media/README/instagram.png)
+</details>
+
 
 #### **Scope**
 A scope was defined to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
@@ -155,7 +180,11 @@ A scope was defined to identify what needed to be done to align features with th
 #### **Structure**
 The information architecture was organized in a hierarchical tree structure to ensure that users could navigate through the site with ease and efficiency, with the following results:
 
+<details>
+<summary>Site Map:</summary>
+
 ![Site Map](static/media/README/site-map.png)
+</details>
 
 #### **Skeleton**
 
@@ -231,8 +260,11 @@ Wireframe mockups were created using [Balsamiq](https://balsamiq.com/ "Link to B
 #### **Database Structure**
 In addition to wireframes, a Database ER Diagram was mocked up to show the relationship between the various database structures.
 
-![Database ER Diagram](static/media/README/database-diagram.png)
+<details>
+<summary>Database ER Diagram:</summary>
 
+![Database ER Diagram](static/media/README/database-diagram.png)
+</details>
 
 ### Design
 
@@ -280,6 +312,8 @@ Each page of the website features a consistent responsive footer design:
     <dd>The home page is the main entry page to the site, it introduces the people involved in the store and gives a sneak peek into some of the products:
         <ul>
             <li><strong>Main Image</strong> - This feature is an image underneath the navigation bar and Custom Orders message bar. The image displayed is of a dog wearing an outfit sold in the store, with the company name and logo also displayed.
+            </li>
+            <li><strong>Mail Chimp Newsletter Subscription Form</strong> - This feature was taken from the site Mail Chimp which records email addresses when entered so the users can be included on the next newsletter mailing list.
             </li>
             <li><strong>Introduction Cards</strong> - Directly underneath the Main Image is a welcome message and a set of three cards that display the person/pet's name, image and a short text piece about each one.
             </li>
