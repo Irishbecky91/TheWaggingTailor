@@ -82,6 +82,12 @@ input[name='q']::placeholder {
     text-decoration: underline;
 }
 
+.link-colour-banner {
+    font-weight: bold;
+    color: #343A40;
+}
+
+
 a.category-badge > span.badge {
     background-color: #04212E;
     color: #EFF5F8 !important;
