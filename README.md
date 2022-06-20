@@ -23,7 +23,7 @@ README.md
      2. [Additional Languages Used](#Additional-Languages-Used)
      3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 6. [Testing](#Testing)
-     1. [Testing.md](TESTING.md)
+     1. [Testing.md](https://github.com/Irishbecky91/TheWaggingTailor/blob/main/TESTING.MD 'Link to TESTING.md')
 7. [Deployment](#Deployment)
      1. [Deploying on Heroku](#Deploying-on-Heroku)
      2. [Forking the Repository](#Forking-the-Repository)
@@ -551,7 +551,7 @@ if pet_form.is_valid():
 
 ## Testing
 
-Testing information can be found in a separate testing [here](../TESTING.md/ "Link to testing file")
+Testing information can be found in a separate testing [here](https://github.com/Irishbecky91/TheWaggingTailor/blob/main/TESTING.MD "Link to testing file")
 
 ## Deployment
 
