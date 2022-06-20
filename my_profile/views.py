@@ -117,7 +117,7 @@ def delete_pet(request, pet_id):
 
     pet = get_object_or_404(PetProfile, pk=pet_id)
     pet.delete()
-    messages.success(request, f'You deleted {pet.pet_name} from the store.')
+    messages.success(request, f'You deleted {pet.pet_name} from your profile.')
     return redirect(reverse('profile'))
 
 

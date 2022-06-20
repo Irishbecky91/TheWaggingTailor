@@ -260,15 +260,35 @@ Manual testing was conducted on the following elements of the [Profile Page](htt
 
 - Test that user name displayed as heading, and pet profile and order history visible.
 
-    ![Test that user name displayed as heading, and pet profile and order history visible](static/media/TESTING/manual_testing/checkout-enter-details.gif)
+    ![Test that user name displayed as heading, and pet profile and order history visible](static/media/TESTING/manual_testing/profile-username-pets-and-order-history.gif)
 
-- Test that users can only use valid card details.
+- Test that users can add, edit and delete pet details.
 
-    ![Test that users can only use valid card details](static/media/TESTING/manual_testing/checkout-valid-card-details.gif)
+    ![Test that users can add, edit and delete pet details](static/media/TESTING/manual_testing/profile-add-edit-delete-pets.gif)
 
-- Test that users can submit payment details and see order confirmation.
+- Test that users can view their order history for specific orders.
 
-    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/checkout-submit-order.gif)
+    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/profile-order-history.gif)
+
+</details>
+
+### Query Page
+Manual testing was conducted on the following elements of the [Query Page](https://the-wagging-tailor.herokuapp.com/queries/):
+
+<details>
+<summary>Query Page - Manual Testing</summary>
+
+- Test that the user can submit a query.
+
+    ![Test that user name displayed as heading, and pet profile and order history visible](static/media/TESTING/manual_testing/queries-submit-query.gif)
+
+- Test that the user can submit a quote request.
+
+    ![Test that users can add, edit and delete pet details](static/media/TESTING/manual_testing/queries-submit-quote.gif)
+
+- Test that queries/quotes are saved to the admin for store owner use.
+
+    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/queries-visible-on-admin.gif)
 
 </details>
      
@@ -288,15 +308,27 @@ Manual testing was conducted on the following elements of the [Sign In Page](htt
 - Manual testing was conducted on the following pages for responsiveness on large, medium and small screens
 
 <details>
-<summary>Home Page - Manual Testing</summary>
+<summary>Responsive Pages - Manual Testing</summary>
 
 ![Responsive Home](static/media/TESTING)
 
-![Responsive About](static/media/TESTING)
+![Responsive Products List](static/media/TESTING)
 
-![Responsive Recipe](static/media/TESTING)
+![Responsive Products Info](static/media/TESTING)
 
-![Responsive Form](static/media/TESTING)
+![Responsive Add/Edit Product Form](static/media/TESTING)
+
+![Responsive Shopping Bag Page](static/media/TESTING)
+
+![Responsive Checkout Page](static/media/TESTING)
+
+![Responsive Order Confirmation/History Page](static/media/TESTING)
+
+![Responsive Profile Page](static/media/TESTING)
+
+![Responsive Add/Edit Pet Form](static/media/TESTING)
+
+![Responsive Query Form](static/media/TESTING)
 
 ![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING)
 
