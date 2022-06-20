@@ -55,11 +55,23 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 
 
 ### User Stories
+The following user stories were developed by using User Story Agile Mapping:
+
+<details>
+<summary>User Stories Agile Mapping:</summary>
+
+![User Stories Agile Mapping - Add product to shopping bag](static/media/README/US-add-to-bag.jpg)
+
+![User Stories Agile Mapping - Pay for items](static/media/README/US-pay-for-items.jpg)
+
+![User Stories Agile Mapping - Personal Profile](static/media/README/US-personal-profile.jpg)
+
+![User Stories Agile Mapping - Product Management](static/media/README/US-product-management.jpg)
+</details>
+
 #### Site User:
-##### **Activities**
 - As a Site User, I want to be able to save my pet's measurements to my user profile so that I can remind myself of the correct sizing when ordering a product.
 - As a Site User, I want to be able to leave a comment on a product so that others can see my thoughts regarding the product.
-##### **Steps**
 - As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
 - As a Site User, I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
 - As a Site User, I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
@@ -70,7 +82,6 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 - As a Site User, I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
 - As a Site User, I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
 - As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
-##### **Details**
 - As a Site User, I want to be able to view a list of products so that I can select some to purchase.
 - As a Site User, I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
 - As a Site User, I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.

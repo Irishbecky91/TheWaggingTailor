@@ -102,83 +102,165 @@
 ### Common Elements Testing
 Manual testing was conducted on the following elements that appear on every page:
 
+<details>
+<summary>Across Site - Manual Testing</summary>
+
 - Test that Logo redirects to home screen.
 
-    ![Test that Logo redirects to home screen](static/media/TESTING)
+    ![Test that Logo redirects to home screen](static/media/TESTING/manual_testing/logo-works.gif)
 
 - Test that Nav Links work.
 
-    ![Test that Nav Links work.](static/media/TESTING)
+    ![Test that Nav Links work.](static/media/TESTING/manual_testing/nav-links-work.gif)
 
 - Test that Query Links work.
 
-    ![Test that Query Links work.](static/media/TESTING)
+    ![Test that Query Links work.](static/media/TESTING/manual_testing/query-links-work.gif)
+
+- Test that Search Bar works.
+
+    ![Test that Search Bar works.](static/media/TESTING/manual_testing/search-bar-works.gif)
 
 - Test that Social Links work.
 
-    ![Test that Social Links work.](static/media/TESTING)
+    ![Test that Social Links work.](static/media/TESTING/manual_testing/social-links-work.gif)
+
+- Test that My Profile links show differently for users, super users and those not logged in.
+
+    ![Test that My Profile links show differently for users, super users and those not logged in.](static/media/TESTING/manual_testing/profile-links-change-for-user-type.gif)
+
+</details>
 
 
 ### Home Page
-Manual testing was conducted on the following elements of the [Home Page]():
+Manual testing was conducted on the following elements of the [Home Page](https://the-wagging-tailor.herokuapp.com/):
      
+<details>
+<summary>Home Page - Manual Testing</summary>
+
 - Test that the three product buttons go to the correct pages.
 
-    ![Test that the three product buttons go to the correct pages](static/media/TESTING)
+    ![Test that the three product buttons go to the correct pages](static/media/TESTING/manual_testing/home-product-buttons-work.gif)
 
 - Test that the carousel images slide when clicked.
 
-    ![Test that the carousel images slide when clicked](static/media/TESTING)
+    ![Test that the carousel images slide when clicked](static/media/TESTING/manual_testing/home-carousel.gif)
 
-### Recipe Page/Edit Recipe Page
-Manual testing was conducted on the following elements of the [Recipe Page]() and [Edit Recipe Page]():
+- Test that the Mail Chimp subscription form works.
 
-- Test that recipes can be edited by author only.
+    ![Test that the Mail Chimp subscription form works](static/media/TESTING/manual_testing/home-mail-chimp.gif)
 
-    ![Test that recipes can be edited by author only](static/media/TESTING)
+</details>
 
-- Test that recipes can only be deleted by author.
+### Products List
+Manual testing was conducted on the following elements of the [Products List Page](https://the-wagging-tailor.herokuapp.com/products/):
 
-    ![Test that recipes can only be deleted by author](static/media/TESTING)
+<details>
+<summary>Products List Page - Manual Testing</summary>
+
+- Test that products can be sorted by price, category name and rating.
+
+    ![Test that products can be sorted by price, category name and rating](static/media/TESTING/manual_testing/products-sort-by-selector.gif)
+
+- Test that product category buttons work.
+
+    ![Test that product category buttons work](static/media/TESTING/manual_testing/products-category-buttons.gif)
      
-- Test that recipes can be liked and unliked when logged in.
+- Test that clicking on a product opens that products info page.
 
-    ![Test that recipes can be liked and unliked when logged in](static/media/TESTING)
+    ![Test that clicking on a product opens that products info page](static/media/TESTING/manual_testing/products-open-product-info.gif)
+
+</details>
+
+### Product Info Page
+Manual testing was conducted on the following elements of the [Product Info Page](https://the-wagging-tailor.herokuapp.com/products/4/):
+
+<details>
+<summary>Product Info Page - Manual Testing</summary>
+
+- Test that users can increase and decrease quantity of product.
+
+    ![Test that users can increase and decrease quantity of product](static/media/TESTING/manual_testing/product-info-quantity.gif)
      
-- Test that comments can be submitted and approved.
+- Test that size selector and quide appear only for products with sizes.
 
-    ![Test that comments can be submitted and approved](static/media/TESTING)
-
-### Share Recipe Page
-Manual testing was conducted on the following elements of the [Share recipe Page]():
-
-- Test that recipes create unique slugs
-
-    ![Test that recipes create unique slugs](static/media/TESTING)
+    ![Test that size selector and guide appear only for products with sizes](static/media/TESTING/manual_testing/product-info-sizes-available.gif)
      
-- Test that recipes are saved.
+- Test that users can add a product to their shopping bag.
 
-    ![Test that recipes are saved](static/media/TESTING)
+    ![Test that users can add a product to their shopping bag](static/media/TESTING/manual_testing/product-info-add-to-bag.gif)
+
+- Test that the comments form is only available if logged in and the comments section displays comments submitted in the form.
+
+    ![Test that the comments form is only available if logged in and the comments section displays comments submitted in the form](static/media/TESTING/manual_testing/product-info-comments.gif)
+
+- Test that the Update and Delete Product buttons are only visible to super users.
+
+    ![Test that the Update and Delete Product buttons are only visible to super users](static/media/TESTING/manual_testing/product-info-update-delete-product.gif)
+
+- Test that a super user can add, edit and delete a product.
+
+    ![Test that a super user can add, edit and delete a product](static/media/TESTING/manual_testing/product-info-add-product.gif)
+
+</details>
+
+### Shopping Bag Page
+Manual testing was conducted on the following elements of the [Product Info Page](https://the-wagging-tailor.herokuapp.com/shopping_bag/):
+
+<details>
+<summary>Shopping Bag Page - Manual Testing</summary>
+
+- Test that users can update quantity of product.
+
+    ![Test that users can update quantity of product](static/media/TESTING)
+
+- Test that users can remove product from shopping bag.
+
+    ![Test that users can remove product from shopping bag](static/media/TESTING)
+
+- Test that users can view the same products of different sizes.
+
+    ![Test that users can view the same products of different sizes](static/media/TESTING)
+
+- Test that total cost, shipping cost and grand total update when updating products in bag.
+
+    ![Test that total cost, shipping cost and grand total update when updating products in bag](static/media/TESTING)
+
+- Test that users can access the checkout page.
+
+    ![Test that users can access the checkout page](static/media/TESTING)
+
+</details>
      
 ### Sign in/Sign Out/Sign Up Pages
-Manual testing was conducted on the following elements of the [Sign In Page](Link), [Sign Out Page](Link) and [Sign Up Page](Link):
+Manual testing was conducted on the following elements of the [Sign In Page](https://the-wagging-tailor.herokuapp.com/accounts/login/), [Verify Email Page](https://the-wagging-tailor.herokuapp.com/accounts/confirm-email/), [Sign Out Page](https://the-wagging-tailor.herokuapp.com/accounts/logout/) and [Sign Up Page](https://the-wagging-tailor.herokuapp.com/accounts/signup/):
 
-- Users can register, log in and logout.
+<details>
+<summary>User Account Pages - Manual Testing</summary>
 
-    ![Users can register, log in and logout](static/media/TESTING)
+- Test that users can register, verify their email, log in and logout.
+
+    ![Test that users can register, verify their email, log in and logout](static/media/TESTING/manual_testing/account-signup-verify-signin-signout.gif)
+
+</details>
 
 ### Pages are Responsive
 - Manual testing was conducted on the following pages for responsiveness on large, medium and small screens
 
-    ![Responsive Home](static/media/TESTING)
+<details>
+<summary>Home Page - Manual Testing</summary>
 
-    ![Responsive About](static/media/TESTING)
+![Responsive Home](static/media/TESTING)
 
-    ![Responsive Recipe](static/media/TESTING)
+![Responsive About](static/media/TESTING)
 
-    ![Responsive Form](static/media/TESTING)
+![Responsive Recipe](static/media/TESTING)
 
-    ![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING)
+![Responsive Form](static/media/TESTING)
+
+![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING)
+
+</details>
 
 [Back to top](#)
 
@@ -193,31 +275,31 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
 <details>
 <summary>HTML Pages - HTML Validation</summary>
 
-![Home Page HTML Validation Results](static/media/TESTING/valid-html-home.png)
+![Home Page HTML Validation Results](static/media/TESTING/validation/valid-html-home.png)
 
-![Products Page HTML Validation Results](static/media/TESTING/valid-html-products.png)
+![Products Page HTML Validation Results](static/media/TESTING/validation/valid-html-products.png)
 
-![Product Info Page HTML Validation Results](static/media/TESTING/valid-html-product-info.png)
+![Product Info Page HTML Validation Results](static/media/TESTING/validation/valid-html-product-info.png)
 
-![Add Product Page HTML Validation Results](static/media/TESTING/valid-html-add-a-product.png)
+![Add Product Page HTML Validation Results](static/media/TESTING/validation/valid-html-add-a-product.png)
 
-![Edit Product Page HTML Validation Results](static/media/TESTING/valid-html-edit-a-product.png)
+![Edit Product Page HTML Validation Results](static/media/TESTING/validation/valid-html-edit-a-product.png)
 
-![Shopping Bag Page HTML Validation Results](static/media/TESTING/valid-html-shopping-bag.png)
+![Shopping Bag Page HTML Validation Results](static/media/TESTING/validation/valid-html-shopping-bag.png)
 
-![Checkout Page HTML Validation Results](static/media/TESTING/valid-html-checkout.png)
+![Checkout Page HTML Validation Results](static/media/TESTING/validation/valid-html-checkout.png)
 
-![Order Confirmation Page HTML Validation Results](static/media/TESTING/valid-html-checkout-successful.png)
+![Order Confirmation Page HTML Validation Results](static/media/TESTING/validation/valid-html-checkout-successful.png)
 
-![Order History Page HTML Validation Results](static/media/TESTING/valid-html-my-order-history.png)
+![Order History Page HTML Validation Results](static/media/TESTING/validation/valid-html-my-order-history.png)
 
-![Profile Page HTML Validation Results](static/media/TESTING/valid-html-profile.png)
+![Profile Page HTML Validation Results](static/media/TESTING/validation/valid-html-profile.png)
 
-![Add Pet Page HTML Validation Results](static/media/TESTING/valid-html-add-a-pet.png)
+![Add Pet Page HTML Validation Results](static/media/TESTING/validation/valid-html-add-a-pet.png)
 
-![Edit Pet Page HTML Validation Results](static/media/TESTING/valid-html-edit-a-pet.png)
+![Edit Pet Page HTML Validation Results](static/media/TESTING/validation/valid-html-edit-a-pet.png)
 
-![Queries Page HTML Validation Results](static/media/TESTING/valid-html-queries.png)
+![Queries Page HTML Validation Results](static/media/TESTING/validation/valid-html-queries.png)
 
 </details>
 
@@ -225,11 +307,11 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
 <details>
 <summary>CSS Stylesheets - CSS Validation</summary>
 
-![Style sheet validation results - base.css](static/media/TESTING/w3c-valid-base-css.png)
+![Style sheet validation results - base.css](static/media/TESTING/validation/w3c-valid-base-css.png)
 
-![Style sheet validation results - checkout.css](static/media/TESTING/w3c-valid-checkout-css.png)
+![Style sheet validation results - checkout.css](static/media/TESTING/validation/w3c-valid-checkout-css.png)
 
-![Style sheet validation results - my_profile.css](static/media/TESTING/w3c-valid-profile-css.png)
+![Style sheet validation results - my_profile.css](static/media/TESTING/validation/w3c-valid-profile-css.png)
 
 </details>
 
@@ -237,17 +319,17 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
 <details>
 <summary>JavaScript Files - JS Validation</summary>
 
-![JS validation results - base.html - postloadjs](static/media/TESTING/jshint-valid-base-postloadjs.png)
+![JS validation results - base.html - postloadjs](static/media/TESTING/validation/jshint-valid-base-postloadjs.png)
 
-![JS validation results - checkout_stripe_elements.js](static/media/TESTING/jshint-valid-checkout-stripe-elements.png)
+![JS validation results - checkout_stripe_elements.js](static/media/TESTING/validation/jshint-valid-checkout-stripe-elements.png)
 
-![JS validation results - index - postloadjs](static/media/TESTING/jshint-valid-index-postloadjs.png)
+![JS validation results - index - postloadjs](static/media/TESTING/validation/jshint-valid-index-postloadjs.png)
 
-![JS validation results - product_quantity_input_script](static/media/TESTING/jshint-valid-product-quantity-input-script.png)
+![JS validation results - product_quantity_input_script](static/media/TESTING/validation/jshint-valid-product-quantity-input-script.png)
 
-![JS validation results - products - postloadjs](static/media/TESTING/jshint-valid-products-postloadjs.png)
+![JS validation results - products - postloadjs](static/media/TESTING/validation/jshint-valid-products-postloadjs.png)
 
-![JS validation results - shooping_bag - postloadjs](static/media/TESTING/jshint-valid-shopping-bag-postloadjs.png)
+![JS validation results - shooping_bag - postloadjs](static/media/TESTING/validation/jshint-valid-shopping-bag-postloadjs.png)
 
 </details>
 
@@ -256,19 +338,19 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Checkout Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-checkout-admin.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-checkout-admin.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-checkout-apps.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-checkout-apps.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-checkout-forms.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-checkout-forms.png)
 
-    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-checkout-models.png)
+    ![Python Validation - forms.py](static/media/TESTING/validation/pep8-valid-checkout-models.png)
 
-    ![Python Validation - models.py](static/media/TESTING/pep8-valid-checkout-signals.png)
+    ![Python Validation - models.py](static/media/TESTING/validation/pep8-valid-checkout-signals.png)
 
-    ![Python Validation - recipes - urls.py](static/media/TESTING/pep8-valid-checkout-urls.png)
+    ![Python Validation - recipes - urls.py](static/media/TESTING/validation/pep8-valid-checkout-urls.png)
 
-    ![Python Validation - views.py](static/media/TESTING/pep8-valid-checkout-views.png)
+    ![Python Validation - views.py](static/media/TESTING/validation/pep8-valid-checkout-views.png)
 
     </details>
 
@@ -277,9 +359,9 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Home Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-home-urls.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-home-urls.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-home-views.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-home-views.png)
 
     </details>
 
@@ -288,15 +370,15 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Product Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-product-admin.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-product-admin.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-product-forms.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-product-forms.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-product-models.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-product-models.png)
 
-    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-product-urls.png)
+    ![Python Validation - forms.py](static/media/TESTING/validation/pep8-valid-product-urls.png)
 
-    ![Python Validation - models.py](static/media/TESTING/pep8-valid-product-views.png)
+    ![Python Validation - models.py](static/media/TESTING/validation/pep8-valid-product-views.png)
 
     </details>
 
@@ -305,15 +387,15 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Profile Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-profile-admin.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-profile-admin.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-profile-forms.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-profile-forms.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-profile-models.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-profile-models.png)
 
-    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-profile-urls.png)
+    ![Python Validation - forms.py](static/media/TESTING/validation/pep8-valid-profile-urls.png)
 
-    ![Python Validation - models.py](static/media/TESTING/pep8-valid-profile-views.png)
+    ![Python Validation - models.py](static/media/TESTING/validation/pep8-valid-profile-views.png)
 
     </details>
 
@@ -322,15 +404,15 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Queries Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-queries-admin.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-queries-admin.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-queries-forms.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-queries-forms.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-queries-models.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-queries-models.png)
 
-    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-queries-urls.png)
+    ![Python Validation - forms.py](static/media/TESTING/validation/pep8-valid-queries-urls.png)
 
-    ![Python Validation - models.py](static/media/TESTING/pep8-valid-queries-views.png)
+    ![Python Validation - models.py](static/media/TESTING/validation/pep8-valid-queries-views.png)
 
     </details>
 
@@ -339,11 +421,11 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>Shopping Bag Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-shopping-bag-contexts.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-shopping-bag-contexts.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-shopping-bag-urls.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-shopping-bag-urls.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-shopping-bag-views.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-shopping-bag-views.png)
 
     </details>
 
@@ -353,13 +435,13 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to M£C Markup Valida
     <details>
     <summary>The Wagging Tailor Files - Python Validation</summary>
 
-    ![Python Validation - student_rations - urls.py](static/media/TESTING/pep8-valid-wagging-tailor-settings.png)
+    ![Python Validation - student_rations - urls.py](static/media/TESTING/validation/pep8-valid-wagging-tailor-settings.png)
 
-    ![Python Validation - settings.py](static/media/TESTING/pep8-valid-wagging-tailor-urls.png)
+    ![Python Validation - settings.py](static/media/TESTING/validation/pep8-valid-wagging-tailor-urls.png)
 
-    ![Python Validation - admin.py](static/media/TESTING/pep8-valid-wagging-tailor-views.png)
+    ![Python Validation - admin.py](static/media/TESTING/validation/pep8-valid-wagging-tailor-views.png)
 
-    ![Python Validation - forms.py](static/media/TESTING/pep8-valid-wagging-tailor-wsgi.png)
+    ![Python Validation - forms.py](static/media/TESTING/validation/pep8-valid-wagging-tailor-wsgi.png)
 
     </details>
 
