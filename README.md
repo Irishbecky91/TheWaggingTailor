@@ -551,7 +551,7 @@ if pet_form.is_valid():
 
 ## Testing
 
-Testing information can be found in a separate testing [here](TESTING.md/ "Link to testing file")
+Testing information can be found in a separate testing [here](../TESTING.md/ "Link to testing file")
 
 ## Deployment
 
