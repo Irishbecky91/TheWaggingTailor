@@ -111,7 +111,7 @@ def delete_pet(request, pet_id):
     """
     Remove the the product from the store
     """
-    if not request.user.is_superuser:
+    if not request.user:
         messages.error(request, "Sorry, you don't have permission to do that.")
         return redirect(reverse('home'))
 
