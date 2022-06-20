@@ -91,6 +91,10 @@ input[name='q']::placeholder {
     color: #343A40;
 }
 
+i.social {
+    font-size: 25px !important;
+}
+
 i.social:hover {
     color: #FFF !important;
 }
