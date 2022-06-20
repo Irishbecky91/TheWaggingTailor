@@ -310,27 +310,27 @@ Manual testing was conducted on the following elements of the [Sign In Page](htt
 <details>
 <summary>Responsive Pages - Manual Testing</summary>
 
-![Responsive Home](static/media/TESTING)
+![Responsive Home](static/media/TESTING/manual_testing/responsive-home.gif)
 
-![Responsive Products List](static/media/TESTING)
+![Responsive Products List](static/media/TESTING/manual_testing/responsive-products-list.gif)
 
-![Responsive Products Info](static/media/TESTING)
+![Responsive Products Info](static/media/TESTING/manual_testing/responsive-product-info.gif)
 
-![Responsive Add/Edit Product Form](static/media/TESTING)
+![Responsive Add/Edit Product Form](static/media/TESTING/manual_testing/responsive-add-edit-product.gif)
 
-![Responsive Shopping Bag Page](static/media/TESTING)
+![Responsive Shopping Bag Page](static/media/TESTING/manual_testing/responsive-shopping-bag.gif)
 
-![Responsive Checkout Page](static/media/TESTING)
+![Responsive Checkout Page](static/media/TESTING/manual_testing/responsive-checkout.gif)
 
-![Responsive Order Confirmation/History Page](static/media/TESTING)
+![Responsive Order Confirmation/History Page](static/media/TESTING/manual_testing/responsive-order-confirmation.gif)
 
-![Responsive Profile Page](static/media/TESTING)
+![Responsive Profile Page](static/media/TESTING/manual_testing/responsive-profile.gif)
 
-![Responsive Add/Edit Pet Form](static/media/TESTING)
+![Responsive Add/Edit Pet Form](static/media/TESTING/manual_testing/responsive-add-edit-pet.gif)
 
-![Responsive Query Form](static/media/TESTING)
+![Responsive Query Form](static/media/TESTING/manual_testing/responsive-query.gif)
 
-![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING)
+![Responsive Sign In, Sign Out and Sign Up](static/media/TESTING/manual_testing/responsive-signout-signup-signin.gif)
 
 </details>
 

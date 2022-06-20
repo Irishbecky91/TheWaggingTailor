@@ -542,10 +542,10 @@ if pet_form.is_valid():
 - Used to store the project after pushing.
 
 [Lucid](https://lucid.app/ "Lucid Site")
-- Used to create a flowchart of information, making the logic of the game easily understood.
+- Used to create a site map of how the site should be laid out.
 
 [AmIResponsive](https://ui.dev/amiresponsive "AmIResponsive Site")
-- Used to generate mockup imagery of the terminal showing the game in use on Heroku.
+- Used to generate mockup imagery of the site in use on Heroku.
 
 [Back to top ⇧](#)
 
