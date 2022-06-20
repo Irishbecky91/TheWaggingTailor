@@ -212,23 +212,63 @@ Manual testing was conducted on the following elements of the [Product Info Page
 
 - Test that users can update quantity of product.
 
-    ![Test that users can update quantity of product](static/media/TESTING)
+    ![Test that users can update quantity of product](static/media/TESTING/manual_testing/shopping-bag-update-quantity.gif)
 
 - Test that users can remove product from shopping bag.
 
-    ![Test that users can remove product from shopping bag](static/media/TESTING)
+    ![Test that users can remove product from shopping bag](static/media/TESTING/manual_testing/shopping-bag-remove-item.gif)
 
 - Test that users can view the same products of different sizes.
 
-    ![Test that users can view the same products of different sizes](static/media/TESTING)
+    ![Test that users can view the same products of different sizes](static/media/TESTING/manual_testing/shopping-bag-same-item-size.gif)
 
 - Test that total cost, shipping cost and grand total update when updating products in bag.
 
-    ![Test that total cost, shipping cost and grand total update when updating products in bag](static/media/TESTING)
+    ![Test that total cost, shipping cost and grand total update when updating products in bag](static/media/TESTING/manual_testing/shopping-bag-total-updates.gif)
 
 - Test that users can access the checkout page.
 
-    ![Test that users can access the checkout page](static/media/TESTING)
+    ![Test that users can access the checkout page](static/media/TESTING/manual_testing/shopping-bag-access-checkout.gif)
+
+</details>
+
+### Checkout Page
+Manual testing was conducted on the following elements of the [Product Info Page](https://the-wagging-tailor.herokuapp.com/checkout/):
+
+<details>
+<summary>Checkout Page - Manual Testing</summary>
+
+- Test that add shipping details.
+
+    ![Test that add shipping details](static/media/TESTING/manual_testing/checkout-enter-details.gif)
+
+- Test that users can only use valid card details.
+
+    ![Test that users can only use valid card details](static/media/TESTING/manual_testing/checkout-valid-card-details.gif)
+
+- Test that users can submit payment details and see order confirmation.
+
+    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/checkout-submit-order.gif)
+
+</details>
+
+### Profile Page
+Manual testing was conducted on the following elements of the [Profile Page](https://the-wagging-tailor.herokuapp.com/profile/):
+
+<details>
+<summary>Profile Page - Manual Testing</summary>
+
+- Test that user name displayed as heading, and pet profile and order history visible.
+
+    ![Test that user name displayed as heading, and pet profile and order history visible](static/media/TESTING/manual_testing/checkout-enter-details.gif)
+
+- Test that users can only use valid card details.
+
+    ![Test that users can only use valid card details](static/media/TESTING/manual_testing/checkout-valid-card-details.gif)
+
+- Test that users can submit payment details and see order confirmation.
+
+    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/checkout-submit-order.gif)
 
 </details>
      

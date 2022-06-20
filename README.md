@@ -55,7 +55,7 @@ This site was developed to be intuitive and appealing to users, with a clean, at
 
 
 ### User Stories
-The following user stories were developed by using User Story Agile Mapping:
+The following user stories were developed by using User Story Agile Mapping. The program used to make these maps was [Miro](https://miro.com/ 'Link to Miro'):
 
 <details>
 <summary>User Stories Agile Mapping:</summary>
