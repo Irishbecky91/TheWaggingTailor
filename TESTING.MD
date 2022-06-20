@@ -21,14 +21,12 @@
 
 ### User Stories:
 #### Site User
-##### **Activities**
 - As a Site User, I want to be able to save my pet's measurements to my user profile so that I can remind myself of the correct sizing when ordering a product.
     - There is a form available for the user to add a profile entry for each pet, detailing their name, breed, gender, mesaurements and an image.
 
 - As a Site User, I want to be able to leave a comment on a product so that others can see my thoughts regarding the product.    
     - There is a form on the product info page which allows the user to add a title and the body of a comment to the product page. The comment will detail the user's username, date of entry, and the title and body of the comment.
 
-##### **Steps**
 - As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
     - There is a search bar in the header which allows users to search for products based on keywords in the description or name fields.
 
@@ -59,7 +57,6 @@
 - As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
     - On registration of a new account, a personal profile is automatically rendered. Here the user can view their order history and pet profiles.
 
-##### **Details**
 - As a Site User, I want to be able to view a list of products so that I can select some to purchase.
     - On the porducts page, a list of product cards are visible, showing the product name, rating, price, category and an image.
 
@@ -280,15 +277,15 @@ Manual testing was conducted on the following elements of the [Query Page](https
 
 - Test that the user can submit a query.
 
-    ![Test that user name displayed as heading, and pet profile and order history visible](static/media/TESTING/manual_testing/queries-submit-query.gif)
+    ![Test that the user can submit a query](static/media/TESTING/manual_testing/queries-submit-query.gif)
 
 - Test that the user can submit a quote request.
 
-    ![Test that users can add, edit and delete pet details](static/media/TESTING/manual_testing/queries-submit-quote.gif)
+    ![Test that the user can submit a quote request](static/media/TESTING/manual_testing/queries-submit-quote.gif)
 
 - Test that queries/quotes are saved to the admin for store owner use.
 
-    ![Test that users can submit payment details and see order confirmation](static/media/TESTING/manual_testing/queries-visible-on-admin.gif)
+    ![Test that queries/quotes are saved to the admin for store owner use](static/media/TESTING/manual_testing/queries-visible-on-admin.gif)
 
 </details>
      
@@ -305,7 +302,7 @@ Manual testing was conducted on the following elements of the [Sign In Page](htt
 </details>
 
 ### Pages are Responsive
-- Manual testing was conducted on the following pages for responsiveness on large, medium and small screens
+- Manual testing was conducted on the following pages for responsiveness on large, medium and small screens.
 
 <details>
 <summary>Responsive Pages - Manual Testing</summary>
