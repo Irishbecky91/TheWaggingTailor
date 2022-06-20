@@ -52,7 +52,7 @@
                     {% if pet.pet_image %}
                     <img src="{{ pet.pet_image.url }}" alt="{{ pet.pet_name }}" class="w-100 rounded-custom img_border">
                     {% else %}
-                    <img src="{{ MEDIA_URL }}pet_profile_pic.png" alt="{{ pet.pet_name }}"
+                    <img src="{{ MEDIA_URL }}pet_profile_pic.png" alt="Image of {{ pet.pet_name }}"
                         class="w-100 rounded-custom img_border">
                     {% endif %}
                 </div>
