@@ -110,9 +110,9 @@ Manual testing was conducted on the following elements that appear on every page
 
     ![Test that Nav Links work.](static/media/TESTING)
 
-- Test that Footer Links work.
+- Test that Query Links work.
 
-    ![Test that Footer Links work.](static/media/TESTING)
+    ![Test that Query Links work.](static/media/TESTING)
 
 - Test that Social Links work.
 
@@ -122,13 +122,13 @@ Manual testing was conducted on the following elements that appear on every page
 ### Home Page
 Manual testing was conducted on the following elements of the [Home Page]():
      
-- Test that user welcome message displays username.
+- Test that the three product buttons go to the correct pages.
 
-    ![Test that user welcome message displays username](static/media/TESTING)
+    ![Test that the three product buttons go to the correct pages](static/media/TESTING)
 
-- Test that recipe cards redirect user to recipe pages.
+- Test that the carousel images slide when clicked.
 
-    ![Test that recipe cards redirect user to recipe pages](static/media/TESTING)
+    ![Test that the carousel images slide when clicked](static/media/TESTING)
 
 ### Recipe Page/Edit Recipe Page
 Manual testing was conducted on the following elements of the [Recipe Page]() and [Edit Recipe Page]():
