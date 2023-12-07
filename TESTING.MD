@@ -1,4 +1,4 @@
-# Student Rations - Testing 
+# The Wagging Tailor - Testing 
 
 [Main README.md file](/README.md)
 
